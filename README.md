@@ -3,17 +3,20 @@
 - Create virutual environment and **install streamlit**
 - Create a .command file using touch
 - Edit with nano and make shebang header **#!/bin/bash**
-'''console
+
+```nano
+
 #!/bin/bash
 cd path/to/flash_card_creator
 conda activate venv
 streamlit run flashcard_app_v2.py
-'''
+```
 - save
 - License with **chmod +x**
-'''console
+- 
+```console
 chmod +x file.command
-'''
+```
 - Now all you have to do is double click the command file and it will open the app
 
 ---
