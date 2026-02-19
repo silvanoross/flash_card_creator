@@ -3,9 +3,7 @@
 - Create virutual environment and **install streamlit**
 - Create a .command file using touch
 - Edit with nano and make shebang header **#!/bin/bash**
-
 ```nano
-
 #!/bin/bash
 cd path/to/flash_card_creator
 conda activate venv
@@ -13,7 +11,6 @@ streamlit run flashcard_app_v2.py
 ```
 - save
 - License with **chmod +x**
-- 
 ```console
 chmod +x file.command
 ```
