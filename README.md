@@ -11,7 +11,7 @@ streamlit run flashcard_app_v2.py
 ```
 - save
 - License with **chmod +x**
-```console
+```nano
 chmod +x file.command
 ```
 - Now all you have to do is double click the command file and it will open the app
