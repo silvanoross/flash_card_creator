@@ -224,7 +224,7 @@ zone.addEventListener('drop', e => {{
 
 
 # ─── header ───────────────────────────────────────────────────────────────────
-st.markdown('<div class="main-title">🃏 FlashCard Studio</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">🗂️ FlashCard Studio</div>', unsafe_allow_html=True)
 st.markdown("Create classes, topics, and flashcards — then study them with ease.")
 st.divider()
 
