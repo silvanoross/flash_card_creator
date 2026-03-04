@@ -1,1 +1,556 @@
-{}
+{
+  "Immuno II": {
+    "T Cell Mediated Immunity": [
+      {
+        "question": "Describe how a na\u00efve T cell gets activated and goes through clonal expansion and differentiation into the different effector and memory T cell populations",
+        "answer_text": "1. T Cell needs to come and meet with DC in lymph node (L-selectin with GlyCAM-1-sialyl Lewis X Factor, CCR7-CCL21, LFA-1-ICAM-1, Diapedesis)\n\n2. LFA-1 binds ICAM-1 on DC, conformational change for firm adhesion/prolonged contact, \n\n3. Needs 3 specific signals in order for activation and proliferation. Fun fact - nutrients can also drive differentiation\n    i. TCR/MHC + CD4/CD8\n    ii. CD28/B7\n    iii. Cytokines (for CD4 lineages)\n\n4. Retention in LN through down-regulation of S1P1R and clonal expansion with aerobic glycolysis, Akt-mTOR survival signaling, progression through cell cycle\n\n5. Once infection cleared there is clonal contraction via apoptosis, programmed cell death\n\n6. A few CD8 and fewer CD4 stick around as memory",
+        "answer_image": "flashcard_images/paste_7e08e63c12.png"
+      },
+      {
+        "question": "After activation, what waves of signaling take place?",
+        "answer_text": "1-2 hours: NFkB, AP-1, NFAT\n\n2-6 hours: Akt-mTOR\n\n9-12 hours: IL-2, CD69, IL-2R-alpha\n\n3-5 days: Cell division and proliferation",
+        "answer_image": null
+      },
+      {
+        "question": "What energy metabolism is used for naive, effectors, memory, and effector memory T cells? and what stage in the cell cycle are they?",
+        "answer_text": "Naive: OXPHOS, G0\nEffector: Aerobic glycolysis, G1-M,\nMemory: OXPHOS, G0\nEffector Memory: Greater aerobic glycolysis, G1-M",
+        "answer_image": null
+      },
+      {
+        "question": "What ultimately allows T Cells to enter the cell cycle upon activation?",
+        "answer_text": "IL-2R-alpha, Upon activation IL-2R-alpha gets expressed which can then bring IL-2 to the IL-2R gamma and beta subunits to trigger signal transduction and entry into the cell cycle for proliferation.",
+        "answer_image": null
+      },
+      {
+        "question": "What is the rule about secretion or response to IL-2 by T Cells?",
+        "answer_text": "T Cells can either secrete IL-2 or respond to IL-2\n\nT Cells that secrete IL-2 don't end up producing IL-2R\u03b1 and become T-fh with ICOS\n\nT Cells that don't secrete IL-2 can respond to IL-2 and make IL-2R\u03b1 on surface to do so",
+        "answer_image": null
+      },
+      {
+        "question": "What is the rule about secretion or response to IL-2 by T Cells?",
+        "answer_text": "T Cells can either secrete IL-2 or respond to IL-2. Tregs constitutively express IL-2R-alpha to be able to respond quickly to signal.",
+        "answer_image": null
+      },
+      {
+        "question": "What are the common costimulatory receptors that get upregulated after T Cell activation?",
+        "answer_text": "Stimulation:\n    ICOS\n    CD27\n    CD40L\n    4-1BB\n    OX40P\n\nInhibition:\n    PD-1\n    CTLA-4\n    B7H1",
+        "answer_image": null
+      },
+      {
+        "question": "What are the coreceptors that assist in activation and inhibition of T Cells?",
+        "answer_text": "CD28 is constitutively expressed on surface of CD4 and CD8 T cells so they can respond to activation signals. Upon activation CD28 expression is downregulated\n\nCTLA-4 is upregulated once T cells get activated. They have 2 binding domains for B7 co-activator on APC. They outcompete CD28 that is only singly binding B7. They also cause internalization of B7/CTLA complex to further inhibit. This allows the tight regulation of T cell activation and shut down.",
+        "answer_image": null
+      },
+      {
+        "question": "How do PD-1 signaling and TNFR signaling work in T Cells?",
+        "answer_text": "PD-1 expressed on T Cell surface and is induced after activation. PD-1L from APC is stimulatory molecule. Activation of PD-1 is highly inhibitory. The ITIM domain brings in SHP phosphatases. Ulitmately inhibits all of the activation pathways induced by CD28. Leads to decreased survival as well. \n\nTNFR family signaling activate the non-canonical NFkB pathway. Enhances sustained T Cell responses. \nOX40, 4-1BB, GITR, CD30",
+        "answer_image": null
+      },
+      {
+        "question": "Detail the experiment that was done using the OVA peptide for T Cell proliferation",
+        "answer_text": "CD4+ naive T cells were incubated with WT and costimulatory deficient APCs (CD40 -/-, B7 -/-, and No APC). \nFor naive T cell activation the presence costimulatory molecules were correlated with higher T cell proliferation when incubated with OVA T cell activating antigen. \n\nFor memory cells, the costimulatory APCs and lack there of did not have an effect on generating a robust memory response. \n\nOverall: Costimulation is necessary for activation, but once memory is formed T cells only need MHC recognition",
+        "answer_image": null
+      },
+      {
+        "question": "How does activation change surface level expression from naive to activated/Effector?",
+        "answer_text": "Naive T cells express L-selectin and CCR7 to enter LN and S1PR1 to exit back into blood. \nEffector T cells lose L-selectin and CCR7 presentation so they don't make it back to LN and lose S1PR1 expression so they stay in LN longer to become activated. Additionally they upregulate LFA-1, CD2, and VLA-4 to bind V-CAM on inflamed tissues as well as PSGL-1 to bind P-selectin and home to inflamed tissues. Upregulation of CD44+ hallmark of effector T cell.",
+        "answer_image": "flashcard_images/paste_55c32f0eb4.png"
+      },
+      {
+        "question": "How does cross presentation and DC licensing lead to increased activation of both CD4 and CD8 T cells",
+        "answer_text": "APCs can phagocytose and express antigens on both MHC class I and class II. \nWhen CD4+ T cells bind MHC class II on APCs they 'license' them by shooting them full of cytokines like CD80, CD86, and CD40. These activated APCs now upregulate expression of B7 and other TNF-TNFR family receptors like OX40 activating ligands for CD28 and amplify T cell response for CD8.",
+        "answer_image": "flashcard_images/paste_ef45704de8.png"
+      },
+      {
+        "question": "How do CD4+ T cells enhance CD8+ T cell responses?",
+        "answer_text": "CD4 has costimulatory CD40L on surface which binds CD40 on APC to enhance B7 for T cell activation with CD28. It also causes APC to release IL-12 release and CD70 expression.\n\nCD4 releases IL-2 which helps with T cell activation.",
+        "answer_image": "flashcard_images/paste_ea6135f062.png"
+      },
+      {
+        "question": "What different classes of pathogen do the different classes of T helper cells help fight and how?",
+        "answer_text": "Th1 - Release IFN-gamma to macrophages to help kill intracellular viruses or bacteria. \n\nTh2 - release IL-4, IL-5, and IL-13 to activate basophils, mast cells, and eosinophils to help clear large parasites and helminths.\n\nTh17 - Release IL-17 and IL-22 which help kill extracellular bacteria by stimulating antimicrobial peptides of epithelium and recruiting neutrophils (ROS, CAMP, NETosis, H2O2, etc.)\n\nTfh - releases IL-21, can also be activated by Th1 to produce IgG, Th2 to produce IgE and Th17 to produce IgG2 and IgG3. They're responsible for B cell class switching and expression of CXCR5. \n\nTreg - produce TGF-Beta and IL-10 which work to (for the most part) control T cell response through inhibitory mechanisms.",
+        "answer_image": "flashcard_images/paste_301bac3ea3.png"
+      },
+      {
+        "question": "What are the fate determining cytokines for the respective T helper cell populations?",
+        "answer_text": "IFN-gamma and IL-12 induce Th1s -> secrete IFN-gamma\nIL-4 induces Th2s -> secrete IL-4, IL-5, and IL-13\nTGF-Beta, IL-6, and IL-17 induce Th17s -> IL-17, IL-22\nIL-6 induces Tfh -> IL-21\nTGF-Beta and IL-2 induce Treg -> TGF-Beta, IL-10",
+        "answer_image": "flashcard_images/paste_3a6a63fc04.png"
+      },
+      {
+        "question": "What are the different signal transduction pathways from cytokine to transcription factor and resulting cell for the respective helper T cells?",
+        "answer_text": "",
+        "answer_image": "flashcard_images/Untitled - Frame 1.jpg"
+      },
+      {
+        "question": "What are the key signals to develop Tregs?",
+        "answer_text": "TGF-\u03b2, IL-2, and all trans retinoic acid, and NO IL-6\n\nIn presence of IL-6 they become Th17s",
+        "answer_image": "flashcard_images/paste_6e8952090d.png"
+      },
+      {
+        "question": "What is an immunological synapse?",
+        "answer_text": "When APCs engage naive T cell in the lymphnode for a long period of time and the T cell gets activated. \n1. TCR/MHC + CD3 + CD4/CD8 recognition forms a cluster for enhanced signaling forming the central supramolecular activation complex (cSMAC)\n2. LFA-1 binding to ICAM-1/2 form around the cSMAC to form the peripheral supramolecular activation complex (pSMAC)\n3. Filamentous actin bundles form on the very outer areas forming the distal SMAC or dSMAC.\nIf this complex does not form then T cell activation does not happen. The mTOR complex moves towards the cSMAC as well and polarizes the cell, carrying the cytotoxic granules with it. The clustering of TCR complexes brings together signaling machinery like ZAP-70, Lck, Fyn, Lat to enhance signaling.",
+        "answer_image": "flashcard_images/paste_39263a190f.png"
+      },
+      {
+        "question": "What do CD8 T cells release?",
+        "answer_text": "Cytotoxic granules that kick of intrinsic apoptosis:\n    - Perforin - pore forming unit to help delivery of cytotoxic granules\n    - Granzyme - serine proteases that activate apoptotic pathways\n    - Granulysin - antimicrobial properties\n    - Serglycin - scaffold\n\nCytokines that trigger extrinsic apoptosis:\n    - IFN-\u03b3 to block viral replication\n    - TNF-\u03b1 and Lymphotoxin (LT)-\u03b1 to induce Fas and TNFR for extrinsic apoptosis",
+        "answer_image": null
+      },
+      {
+        "question": "Detail the process of extrinsic apoptosis",
+        "answer_text": "FasL (CD178) on T cells binds Fas (CD95) on surface of target.\nFas trimerizes and cytoplasmic Death Domain (DD) recruits FADD (Fas associated protein of Death Domain)\nFADD recruits Death Effector Domain (DED)\nDD + FADD + DED = DISC (Death inducing signaling complex)\nThis activates procaspase 8 or 10, which in turn cleaves procaspase 3 into effector caspase 3\nCas3 cleaves and activated ICAD\nICAD goes into nucleus and fragments DNA inducing cell death",
+        "answer_image": "flashcard_images/paste_17f5f40e3d.png"
+      },
+      {
+        "question": "Detail intrinsic apoptosis",
+        "answer_text": "Cytotoxic granules released into target cell\nSerglycin scaffold carries perforin, granzyme, and granulysin\nGranzyme B hits Bid and caspase 3 (cas 3 effector caspase already)\n    - tBid helps formation of Bak, Bax, and Bok to release cytochrome C from mitochondrial membrane\nCytochrome C associates with Apaf-1 and procaspase 9 to make apoptosome\nProcaspase 9 cleaves procaspase 3 into effector cas 3\ncas 3 cleaves ICAD which kills cell",
+        "answer_image": null
+      },
+      {
+        "question": "What are the subtypes of Effector CD8 T cells?",
+        "answer_text": "Basically same as T helper cell subsets\nIL-12 induces Tc1 which makes IFN-\u03b3 and TNF-\u03b1 \nIL-4 induces Tc2 which makes IL-4, IL-5, and IL-13\nIL-4 and TGF-\u03b2 induce Tc9 (different) which makes IL-9\nIL-6 and TGF-\u03b2 induce Tc17 which makes IL-17 and IL-22\nIL-6 and TNF-\u03b1 induce Tc22 which makes IL-2, IL-22, and TNF-\u03b1",
+        "answer_image": "flashcard_images/paste_3d926c6bbf.png"
+      }
+    ],
+    "Humoral Immunity": [
+      {
+        "question": "What is the difference between opsonization and neutralization?",
+        "answer_text": "Neutralization:\n- Done mainly by IgG and IgA, a little bit by IgM\n- Coating of a bacterium so adherence mechanisms like pili cannot attach to host surface\n- Blocking virus endocytosis mechanisms so they cannot get into cell\n- Blocking the binding portion of a toxin to prevent it from being activated\n\nOpsonization:\n- Mainly IgG1 and IgG3, a little bit of the others except IgE\n- Bind surface of pathogen\n- Complement is recruited or Fc portion bound by FcR on macrophages for phagocytosis and clearance",
+        "answer_image": null
+      },
+      {
+        "question": "Which antibodies cross the placenta and which antibodies cross epithelium?",
+        "answer_text": "Placental transfer: Mainly IgG1 and IgG3 can cross placenta before birth, a little bit of IgG2 (but only IgG).\nAfter birth: IgA can be transferred to baby through mucosal epithelium crossing as dimer, a little bit of IgM\nExtravasation to specific vascular sites: IgG(1,2,3,4) dominant, IgA as monomer, and a little IgE",
+        "answer_image": "flashcard_images/Screenshot 2026-03-03 at 7.50.06\u202fAM.png"
+      },
+      {
+        "question": "What are the mean serum concentrations for the different classes of antibodies?",
+        "answer_text": "In blood: IgG1 > IgG2 > IgA > IgM > IgG3 IgD > IgE (even though IgE smallest in circulation, pivotal for allergy response)\nIn gut: IgA predominant antibody",
+        "answer_image": "flashcard_images/Screenshot 2026-03-03 at 7.52.47\u202fAM.png"
+      },
+      {
+        "question": "Which kind of T cell can activate B cells and what is the outcome?",
+        "answer_text": "CD4 helper T cells recognize MHC class II on B cells and B cells need to have their antibody binding portion recognize the same pathogen that peptide derived from on class II. It's MHC class II binding and CD40 on B cell binding CD40L and TCR on T cell that ultimately activates B cell.\n\nOutcome: \n1. OPSONIZATION\n2. NEUTRALIZATION\n3. COMPLEMENT ACTIVATION",
+        "answer_image": "flashcard_images/paste_293452792e.png"
+      },
+      {
+        "question": "How can antibody lead to phagocytosis?",
+        "answer_text": "Antibody binds pathogen surface. FcR or due to C3b deposition CR1 on macrophages trigger phagocytosis and lysosomal fusion with phagosome to destroy eaten pathogen.\n1. Chemotaxis\n2. Engulfment\n3. Intracellular Killing",
+        "answer_image": "flashcard_images/Screenshot 2026-03-03 at 7.59.11\u202fAM.png"
+      },
+      {
+        "question": "What happens to pathogens after phagocytosis?",
+        "answer_text": "The phagosome fuses with lysosomes. Acidification of phagolysosome and activation of proteases and other lytic enzymes within lysosomal granules. Degradation and perhaps presentation on MHC Class II or through cross presentation to class I",
+        "answer_image": null
+      },
+      {
+        "question": "Which antibody is responsible for mucosal protection",
+        "answer_text": "Dimeric IgA - prevents adherence and colonization by bacteria. In all mucosal tissue including teeth. IgA binds to epithelia of gut and also can bind and sequester toxins with the help of pIgR - polymeric Ig Receptor. In this respect it neutralizes toxin by preventing its interaction with host receptors that stimulate endocytosis and virulence.",
+        "answer_image": "flashcard_images/paste_c0460e3fd9.png"
+      },
+      {
+        "question": "What is the sedimentation rate and what is it indicative of?",
+        "answer_text": "how fast red cell sediment in tube when centrifugation. Immune complexes bind to red cells and make them heavy. Heavier Sed rate means you have a lot of immune complexes (Ab binding Ag) on your red cells making them heavier and sediment quicker.",
+        "answer_image": "flashcard_images/paste_69f53c7ef7.png"
+      },
+      {
+        "question": "If T cells can't recognize carbohydrates, then how do they stimulate B cells to create antibody against said carbohydrates if B cells need T cell help in order to become plasma cells?",
+        "answer_text": "The BCR recognizes the carbohydrate epitope that's part of the entire antigen with other protein parts. It macropinocytoses the antigen and present the peptide portion on MHC class II to TCRs that recognize the peptide/MHC complex. The CD40 receptor on the B cell also recognizes the CD40 Ligand (CD154) on the T cell which activates that B cell with the BCR that recognizes the carbohydrate and cytokine secretion from T cell (IL-4 or IL-21 for extracellular parasite or microbe or IFN-\u03b3/IL-12 if virus picked up by antibody). The B cell can then differentiate into a plasma cell and secrete antibody.\n\nWhen you design vaccines, adding the protein portion of an antigen along with its carbohydrate portion (often on a bacteria with peptidoglycan domains) then this is called a HAPTEN. This allows you amount an immune response a carbohydrate, that otherwise does not trigger an antibody response by itself. This was done in tetanus toxoid vaccine.",
+        "answer_image": "flashcard_images/paste_8392e1cee9.png"
+      },
+      {
+        "question": "What is ADCC and in what contexts is it best for?",
+        "answer_text": "Antibody Dependent Cellular Cytotoxicity:\n1. Multiple antibodies bind target cell surface (on host), can be due to complement deposition on cell surface\n2. Antibody Fc region recognized by NK cell FcR\u03b3III (CD16) \n3. Cross linking of multiple FcRs on NK cell by multiple antibodies bound triggers signaling transduction on NK cell to release cytotoxic granules\n4. The target cell dies (typically an infected or tumorigenic cell)\n\nThe best context for this is in tumor immunity.",
+        "answer_image": "flashcard_images/paste_882b6c110b.png"
+      },
+      {
+        "question": "How do we get allergic responses? Think about the peanut allergy... What is this pathway actually meant for?",
+        "answer_text": "Even though we only have a little bit of IgE in our system, they play an important role in clearing out large parasites that cannot be phagocytosed. They release histamine and trigger degranulation of mast cells. \n\nThis is accomplished by Mast Cells harboring IgE on their surface via the Fc\u03b5RI receptor for the Fc portion of the IgE antibody. Once IgE binds multivalently and crosslinks, this triggers the massive degranulation of the Mast Cells. The massive influx of histamine, when say you have a peanut allergy and your IgE inappropriately binds and activates the mast cells, causes your muscles to contract uncontrollably. This can be either severe or mild. In the case of severe the muscles in the lungs contract, don't decontract, causing you to not be able to breathe. This is in addition to uncontrolled swelling of affected mucosal tissue.\n\n\nAnti-allergy meds are histamine blockers.",
+        "answer_image": "flashcard_images/paste_cf3efc0244.png"
+      },
+      {
+        "question": "What is the difference between TD, TD1, and TD2 antigen?",
+        "answer_text": "TD is T cell dependent, meaning the antibody alone cannot trigger a B cell to differentiate and secrete antibody as a plasma cell.\n\nTI - T cell Independent and depending on the type of antigen, B cells can turn into plasma cells without CD4 t cell help.\nTI1s - LPS - Polyclonal B cell activation. Super immuno-active. Think TLR activation\nT2s - Pneumococcal polysaccharide, Salmonella polymerized flagellin, Dextran, Hapten-conjugated Ficoll (polysucrose) - Repeating epitopes that can cause antibody production, not as polyclonally activating, usually only one BCR recognizes the repeating epitopes, is crosslinked and triggers production of that one antibody.",
+        "answer_image": "flashcard_images/paste_3a955b0f8c.png"
+      },
+      {
+        "question": "What are the characteristics of TI-1 antigens?",
+        "answer_text": "T cell independent, LPS\n1. Mitogens at high concentrations causing polyclonal activation of a bunch of kinds of B cells\n2. Monoclonally activating at low concentrations where only one type of receptor recognizes and responds to ag",
+        "answer_image": "flashcard_images/paste_06b31ffb0d.png"
+      },
+      {
+        "question": "How do TI-2s work?",
+        "answer_text": "Think IgM on naive mature B cell binds repeated motifs cross-linking an antigen. The BCR bound to antigen gets help from DC or Macrophages secrete BAFF or APRIL and can trigger class switching to allow B cell to secrete antibody as IgG",
+        "answer_image": "flashcard_images/paste_76fe2f24d9.png"
+      },
+      {
+        "question": "Terms to know:",
+        "answer_text": "Terms: \n- Opsonization\t\t\t\n- Neutralization\n- Primary Response\n- Secondary Response\n- IgA Mucosal Immunity\n- IgG Immunity and subclasses\n- T Independent Response\n- T Dependent Response\n- Protein-Polysaccharide Responses\n- Antibody Dependent Cellular Cytotoxicity\n- Polyclonal activation\n- Fc Receptors",
+        "answer_image": null
+      },
+      {
+        "question": "What is the stimulatory molecule that induces cytokine production by bound TCR/MHC",
+        "answer_text": "CD40 which triggers cytokine release by TCR, the cytokine release helps decide BCR differentiation path",
+        "answer_image": "flashcard_images/paste_5efb2de328.png"
+      },
+      {
+        "question": "What are the main and two extra signals B cells need to trigger differentiation?",
+        "answer_text": "1. Crosslinking of BCR to antigen\n2. B Cell -<CD40 - CD40L >-T cell is signal, costimulation through B cell-<B7 - CD28>-T cell",
+        "answer_image": null
+      }
+    ],
+    "Mucosal Immunity": [
+      {
+        "question": "Identify the structural and cellular components of the mucosal immune system",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Explain the effector functions of immune cells in the GI tract. Differentiate how T and B cells in mucosal immunity different from systemic immunity.",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Describe the immuno-regulatory environment of the GI tract",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "What are the parts of the GI tract, the Respiratory tract and its structure and the other mucosal tissue found in the body?",
+        "answer_text": "Entire GI tract is from mouth to anus - mucosal tissue known to have goblet cells, paneth cells, stem cells in crypts, IELs, M cells. \n\nThe respiratory tract is from the sinus to the lungs, have cilia on outer pseudo stratified-epithelium rather than villi. Goblet cells line the epithelial layer leading up to the alveolus, but not inside. Inside the alveolus there is a surfactant layer where air is exchanged. AT cells that are interspersed along the alveoli epithelial layer\n\nThe other tissues are the eyes, urinary tract (bladder, uterus, vagina, penis), kidneys and mammary gland, the tear gland and salivary gland",
+        "answer_image": "flashcard_images/Screenshot 2026-03-04 at 2.55.16\u202fPM.png"
+      },
+      {
+        "question": "Describe the GI tract commensal and pH landscapes",
+        "answer_text": "Beginning:\nStomach, low pH, low concentration of microbes/commensals | 0-10e2 | Lactobacillus, Candida| -->\nDuodenum: 10e2 | Streptococcus, Lactobacillus -->\nJejunum: 10e2 | Streptococcus, Lactobacillus -->\nProximal Ileum: 10e3 | Streptococcus, Lactobacillus --> \nDistal Ileum: 10e7-10e8 | Clostridium, Bacteroides -->\nColon: 10e11 | Bacteroides, Bifidobacterium, Clostridium, Fusobacterium\n\n\n\n\n:End",
+        "answer_image": "flashcard_images/paste_c856cae8e3.png"
+      },
+      {
+        "question": "What is the structure of the GI system?",
+        "answer_text": "Crypts\nIntraepithelium\nLamina propria\nPeyer\u2019s patches\nFollicle-associated epithelium (FAE)\nMesenteric Lymph node\nLumen Isolated lymphoid follicle",
+        "answer_image": "flashcard_images/Screenshot 2026-03-04 at 10.49.33\u202fAM.png"
+      },
+      {
+        "question": "What happens in the crypts?",
+        "answer_text": "Stem cells that rapidly proliferate to replace epithelium\nPaneth cells make Antimicrobial Peptides (AMPs) like Beta defensins. This protects the crypts where there are precious stem cells. Keeps the crypts free from bacteria where higher up in the lumen theres more. Helps shape composition of commensal microorganisms as well.",
+        "answer_image": null
+      },
+      {
+        "question": "What about Peyer's Patches, what do they look like, where are they located, and what do they do?",
+        "answer_text": "In the distal ileum mostly. Peak in 20s or 30s then start to decline. Got the M cells that transcytose, lack of goblet cells. There are B cell and T cell zones. Connected to afferent lymph with HEVs.",
+        "answer_image": "flashcard_images/paste_d4403a90f3.png"
+      },
+      {
+        "question": "FAE - Follicle-Associated Epithelium",
+        "answer_text": "Layer of epithelium that covers the organized lymphoid tissue (Peyer's Patch). Main similarity is lack of goblet cells. Normally, mucus washes away bacteria, here there is less of it and allows M cells to transcytose and show resident lymphocytes and DCs in lamina propria.",
+        "answer_image": "flashcard_images/paste_9f374bbb66.png"
+      },
+      {
+        "question": "What are the cells of the GI immune system?",
+        "answer_text": "Dendritic cells (DCs): tolerogenic or inflammatory  \nIntraepithelial T lymphocytes (IEL)\nLamina propria T lymphocytes (LPL)\nRegulatory T cells (Treg) \nT helper 17 cells (Th17) \nGroup 3 innate lymphocytes (ILC3s)  \nIgA-secreting B cells",
+        "answer_image": null
+      },
+      {
+        "question": "Interactions of the T cells and DCs in gut",
+        "answer_text": "We have Dendritic cells that can produce IL-6 for systemic inflammation and for Th17 differentiation . Retinoic acid RA to influence Treg differentiation. \n\nResident macrophages can release these cytokines as well. \n\nThen you have the intra-epithelial Lymphocytes (IELs) which are specific CD8 T cells with CD8\u03b1\u03b1 or CD8\u03b1\u03b2 more innate like not cytotoxic. \n\nYour thymic T regs or inducible CD4s",
+        "answer_image": "flashcard_images/paste_57941ba324.png"
+      },
+      {
+        "question": "Th-17 cells are important in what contexts?",
+        "answer_text": "Induced by TGF-\u03b2 and IL-6 (IL-1 and IL-23) from APC to differentiate from naive to Th17. Then they secrete IL-17 and IL-22 which is primarily to recruit neutrophils to deal with extracellular bacterial pathogens. \n\nThey are important for gut barrier protection and a heathy GI tract. However, overpopulation or activity of these cells is linked to different chronic inflammatory GI diseases - IBD, MS, RA, Psoriasis\n\nSo they are good drug targets",
+        "answer_image": "flashcard_images/paste_5a03258ecb.png"
+      },
+      {
+        "question": "What kinds of drugs are made to target Th17 cells?",
+        "answer_text": "Since the Th17 cells are overactive in chronic gut diseases, the drug companies will make an antibody to the cytokines made by Th17 cells. All drugs end in \"mab\" - monoclonal antibody\n\nThey antibodies need to target the p40 and p35 subunits of the cytokine because just blocking one won't kill downstream effects the other subunit has.\n\nThe main targets are IL-17, IL-12, and IL-23 which are proinflammatory cytokines",
+        "answer_image": null
+      },
+      {
+        "question": "Differentiate the different Innate-Lymphocyte (ILCs)",
+        "answer_text": "ILC generic traits:\nNo MHC recognition. Come from cytokines produced by tissue.\n\nILC1s: \n- NK cells, induced by IL-12 \n- produce IFN-\u03b3, granzyme, perforin and TNF\n- Use the Tbet+ TF\n- Akin to Th1 cells\n- Stimulate macrophages for intracellular pathogens\n\nILC2s: \n- Akin to Th2s\n- Use the GATA3+\n- Made with TSLP, IL-25, IL-33 (alarmins induced by parasite damage to mucosa and epithelium)\n- Create IL-4, IL-5 (eosinophil and basphil recruitment), IL-13 (smooth muscle contraction), IL-9, Amphiregulin (tissue repair)\n- Act on goblet cells to help clear extracelluar parasites through mucus production, weep and sweep\n\nILC3s: \n- Th17 like\n- Built for extracellular bacteria and fungi\n- DCs secrete IL-23 which activate ILC3s to secrete IL-22 which tell epithelial layer to produce AMPs\n- IFN-\u03b3, TNF (during chronic inflammatory bowel diseases), IL-17, and IL-22 producing\n- Macrophages respond to antigen from epithelium which makes them release IL-1\u03b2 to trigger ILC3s to make GM-CSF which then signals back to macrophages to produce RA to influence Tregs\n- Use the ROR\u03b3t+ TF\n- Interact with DC to maintain epithelial barrier",
+        "answer_image": "flashcard_images/paste_8533d60f58.png"
+      },
+      {
+        "question": "What are the three ways drug companies use the immune system to fight gut diseases in humans?",
+        "answer_text": "1. Taking away cytokine for bad - Antibodies to IL-17 and IL-12, and IL-23 to target Th17 overactivation and inflammation (Chrohn's or Psoriasis) \n2. Introducing cytokine for good - Create more stable recombinant IL-22-Fc (Zenewics favorite cytokine BTW) analogs to promote repair through amphiregulin and AMP production via epithelial cells - helps treat ulcerative colitis (anything that damages gut tissue) - what happens with Th2 response\n3. Block entry back into gut - block MAdCAM-1 recognition of \u03b14:\u03b27, CCR9 chemokine receptor for CCL25,",
+        "answer_image": "flashcard_images/paste_79edd302aa.png"
+      },
+      {
+        "question": "What are the relative concentrations of Ig in blood vs gut",
+        "answer_text": "Blood:\n- IgG > IgA > IgM > IgD > IgE (52 - 30 - 17 - 1 - <1)%\n\nMucosa:\n- IgA > IgM > IgG > IgD > IgE (80, 13, 6, 1, <1)%",
+        "answer_image": "flashcard_images/paste_c4d9b587a3.png"
+      },
+      {
+        "question": "How does IgA get secreted?",
+        "answer_text": "- First made by plasma cells in lamina propria\n- Uses the pIgR (poly Ig Receptor) to go from lamina propria through epithelial cells by binding J-chain linker and endocytosing ab\n- Goes to the lumen apical/basal polarity, then the pIgR gets cleaved and a part of it stays bound to J-chain of dimer",
+        "answer_image": "flashcard_images/paste_e9e7e9446e.png"
+      },
+      {
+        "question": "What are important aspects of IgA and its immunity?",
+        "answer_text": "- Mainly dimeric IgA, also larger polymers (pIgA)\n- J chain links monomeric IgA together to form dimer\n- IgA responses are T cell dependent\n- TGF-\u03b2 is a potent IgA-switch factor\n- IgA does not usually activate complement\n\nHuman\nIgA1  \n- Against protein antigens\n- Predominant in the jejunum \n\nIgA2 \n- Against LPS \n- Predominant in the colon\n- Resistant to bacterial proteases\n\nMice have IgA similar to IgA2",
+        "answer_image": "flashcard_images/paste_c7fc658c1e.png"
+      },
+      {
+        "question": "What is IgAs function?",
+        "answer_text": "Once secreted in the lumen it can help bind pathogens and toxins to neutralize them. Can also do this in endosomes. Can bind toxins in lamina propria and export them with pIgR. Can act to trigger degranulation, activate nuetrophils or maybe start complement cascade.",
+        "answer_image": "flashcard_images/paste_2681ff37cb.png"
+      },
+      {
+        "question": "What happens if you have an IgA deficiency?",
+        "answer_text": "It is possible that other classes of Antibody will compensate for lack of IgA. Still don't have the greatest immune responses and still have frequent GI and pulmonary infections. Higher risk for celiac disease, most likely a class switching error. Problems with transfusions because you can make ab to IgA",
+        "answer_image": null
+      },
+      {
+        "question": "How does GI Immune system uptake antigen?",
+        "answer_text": "1. M Cells - microfold cells\n- Modified cell mainly on the Follicle Associated Endothelium for easy endocytosis of ag and delivery to lamina propria DCs\n\n2. Dendritic Cells\n- Sampling gets through tight junctions allegedly\n\n3. Transcytosis with IgG receptor\n- IgG binds ag in gut lumen\n- Fc receptor on epithelium endocytosis ab bound ag\n- transported to lamina propria and released",
+        "answer_image": "flashcard_images/paste_0153c50787.png"
+      },
+      {
+        "question": "What happens once antigen gets recognized?",
+        "answer_text": "Changes.\n1. Ag presentation by APC to T cells in peyers patch, CD40-CD40L, cytokine release and T cell activation and proliferation\n2. T cells leave the area draining through lymph via upregulation S1PR and downregulating CCR7\n3. After circulation through lymph (if CD4 its helping activate other cells) it homes back to tissue\n- Gut homing mediated by chemokine receptors on T cell (CCR9 & CCR10) and MAdCAM-1 sialyl-Lewis x factor binding \u03b14:\u03b27 integrin for diapedesis through blood vessel in gut to lamina propria\n- Once in lamina propria CCL25 and CCL28 attract T cell via CCR9 and CCR10 \n- \u03b1\u0395:\u03b27 integrin on T cell binds \u0395-cadherin on epithelium for firm adhesion",
+        "answer_image": "flashcard_images/paste_f333e7163e.png"
+      },
+      {
+        "question": "What is the first line of defense in the gut?",
+        "answer_text": "Mucosa and epithelial cell barrier tight junctions and innate immunity: \n- TLR, NOD: can trigger cytokine production (NFkB, IL-6, )\n- NLR receptor recognition of bacterial LPS peptides  in epithelial cells and inflammasome formation - critical for cleavage of pro-IL-1 and pro-IL-18 by Caspases from inflammosome - helps with barrier integrity\n- NOD2 can help bind bacterial surfaces and bring to phagophore.",
+        "answer_image": "flashcard_images/paste_7a75622c04.png"
+      },
+      {
+        "question": "How come our innate immune system isn't just responding to everything all the time with all of the commensals and gut microbiota?",
+        "answer_text": "TLR expression is spatially regulated so you have a lot where there shouldn't be any microbiota - ie the stomach or in crypts where stem cells are to protect them from microbes that get past paneth cell AMPs. Or you have a few where there is a lot of microbiota so you don't cause crazy activation like in distal ileum/colon",
+        "answer_image": null
+      },
+      {
+        "question": "Which bug do most immunologists use to create bacterial infection that has led to most of what we know about mucosal immunity?",
+        "answer_text": "Citrobacter redentium: like Enteropathogenic E. Coli. \n\nMouse specific, good at colonizing. Induces strong innate response \u2013 IL-1B, IL-22, AMPs, \nAlthough the innate can help protect, you get a strong adaptive response\n\nInduces strong Th17 and Ab response. It ultimately gets cleared, so it isn\u2019t chronic. Induces a good immune response. Model pathogen",
+        "answer_image": null
+      },
+      {
+        "question": "What is the difference between protective immunity and mucosal tolerance, why is it important?",
+        "answer_text": "Protective Immunity: Our immune system reacts to pathogens and bugs that should not be in the gut\n- Need good specific IgA antibodies\n- Effector T cell responses to bacterial, viral, and toxin presentation\n- Want to develop memory\nMucosal Tolerance: Our immune system does not react to harmless things like food and our own commensal bacterium. \n- Need little to no IgA\n- No effector T cell action\n- No immunologic memory formation",
+        "answer_image": "flashcard_images/paste_e66e6c13ea.png"
+      },
+      {
+        "question": "What is Oral Tolerance and what is its mechanism?",
+        "answer_text": "Oral Tolerance: Development of tolerance to fed antigen. The lack of responsiveness by peripheral immunity.\nMechanism: Anergy with no costimulation, or Treg induction with TGF\u03b2-1 and IL-10 to dampen immune response.",
+        "answer_image": null
+      },
+      {
+        "question": "How do we develop a full Gut Immunity?",
+        "answer_text": "Prenatal intestine: Only have mesenteric LN and IgG that crosses placenta, No TLR stimulation, Naive T cells and B cells\n\nNeonatal intestine: Develop IgA through mucosal transference of mother's milk, IgA plasma cells, get microbiota from delivery method, TLR tolerance, beginning of colonization, cryptopatches, some intraepithelial lymphocytes and Tregs, minimal mucus secretion\n\nAdult intestine: Commensal colonization variety, full on crypts with active paneth cells, differentiated and mature lymphocytes, innate immune cells like macrophages, much more mucus production with goblet cells, M cells, \n\nTakehome:\n- You need commensal bacteria to develop Gastrointestinal immune system",
+        "answer_image": "flashcard_images/paste_50ff98c4f5.png"
+      },
+      {
+        "question": "How do we know that commensal bacteria are what shape a healthy immune response?",
+        "answer_text": "We grow mice in germ free environment, perform c-section and house in sterile conditions.\nWe see:\n- Underdeveloped Peyer's Patches\n- Very few germinal centers\n- Reduced IgA secretion\n- Reduced CTL killing\n- Reduced LPLs (CD4 regulatory cells)\n- Reduced neutrophil killing ability\n\nCan reverse phenotype if housed with other mice with full immune system - indicative of successful fecal transplant",
+        "answer_image": null
+      },
+      {
+        "question": "Which genes are implicated in IBD (disease not syndrome)",
+        "answer_text": "Crohn's - Th1\nUlcerative Colitis - Th2\n\nA multitude of mutations in everything related to mucosal immunity in gut, from epithelium, to cells, to cytokines, to cytokine receptors, to effector enzymes, to autophagy, T cell regulation, commensal tolerance, carbohydrate metabolism...",
+        "answer_image": "flashcard_images/paste_1dcbeb20a1.png"
+      }
+    ],
+    "Dynamics of Adaptive and Innate Immunity": [
+      {
+        "question": "Identify the initial innate responses to different classes of pathogens",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Identify the innate and adaptive immune cells associated with intracellular, extracellular, and large extracellular parasitic pathogens",
+        "answer_text": "## Intracellular:\n#### Type I response\n**Innate**\n- Dendritic Cells / Plasmcytoid Dendritic cells - IFN\n- Macrophages - phagocytosing infected cells / cleaning up dead cells / releasing cytokines to recruit other immune cells and keep inflammation going / activated by Th1 CD40L\n- NK cells - direct killing infected cells lack of MHC / IFN-\u03b3 production, or by innate cells that have bound antibody with FcR and crosslinking of antibody causes ADCC\n\n**Adaptive**\n- B cell antibodies to neutralize virus from binding and being endocytosed to host cell / possible antibodies can tear virus capsid apart\n- CD8 T cells to kill virus on MHC class I recognition with perforin and granzymes and Fas/TNFR intrinsic and extrinsic apoptosis / IL-2, TNF-\u03b1, IFN-\u03b3 promote survival signal and inflammatory mediators\n- Th1 to help create IFN-\u03b3 for inflammation, Fas ligand activation to apoptose infected cells, IL-3 + GM-CSF to produce more monocytes, TNF-\u03b1 + LT-\u03b1 activate endothelium to help macrophages exit to site of infection, CCL2 chemoattractant\n\n\n---\n## Extracellular:\n#### Type 3 response\n**Innate**\n- Neutrophils - PAMPs activate, called to site by IL-17, induce degranulation, ROS, H2O2, bleach, O2-, NETosis, and cytokine production for Th17 differentiation\n- DC - phagocytose and antigen presentation of bacterial pathogens MHC class II\n- Macrophages - phagocytosis and proinflammatory creation\n- \n**Adaptive**\n- Th17 produces IL-17 and IL-22 to have epithelium produce AMPs and chemokines to attract neutrophils / IL-22 increases stem cell proliferation in gut / IL-17 helps stromal cells and myeloid cells to make G-CSF to stimulate production of neutrophils from bone marrow /  \n- Antibody production for fixing complement to destroy extracellular bacteria / opsonize for phagocytosis / neutralize by binding and blocking adhesion molecules on bacteria and binding and blocking toxins / Facilitate ADCC\n- IgA in gut and IgG in system\n- ADCC\n\n---\n## Large Extracellular Parasitic\n#### Type 2 response\n**Innate**\n- Mast Cells - degranulation of histamine with IgE, smooth muscle contraction with histamine for weep and sweep, TNF-\u03b1 inflammatory \n- Basophils - histamine release\n- Eosinophils - EET, degranulation, ROS\n- Macrophages - activated by IL-4 and IL-13 from helminth presence, creates TGF-\u03b2 and IL-10 for tissue repair and activates Th\n- DC cells to prime T0 to become Tregs \n\n**Adaptive**\n- Tregs - tissue healing after helminth damage with TGF-\u03b2 and IL-10\n- Th2 to promote activation of basophils (IL-13), mast cells (IL-5), eosinophils (IL-4), B cell help of IgE\n- IL-13 from Th2 acting on epithelium to promote tissue repair and influence goblet cell mucus production and smooth muscle contraction\n- Th2 secretes IL-3 and IL-9 for mast cell recruitment\n- B cells making IgE",
+        "answer_image": null
+      },
+      {
+        "question": "Articulate the sequence of events that lead to development of an immune response and establishment of immunological memory",
+        "answer_text": "##### 1. First encounter with pathogen - breach of barrier tissue: viral, bacterial/fungi, or parasite/helminth\na) For bacterial infection, first innate immune cells activated are resident macrophages and mast cells, mast cells create histamine and increased blood flow from alarmin response (IL-33) and macrophages begin phagocytosing and releasing cytokines to recruit other immune cells\n\nb) For viral infection, intercellular receptors recognize  viral peptides and/or dna/rna - RIG-1 -> TRIM25 and MAVS cause TRAF3 and IRF3 trigger - Type 1 IFN (necessary for viral infection clearance) and IFN-\u03b1 to help prevent further infection.\n\n---\n##### 2. Establishment of infection\na) Activation of macrophages and DC phagocytose and start inflammatory response with cytokine release\n\nb) DC go to LN to present antigen to T and B cells\n\nc) Innate immunity works to keep infection in check (neutrophil recruitment, IFN production etc)\n\n---\n##### 3. Induction of adaptive immunity\na) CD8 T cells activated by MHC class I presenting peptides, change metabolism to glycolysis aerobic, rapid proliferation, retention in LN\n\nb) B cells look at free Ag floating through\n\n##### 4. Effector phase\na) Full clearance of pathogen with specific lymphocyte receptors and targeted cell killing, adaptive immunity takes over\n\n---\n##### 5. Clonal contraction\na) T and B cells change metabolism to \n\n---\n##### 6. Establishment of memory\na) IL-21 critical signal from CD4 for CD8 memory T cell formation\n\nb) BAFF and APRIL critical to keep",
+        "answer_image": null
+      },
+      {
+        "question": "What does Type 1 IFN due?",
+        "answer_text": "- Primarily response to virus and induction of type 1 immunity\n- Recruits inflammatory monocytes from blood and NK cells activates them with IL-18 causing them to secrete more IFN\u03b3 - Signals through autocrine and paracrine signaling to positively feedback loop itsself and let other neighboring cells to upregulate viral defense mechanisms\n- Triggers IL-18 release, IFN-\u03b3\n- Helps activate DC cells to pick up virus and present to T cells for Th1 response in viral infection\n- Helps ILC1s activate\n- Upregulate MHC class I expression",
+        "answer_image": "flashcard_images/paste_9eb1332aae.png"
+      },
+      {
+        "question": "How do NK cells get activated and what is their response?",
+        "answer_text": "If virus infected host cell it recognizes decrease in MHC expression due to viral effects, or lack of inhibiting receptors cause NK cells to do the kiss of death where they release perforin and granzyme like CD8 t cells. Just not specific. \n- Ultimately - NK cells activated by Type I - IFN, IL-12, IL-18, IL-15\n- NK cells release IFN-\u03b3 for inflammation and alert other cells as well as kill via kiss of death",
+        "answer_image": null
+      },
+      {
+        "question": "How do other innate cells (besides NK cells) get activated and what is their response?",
+        "answer_text": "- Injury either sterile or with pathogen causes swelling via migration of neutrophils to site of injury\n- PAMPs activate neutrophils to kill pathogen (ROS, O2-, H202, NETosis), release cytokines\n- TLR activation of resident epithelial DCs (Langerhans cells) trigger halt of processes and exiting to LN via afferent lymphatics",
+        "answer_image": null
+      },
+      {
+        "question": "What does complement recognize mostly?",
+        "answer_text": "Bacteria and fungi:\n- Classical - C1q\n- MBL/MASPs - \n- Alternative - C3bH2O\n\nTriggers inflammation and killing of microbes through MAC and pore formation",
+        "answer_image": null
+      },
+      {
+        "question": "What do TLRs and NLRs recognize and what is their response?",
+        "answer_text": "TLRs and NLRs more so recognize PAMPs both intra (NLRs) and extracellularly (TLRs or in endocytosed compartments)\n\nNLRs:\n- Oligomerization into inflammasome with caspase activity\n- Cleaves pro-IL-1 into active IL-1\n- IL-1 drives fever and can synergize with IL-12 to push Type I response\n- IL-1 signaling drives inflammatory cytokine production and immune activation in both innate and adaptive immunity\n- IL-1 signaling also acts on the brain in order to induce fever during infection\n- IL-1 release causes the production of chemokines to further recruit immune cells to the site of infection\n\nTLR:\n- Can recognizer intracellular and extracellular bacteria or virus",
+        "answer_image": "flashcard_images/paste_7cf1709a04.png"
+      },
+      {
+        "question": "What does IL-1 do and how does it signal?",
+        "answer_text": "IL-1 related cytokines \u2013 IL-18 is one of them. They act on a lot of different cell types. You have systemic effects. C-reactive protein in liver. Changes in glycolysis in adipose tissue to release energy to drive immune response. Also activation of these cytokines on innate immune cells. All of the innate cells can respond to IL-1\n\nSynergy of IL-1 and IL-12 IFNgamma creation of NK cells. Also CD\n\nNLR \u2013 activates one pathway\nTLR makes different ones",
+        "answer_image": "flashcard_images/paste_8048f40ebd.png"
+      },
+      {
+        "question": "What is the response to Helminth/Large worms Infections?",
+        "answer_text": "- Helminths trigger release of alarmin IL-33 from epithelium upon damage\n- IL-1\u03b2 released from epithelial cells to promote inflammation of tissue and recruit other immune cells\n- IL-25 and IL-33 go to activate type 2 response and trigger ILC2s and Th2s to secrete IL-13, IL-5, and IL-4 to cause recruitment of basophils and eosinophils as well as degranulation of mast cells. \n- Smooth muscle contraction to weep and sweep \n\n* Parasites can inhibit type 2 response by triggering type 1 response via induction of IL-1",
+        "answer_image": "flashcard_images/paste_e7bf4a5674.png"
+      },
+      {
+        "question": "What are the three groups of ILCs and what are their analogs in Th cells?",
+        "answer_text": "ILC1: NK cells and the like - Analog: Th1 cells. Can kill and release inflammatory cytokines. Activated by IL-12 from DC and M\u03d5 and secrete IFN-\u03b3. Good for intracellular pathogen infections.\n\nILC2: Analog: Th2 cells. Activated by alarmins from epithelium (TSLP, IL-33, and IL-25). Secrete IL-4, IL-5, IL-13) Good for parasite infections.\n\nILC3: Analog: Th17. Activated by IL-23 from DC and M\u03d5. Secrete IL-17 and IL-22.",
+        "answer_image": "flashcard_images/paste_5b826bb63d.png"
+      },
+      {
+        "question": "How do M\u03d5 and monocytes get activated, what happens?",
+        "answer_text": "- Activated by PAMPs in tissue resident M\u03d5\n- Produce cytokines IL-12 for type I response and IL-23 for type 3 response\n- Phagocytose pathogen and present to MHC class II\n- Have CR, Dectin, TLRs, FcRIII\u03b3",
+        "answer_image": "flashcard_images/paste_6ac393a942.png"
+      },
+      {
+        "question": "What happens after first innate activation?",
+        "answer_text": "- Tissue resident DCs take up antigen and leave their residence to go to LN\n- Lose adhesion molecules, gain CCR7\n- Upregulate inflammatory cytokine production",
+        "answer_image": null
+      },
+      {
+        "question": "How do T cells become activated upon first pathogen exposure?",
+        "answer_text": "Need 3 signals otherwise die by anergy or autophagy\n1. Naive TCR/MHC class II on DC in the LN\n2. CD28 on T cell recognizing CD80/86 on DC\n3. Cytokines for direction of differentiation by DC",
+        "answer_image": "flashcard_images/paste_5fe8cee2e7.png"
+      },
+      {
+        "question": "Do we have any TCRs that recognize pathogen even without exposure?",
+        "answer_text": "Yes, we have about 100-1000 TCRs for almost every possible epitope out there. These are the cells that go the LN and test every DC and MHC presentation on B cells to find the pathogen then clonally expand. Clonal expansion often result of increased retention and proliferation in LN.",
+        "answer_image": null
+      },
+      {
+        "question": "Which adaptive immune cells are activated first?",
+        "answer_text": "1. B cells quickest: Have burst of IgM from B-1 B cells and activated by pathogens directly, don't have to wait for presentation process. Proliferation after about 40 hours post exposure, peak response around 14-20 days like CD4s\n2. CD8s next fastest because MHC much more broadly expressed on all cells so probability higher - usually come online around 40 hours exposure\n3. CD4s are the slowest because few cells present Ag on MHC class II. Usually come to be at 14-20 days, after infection is cleared.",
+        "answer_image": null
+      },
+      {
+        "question": "What is the point of having CD4 differentiation and B cell Ab response that peak after the initial exposure of pathogen? Isn't that a huge waste of energy for something that isn't being used?",
+        "answer_text": "It's like the immune system is hedging its bets. More useful by having a repertoire of differently binding Abs in case of reinfection or viral mutation due to chronic exposure and evading of immune system.\nSomatic hypermutation in B cells is what ultimately keeps the huge repertoire, happens in the germinal center with multiple rounds of rearrangement, Ag/BCR testing on DC and Tfh costimulation",
+        "answer_image": "flashcard_images/paste_11879425d0.png"
+      },
+      {
+        "question": "What happens to CD8 immune response in absence of CD4 T helper cells? What is the signal that is vital for memory T cell formation?",
+        "answer_text": "A CD8 CTL may be able to bind and recognize a pathogen initially and kill it and proliferate to completely eradicate. However, without T cell help from CD4 t cells, it fails to form memory and after clonal contraction after response the necessary surface molecules needed to become a memory cell won't have been stimulated by CD4 T cells.\n\nIL-21 VITAL FOR MEMORY FORMATION from CD4 helper Ts.",
+        "answer_image": null
+      },
+      {
+        "question": "So now the DCs have taken Ag to LN and have primed T cells and B cells, what happens next?",
+        "answer_text": "They need to leave the LN. This is caused by \n- Upregulation of S1PR to re-enter the lymphatics/blood stream. \n- Loss of CCR7 needed to attraction to LN\n- L-selectin/CD62L needed for slow rolling near HEVs\n- Expression of new adhesion molecules specific for site of infection (LFA-1, VLA-4 (VCAM-1 vascular inflammed epithelium), PSGL-1 (P-selectin of endothelium), \u03b14:\u03b2 (MAdCAM-1 gut epithelium)\n- Expression of new receptors to follow chemokines at site of infection\n-",
+        "answer_image": "flashcard_images/paste_66e0560bf2.png"
+      }
+    ]
+  },
+  "Micro II": {
+    "Intro Fungi & Fungal Physiology": [
+      {
+        "question": "Yeast vs. Mold:\n    \u2022 Describe and distinguish their morphology.\n    \u2022 Characterize their modes of reproduction.",
+        "answer_text": "Yeast:\n    \u2022 Single celled: Round, ovoid, or rod like\n    \u2022 Can perform asymmetric (budding) division or symmetric (fission)\n    \u2022 Cell wall can be thick or thin.\n    \u2022 Different plate colony appearance, color and morphology\n\nFilamentous Mold:\n    \u2022 Elongated cells called hyphae (network called mycelium)\n    \u2022 Cells can be septate (segregated transport between cells) or aseptate (continuous/connected cells)\n    \u2022 Hyphae don't divide but extend (invade) into the environment until they run out of nutrients\n    \u2022 Different appearances on plate - some are fluffy/velvety, others have different characteristics\n    \u2022 Reproduce through production and spread of spores (Sporangiospores or Arthrospores)\n\nDimorphic and Pleiomorphic Molds:\n    \u2022 Grow as yeast or hyphae depending on environment\n    \u2022 Pleiomorphic example: Candida albicans - grow as yeast on mucosa or at 30\u00baC in culture. Then when they get to 37\u00baC it can trigger shift to hyphae or pseudohyphae (chains of unseparated yeast)\n    \u2022  Dimorphic example: Blastomyces dermatitidis - grows as hyphae at 30C then as single celled yeast at 37C\nBoth:\n    \u2022 Membrane bound organelles\n    \u2022 Have thick cell walls",
+        "answer_image": null
+      },
+      {
+        "question": "Immune defense against fungal infections:\n    \u2022 Understand which immune systems (innate vs. adaptive) are important for fungal infections.\n    \u2022 Describe the defense mechanisms of major immune cells against fungi.",
+        "answer_text": "Main protection from fungi is the innate immune system. Since fungi and mold always in the air we've been conditioned to them and our adaptive immunity does not respond. If it did we would be constantly reacting and creating inflammation.\n\n    \u2022 Mechanical barriers and clearance mechanisms: Upper airway cilia (lung actually direct line to inner bodily compartments), blinking, tears, epithelial junctions, sebaceous secretions, altered pH of digestive and vaginal tracts\n\n    \u2022 Antimicrobial enzymes: from innate immune system, defensins to break cell wall, metal chelating compounds to limit fungal nutrients, complement and TLR responses\n\n    \u2022 Normal flora (commensals): Space and nutrient competition, secretion of antifungal metabolites\n\n    \u2022 Innate immune cells and complement: Macrophages and DCs phagocytose, oxidative burst, MHC presentation, recruit other immune cells. Neutrophils first line of defense to get called in - ROS, H2O2, bleach, NETosis",
+        "answer_image": null
+      },
+      {
+        "question": "Major classes of antifungal drugs:\n    \u2022  List out major classes and giving examples of drug name(s) within each class.\n    \u2022 Describe detailed mechanisms of each major antifungal drug class.",
+        "answer_text": "Main idea is to target the part of the fungi that are most unlike humans to minimize side-effects\n\n1) Cell wall targeting: Echinocandins - noncompetitively inhibit 1,3 \u03b2-glucan synthase (encoded by FKS1 gene)\n    - Can be fungicidal or fungistatic depending on organism\n    - caspofungin or micafungin\n\n2) Fungal membrane targeting: Polyenes - Bind ergosterol (like fungal cholesterol) on fungal membrane (small drug that can get past cell wall. \n    - amphotericin B (injection) or nystatin (cream/ointment)\n    - Very high kidney toxicity, ergosterol very similar to human cholesterol so high amount of side effects. Usually last line of defense\n\n3) Targeting ergosterol synthesis (enzymes): \n    i. Azoles - competitively inhibit 14\u03b1 - lanosterol demethylase enzyme (encoded by ERG11). Binds to active sites to inhibit sythesis.\n        - Imidazoles (topical) - miconazole\n        - Triazoles: systemic treatments - fluconazole\n        - First line treatment worldwide\n    ii. Allylamines - inhibit the squalene epoxidase enzyme (encoded by ERG1)\n        - Highly lipophilic and can accumulate in skin, mostly used as topical\n        - Lamisil\n\n5) Flucytosine: Nucelotide analog that inhibits RNA and DNA synthesis - converted to fungicidal uracil, not stand alone treatment\n\n6) Griseofulvin: Binds microtubules and inhibits mitosis and cell wall deposition\n    - High affinity for keratin. Perfect to fight ringworm fungus since they originate in hair follicles.",
+        "answer_image": "flashcard_images/Screenshot 2026-02-24 at 5.53.47\u202fPM.png"
+      },
+      {
+        "question": "What does a mold use to produce?",
+        "answer_text": "Asexual spores called conidia. Spores are the infectious unit for molds. Spores on their spore bearing structures are called conidiophores.\n\nSpores can be sporangiospores where they have rhizoides like roots, a sporangiphore like stem and sporangium with sporangiospores on it like a dandelion. \nOr they can be Arthospores - a vegetative hyphae that breaks off into small arthrospores.",
+        "answer_image": "flashcard_images/paste_2e5b1b9b19.png"
+      },
+      {
+        "question": "What are the innate cellular mechanisms for defense against fungi?",
+        "answer_text": "1)    Resident APC, macrophages, and dendritic cells - recognize PAMPs through PRR like TLRs.\n    - Phagocytosis and killing via oxidative burst\n    - Fungal antigen presentation (MHC)\n    - Chemoattractant production for other immune cells\n\n2)    Netrophils (PMNs): Primary infiltrating cell during infection\n    - Oxidative and non-oxidative killing\n    - Chemoattractant production",
+        "answer_image": "flashcard_images/paste_4dc658bfcf.png"
+      }
+    ],
+    "Candida albicans infections": [
+      {
+        "question": "Describe the detailed mechanism of hyphae formation",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Describe candidalysin synthesis process, and its function",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Describe major steps in fungal biofilm formation, and list out major components of fungal biofilm matrix",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Mechanisms of antifungal drug resistance in C. albicans: \n    - Understand and describe the mechanism(s) of resistance against each antifungal class",
+        "answer_text": "asd",
+        "answer_image": null
+      },
+      {
+        "question": "Outline C. albicans pathogenesis",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Outline C. albicans pathogenesis",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "What are the different hyphae functions?",
+        "answer_text": "",
+        "answer_image": null
+      }
+    ],
+    "Candida albicans": [],
+    "Aspergillus fumigatus - Tolerance/Resistance": [
+      {
+        "question": "Describe 4 major types of A. fumigatus lung infections",
+        "answer_text": "1) IPA - Invasive Pulmonary Aspergillosis: Most prominent case. High mortality rate. Fungal hyphae spread in lung tissue. Occurs primarily in immunodeficient patients (neutropenic), those with COPD, Pulmonary viral infections (COVID), ICU long stays. For diagnosis: Need to know current history if neutropenic, need chest CT that has white mass and extended hyphae visible.\n\n2) CPA - Chronic Pulmonary Aspergillosis: Less common than IPA, slow, cavitating process. Occurs in immunocompetent patients with COPD, TB, Sarcoidosis - Damage done during prolonged injury to lung tissue create pockets/scar tissue, spores can be inhaled and germinate in pockets which there is no immune presence, growth with distinct vacuole in lung. Diagnosis: Needs chest ct showing clear cavity, prior history of chronic lung disease\n\n3) ABPA - Allergic Bronchopulmonary Aspergillosis: Allergic response to the hyphae of the mold. Elevated levels of IgE in serum. Treatment with steroid inhaler, need to manage immune suppression/fungal growth. Mild or Severe where just walking outside triggers strong immune response. Needs to be taken care of, allergist, or chronic can be bad - fibrotic lung disease. Found in patients with asthma or cystic fibrosis chronic diseases. \n\n4) AB - Aspergillosis Bronchitis: Rule out the other 3. Mainly diagnosed in patients with COPD or CF",
+        "answer_image": "flashcard_images/Screenshot 2026-02-27 at 11.38.05\u202fAM.png"
+      },
+      {
+        "question": "Understand azole resistance mechanisms in A. fumigatus",
+        "answer_text": "14\u03b1 - lanosterol demethylase - inhibits synthesis of 4,4-dimethylcholesta-8,14,24-trienol from lanosterol\nNo ointments because in the lungs - \n\nUpregulate the efflux pump system (CDR1/ABCG1), leading to a reduction in the intracellular azole level.\n\nGained mutations in ERG11/CYP51 gene in azole binding pocket, leading to a reduction of azole binding to the enzyme. \n\nIncrease ERG11/CYP51 expression specifically. Of note, this is different from C. albicans in which the entire ERG pathway is upregulated by increase Upc2 function.\n\nDerived from European use of antifungals for their tulips, same strain and has had a lot of time to acquire resistant mutations",
+        "answer_image": "flashcard_images/Screenshot 2026-02-27 at 11.49.32\u202fAM.png"
+      },
+      {
+        "question": "Understand the definition of drug resistance vs. drug tolerance",
+        "answer_text": "Resistance:\nA strain that is resistant to an antibiotic typically will have a mutation allowing it to grow while in the presence of that drug. If you treat a strain with a drug, select surviving colonies (normally very few), then retreat with same drug, the colonies that have developed resistance will always proliferate quite well in presence of the drug. Then if you do whole genome sequencing on that strain you will find differences/mutations compared to WT/parent strain.\n\nTolerance: \nThere are no mutations present in the genome, making tolerant strains hard to identify. After treatment with drug there is stunted proliferation, smaller cells, more colonies than what resistant strains initially form. Then if you isolate these colonies and retreat with the drug you will get the exact same effect, the same number of surviving colonies will persist - and it doesn't matter the concentration of the drug being used.\n\nDrug susceptible strains \u2013 somehow it can grow just a little bit slower. 4 distinct characteristics \u2013 \nREPRODUCIBLE. Same number of colonies after repetition of the same process (without permanent mutation). Subopulation \u2013 slow growth vs no growth\nSubpopulation\nTolerance is independent of drug concentration \u2013 (more specific to fungi)\nAn isolate can have a higher tolerance and can grow faster phenotypically relative to lower tolerance strain",
+        "answer_image": "flashcard_images/Screenshot 2026-02-27 at 12.11.51\u202fPM.png"
+      },
+      {
+        "question": "Describe 4 unique characteristics of fluconazole-tolerant cells",
+        "answer_text": "Fluconazole - Azole drug that inhibits ERG11\n1. Environment plays a role - level of tolerance exhibited differently depending on location and fitness of strain in that location\n\n2. Epigenetic - there aren't any point mutations so DNA accessibility, mRNA stability, or PTMs can change expression levels of certain proteins, ie up-regulate expression of efflux pumps by having them always on or being able to switch them on and off advantageously. Affects tolerance without permanent mutations.\n\n3. (& 4) Transient Gene Modifications:\n\n- Aneuploidy - gaining an extra copy or multiple extra copies of chromosome. Ex: additional copy of chromosome 3 which is where the CDR1 and MDR1 efflux pumps are so increasing relative abundance in cell when turned on. \n\n- Loss of Heterozygosity - Only possible with diploid organisms (not bacterial resistance mechanism). Normally have two copies and they work together. They have point mutations in one copy, then it silences the other, now the cell lives by the mutated version of the gene, then when drug disappears the WT copy becomes functional again and through replication it fixes mutation to become WT again.",
+        "answer_image": null
+      },
+      {
+        "question": "General info on Aspergillus fumigatus",
+        "answer_text": "Break down organic matters to inorganic things. In nature on leaves, actively break things down and absorb nutrients, we can inhale them in and get into our skin and become opportunistic pathogens.\n\nLive within compost pile. Can live in high temperatures. Can survive at 40 celcius. Most molds, fungus at 32 celcius, but when in out bodies its fine. Hypoxic, so anaerobic, and low pH \u2013 all of these environments coincides with a lot of conditions in our body. Hypoxic and low pH in intestines\n\nSkin and low pH are supposed to be the barriers, but now they're ideal for this organism to grow.\nGood news \u2013 if you have neutrophils and good innate immunity \u2013 normally causes disease in immunocompromised or chronic lung disease. \n\nInhale spores everyday \u2013 morpnology of different parts \u2013 spore is conidia- then it germinates and starts growing. Don\u2019t divide, they just extend and form hyphae, then the conidiophore, to spread out \nIf you damage the hyphae they\u2019ll regrow, if not pseudohyphae, there is only one nucleus",
+        "answer_image": null
+      },
+      {
+        "question": "How does A. fumigataus regulate gene expression to combat Azoles",
+        "answer_text": "Induction of ERG11. Normally A/B/C upstream activator sequences unbound and gene off. When respective co-activators bind TR sites ERG11 made. \n\nMutated Aspergellosis fumigatus has mutated DNA to create tandem repeat (TR) regions that essentially multiple the upstream regulators within the DNA. This in turn increases TF binding and subsequent expression allowing them to continue to metabolize lanasterol. In addition, the TRs come with offsite mutations to the actual protein region making the protein less stable and more easily unfold or degrade. It is changing the half-life of the protein to become shorter to maintain fitness, so once drug is gone it isn't wasting energy creating protein it doesn't need anymore.",
+        "answer_image": "flashcard_images/paste_608df0d400.png"
+      },
+      {
+        "question": "What does the term Clinical Breakpoint mean?",
+        "answer_text": "CLINICAL BREAK POINT \u2013 concentration for drug will actually effect organism \u2013 meaning 4mg/ml will kill in human \u2013 derived from clinical labs and patient clinical trials. Cannot be determined in lab or in mice. Means theres a record for a human trial that if you treat with this concentration it will clear the infection.",
+        "answer_image": null
+      }
+    ]
+  }
+}
