@@ -499,7 +499,7 @@
       },
       {
         "question": "So now the DCs have taken Ag to LN and have primed T cells and B cells, what happens next?",
-        "answer_text": "They need to leave the LN. This is caused by \n- Upregulation of S1PR to re-enter the lymphatics/blood stream. \n- Loss of CCR7 needed to attraction to LN\n- L-selectin/CD62L needed for slow rolling near HEVs\n- Expression of new adhesion molecules specific for site of infection (LFA-1, VLA-4 (VCAM-1 vascular inflammed epithelium), PSGL-1 (P-selectin of endothelium), \u03b14:\u03b2 (MAdCAM-1 gut epithelium)\n- Expression of new receptors to follow chemokines at site of infection\n-",
+        "answer_text": "They need to leave the LN. This is caused by \n- Upregulation of S1PR to re-enter the lymphatics/blood stream. \n- Loss of CCR7 needed to attraction to LN\n- L-selectin/CD62L needed for slow rolling near HEVs\n- Expression of new adhesion molecules specific for site of infection (LFA-1, VLA-4 (VCAM-1 vascular inflammed epithelium), PSGL-1 (P-selectin of endothelium), \u03b14:\u03b2 (MAdCAM-1 gut epithelium)\n- Expression of new receptors to follow chemokines at site of infection",
         "answer_image": "flashcard_images/paste_66e0560bf2.png"
       }
     ],
