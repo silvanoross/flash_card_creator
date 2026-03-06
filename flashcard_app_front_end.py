@@ -18,6 +18,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import json, base64, os, random, uuid
 from pathlib import Path
+import markdown as md_lib
 
 st.set_page_config(page_title="FlashCard Studio", page_icon="🃏", layout="wide")
 
@@ -83,10 +84,24 @@ st.markdown("""
   min-height:180px;display:flex;align-items:center;justify-content:center;
   box-shadow:0 8px 32px rgba(79,70,229,.3);margin-bottom:1rem}
 .card-back{background:linear-gradient(135deg,#f093fb,#f5576c);border-radius:16px;
-  padding:2rem;color:#fff;font-size:1.1rem;text-align:center;min-height:180px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:2rem;color:#fff;font-size:1.1rem;text-align:left;min-height:180px;
+  display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;
   box-shadow:0 8px 32px rgba(245,87,108,.3);margin-bottom:1rem}
-.card-back img{max-width:100%;max-height:260px;border-radius:10px;margin-top:1rem}
+.card-back img{max-width:100%;max-height:260px;border-radius:10px;margin-top:1rem;display:block}
+.card-back h1,.card-back h2,.card-back h3,.card-back h4{color:#fff;margin:.4rem 0;font-weight:700}
+.card-back h1{font-size:1.5rem} .card-back h2{font-size:1.3rem} .card-back h3{font-size:1.15rem}
+.card-back p{margin:.3rem 0}
+.card-back ul,.card-back ol{margin:.3rem 0;padding-left:1.4rem}
+.card-back li{margin:.15rem 0}
+.card-back code{background:rgba(0,0,0,.25);border-radius:4px;padding:1px 5px;font-family:monospace;font-size:.95em}
+.card-back pre{background:rgba(0,0,0,.3);border-radius:8px;padding:.8rem 1rem;overflow-x:auto;margin:.5rem 0}
+.card-back pre code{background:none;padding:0;font-size:.9em}
+.card-back strong{font-weight:700} .card-back em{font-style:italic}
+.card-back blockquote{border-left:3px solid rgba(255,255,255,.5);margin:.4rem 0;padding-left:.8rem;opacity:.9}
+.card-back table{border-collapse:collapse;width:100%;margin:.5rem 0}
+.card-back th,.card-back td{border:1px solid rgba(255,255,255,.4);padding:.3rem .6rem}
+.card-back th{background:rgba(0,0,0,.2);font-weight:700}
+.card-back hr{border:none;border-top:1px solid rgba(255,255,255,.4);margin:.5rem 0}
 .progress-bar{background:#E5E7EB;border-radius:8px;height:12px}
 .progress-fill{background:#4F46E5;border-radius:8px;height:12px}
 .badge{display:inline-block;background:#EEF2FF;color:#4F46E5;border-radius:20px;
@@ -509,9 +524,15 @@ else:
                     b64 = img_to_b64(card["answer_image"])
                     if b64: img_html = f'<img src="{b64}" />'
 
+                raw_answer = card.get("answer_text", "")
+                answer_html = md_lib.markdown(
+                    raw_answer,
+                    extensions=["fenced_code", "tables", "nl2br", "sane_lists"]
+                )
+
                 st.markdown(f"""
                 <div class="card-back">
-                    <div>{card.get("answer_text","")}</div>
+                    <div>{answer_html}</div>
                     {img_html}
                 </div>""", unsafe_allow_html=True)
 
