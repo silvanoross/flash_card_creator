@@ -520,7 +520,7 @@ else:
                     ss["show_answer"] = True; st.rerun()
             else:
                 img_html = ""
-                if card.get("answer_image"):
+                if card.get("answer_image") and os.path.exists(card["answer_image"]):
                     b64 = img_to_b64(card["answer_image"])
                     if b64: img_html = f'<img src="{b64}" />'
 
