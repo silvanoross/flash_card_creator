@@ -9,7 +9,7 @@
       {
         "question": "After activation, what waves of signaling take place?",
         "answer_text": "1-2 hours: NFkB, AP-1, NFAT\n\n2-6 hours: Akt-mTOR\n\n9-12 hours: IL-2, CD69, IL-2R-alpha\n\n3-5 days: Cell division and proliferation",
-        "answer_image": null
+        "answer_image": "flashcard_images/Picture1.jpg"
       },
       {
         "question": "What energy metabolism is used for naive, effectors, memory, and effector memory T cells? and what stage in the cell cycle are they?",
@@ -19,16 +19,11 @@
       {
         "question": "What ultimately allows T Cells to enter the cell cycle upon activation?",
         "answer_text": "IL-2R-alpha, Upon activation IL-2R-alpha gets expressed which can then bring IL-2 to the IL-2R gamma and beta subunits to trigger signal transduction and entry into the cell cycle for proliferation.",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 2.14.56\u202fPM.png"
       },
       {
         "question": "What is the rule about secretion or response to IL-2 by T Cells?",
         "answer_text": "T Cells can either secrete IL-2 or respond to IL-2\n\nT Cells that secrete IL-2 don't end up producing IL-2R\u03b1 and become T-fh with ICOS\n\nT Cells that don't secrete IL-2 can respond to IL-2 and make IL-2R\u03b1 on surface to do so",
-        "answer_image": null
-      },
-      {
-        "question": "What is the rule about secretion or response to IL-2 by T Cells?",
-        "answer_text": "T Cells can either secrete IL-2 or respond to IL-2. Tregs constitutively express IL-2R-alpha to be able to respond quickly to signal.",
         "answer_image": null
       },
       {
@@ -39,17 +34,17 @@
       {
         "question": "What are the coreceptors that assist in activation and inhibition of T Cells?",
         "answer_text": "CD28 is constitutively expressed on surface of CD4 and CD8 T cells so they can respond to activation signals. Upon activation CD28 expression is downregulated\n\nCTLA-4 is upregulated once T cells get activated. They have 2 binding domains for B7 co-activator on APC. They outcompete CD28 that is only singly binding B7. They also cause internalization of B7/CTLA complex to further inhibit. This allows the tight regulation of T cell activation and shut down.",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 2.16.53\u202fPM.png"
       },
       {
         "question": "How do PD-1 signaling and TNFR signaling work in T Cells?",
         "answer_text": "PD-1 expressed on T Cell surface and is induced after activation. PD-1L from APC is stimulatory molecule. Activation of PD-1 is highly inhibitory. The ITIM domain brings in SHP phosphatases. Ulitmately inhibits all of the activation pathways induced by CD28. Leads to decreased survival as well. \n\nTNFR family signaling activate the non-canonical NFkB pathway. Enhances sustained T Cell responses. \nOX40, 4-1BB, GITR, CD30",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.12.11\u202fPM.png"
       },
       {
         "question": "Detail the experiment that was done using the OVA peptide for T Cell proliferation",
         "answer_text": "CD4+ naive T cells were incubated with WT and costimulatory deficient APCs (CD40 -/-, B7 -/-, and No APC). \nFor naive T cell activation the presence costimulatory molecules were correlated with higher T cell proliferation when incubated with OVA T cell activating antigen. \n\nFor memory cells, the costimulatory APCs and lack there of did not have an effect on generating a robust memory response. \n\nOverall: Costimulation is necessary for activation, but once memory is formed T cells only need MHC recognition",
-        "answer_image": null
+        "answer_image": "flashcard_images/Picture3.png"
       },
       {
         "question": "How does activation change surface level expression from naive to activated/Effector?",
@@ -93,7 +88,7 @@
       },
       {
         "question": "What do CD8 T cells release?",
-        "answer_text": "Cytotoxic granules that kick of intrinsic apoptosis:\n    - Perforin - pore forming unit to help delivery of cytotoxic granules\n    - Granzyme - serine proteases that activate apoptotic pathways\n    - Granulysin - antimicrobial properties\n    - Serglycin - scaffold\n\nCytokines that trigger extrinsic apoptosis:\n    - IFN-\u03b3 to block viral replication\n    - TNF-\u03b1 and Lymphotoxin (LT)-\u03b1 to induce Fas and TNFR for extrinsic apoptosis",
+        "answer_text": "Cytotoxic granules that kick off intrinsic apoptosis:\n    - Perforin - pore forming unit to help delivery of cytotoxic granules\n    - Granzyme - serine proteases that activate apoptotic pathways\n    - Granulysin - antimicrobial properties\n    - Serglycin - scaffold\n\nCytokines that trigger extrinsic apoptosis:\n    - IFN-\u03b3 to block viral replication\n    - TNF-\u03b1 and Lymphotoxin (LT)-\u03b1 to induce Fas and TNFR for extrinsic apoptosis",
         "answer_image": null
       },
       {
@@ -110,6 +105,21 @@
         "question": "What are the subtypes of Effector CD8 T cells?",
         "answer_text": "Basically same as T helper cell subsets\nIL-12 induces Tc1 which makes IFN-\u03b3 and TNF-\u03b1 \nIL-4 induces Tc2 which makes IL-4, IL-5, and IL-13\nIL-4 and TGF-\u03b2 induce Tc9 (different) which makes IL-9\nIL-6 and TGF-\u03b2 induce Tc17 which makes IL-17 and IL-22\nIL-6 and TNF-\u03b1 induce Tc22 which makes IL-2, IL-22, and TNF-\u03b1",
         "answer_image": "flashcard_images/paste_3d926c6bbf.png"
+      },
+      {
+        "question": "What are the important adhesin contacts for DC and T cells for antigen presentation",
+        "answer_text": "- LFA-1 on T cell to ICAM-1 or ICAM-2 on DC\n- CD2 on T cell to CD58 on DC\n-",
+        "answer_image": "flashcard_images/paste_9d3d46e701.png"
+      },
+      {
+        "question": "What metabolic changes go happen for T cells to rapidly proliferate?",
+        "answer_text": "- Activation of Akt downstream of TCR/CD28 stimulates the mTOR pathway to increase T cell\u2019s metabolic and biosynthetic capabilities as it transitions from G0-> G1 and enters cell cycle\n\n- AKT-mTOR pathway activation stimulates aerobic glycolysis and increases the uptake of glucose to fuel this pathway  while also increasing the OXPHOS pathway to meet energy demands\n\n- Aerobic glycolysis supports anabolic metabolism that is required for rapid cell division",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 2.14.00\u202fPM.png"
+      },
+      {
+        "question": "Which subset of T cells is higher after clonal contraction?",
+        "answer_text": "CD8",
+        "answer_image": "flashcard_images/paste_416531bd58.png"
       }
     ],
     "Humoral Immunity": [

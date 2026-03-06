@@ -82,10 +82,9 @@ st.markdown("""
   padding:2rem;color:#fff;font-size:1.3rem;font-weight:600;text-align:center;
   min-height:180px;display:flex;align-items:center;justify-content:center;
   box-shadow:0 8px 32px rgba(79,70,229,.3);margin-bottom:1rem}
-.card-back{background:linear-gradient(135deg,#f093fb,#f5576c);border-radius:16px;
-  padding:2rem;color:#fff;font-size:1.1rem;text-align:center;min-height:180px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  box-shadow:0 8px 32px rgba(245,87,108,.3);margin-bottom:1rem}
+# .card-back{background:linear-gradient(135deg,#f093fb,#f5576c);border-radius:16px;
+#   padding:2rem;color:#fff;font-size:1.1rem;text-align:left;min-height:180px;
+#   box-shadow:0 8px 32px rgba(245,87,108,.3);margin-bottom:1rem}
 .card-back img{max-width:100%;max-height:260px;border-radius:10px;margin-top:1rem}
 .progress-bar{background:#E5E7EB;border-radius:8px;height:12px}
 .progress-fill{background:#4F46E5;border-radius:8px;height:12px}
@@ -514,11 +513,18 @@ else:
                             b64 = img_to_b64(card["answer_image"])
                             if b64: img_html = f'<img src="{b64}" />'
 
-                        st.markdown(f"""
-                        <div class="card-back">
-                          <div>{card.get("answer_text","")}</div>
-                          {img_html}
-                        </div>""", unsafe_allow_html=True)
+                        # st.markdown('<div class="card-back">', unsafe_allow_html=True)
+                        with st.container(border=True):
+                            st.markdown(
+                                '<div style="background:linear-gradient(135deg,#f093fb,#f5576c);'
+                                'border-radius:16px;padding:1rem;color:#fff;margin-bottom:1rem">',
+                                unsafe_allow_html=True
+                            )
+                            if card.get("answer_text"):
+                                st.markdown(card["answer_text"])
+                            if img_html:
+                                st.markdown(img_html, unsafe_allow_html=True)
+                            st.markdown('</div>', unsafe_allow_html=True)
 
                         st.markdown("**How did you do?**")
                         cy, cn = st.columns(2)
