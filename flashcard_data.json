@@ -447,6 +447,48 @@
         "answer_text": "They need to leave the LN. This is caused by \n- Upregulation of S1PR to re-enter the lymphatics/blood stream. \n- Loss of CCR7 needed to attraction to LN\n- L-selectin/CD62L needed for slow rolling near HEVs\n- Expression of new adhesion molecules specific for site of infection (LFA-1, VLA-4 (VCAM-1 vascular inflammed epithelium), PSGL-1 (P-selectin of endothelium), \u03b14:\u03b2 (MAdCAM-1 gut epithelium)\n- Expression of new receptors to follow chemokines at site of infection\n-",
         "answer_image": "flashcard_images/paste_66e0560bf2.png"
       }
+    ],
+    "Failures of the Immune System - PIDS": [
+      {
+        "question": "How can different types of infections be clues to diagnosing primary immunodeficiency?",
+        "answer_text": "- Recurrent pyogenic (inflammation and pus) bacterial infections , or specific viral infections (from live viral vaccines) suggest: Immunoglobulin, Complement, or Phagocyte deficiency\n\n- Recurrent viral or fungal infections suggest: T cell immunity defect (can die from chicken pox)",
+        "answer_image": null
+      },
+      {
+        "question": "What kinds of laboratory tests can you do to diagnose PIDs",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "What inheritance patterns are there for PIDs, how do they present, and how can you determine them through family history?",
+        "answer_text": "##### Modes of Inheritance\n###### X-linked\n###### Autosomal Recessive\n###### Autosomal Dominant",
+        "answer_image": null
+      },
+      {
+        "question": "Why is it important to establish a molecular diagnosis for patients with PID? And how do you do so?",
+        "answer_text": "###### Molecular Components to test for\n- Complement components (C1q binding assay), C3b staining, MAC staining when incubated with pathogen\n- Enzyme/proteins: Adenosine Deaminase (ADA), Activation-Induced Cytidine Deaminase (AID), Purine Nucleoside Phosphorylase (PNP), JAK3, RAG1/RAG2, Bruton's Tyrosine Kinase (BTK), MHC Class I and II - antibodies or flow\n- Mutations in specific genes (IL7R\u03b1 (T cell differentiation), Artemis, DNA-PK, XIAP, CD40L, common \u03b3 chain (immune signaling ITAM portion, Wiskot-Aldrich Syndrome protein, CD45) - PCR",
+        "answer_image": null
+      },
+      {
+        "question": "How are PIDs treated?",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "What is the value in studying PIDs and how is it normally done?",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "What is a Primary Immune Deficiency (PID) and what are the classes?",
+        "answer_text": "##### Definition\nPIDs are caused by a mutation in a gene important for the development of the immune system or control of an immune response.\n\n---\n##### Classes\n- Combined Immunodeficiency (also Severe CID): Both T and B cells are non-functional\n- Isolated B cell defect (Often in class switching or antibody production)\n- Isolated T cell defect\n- Complement deficiencies\n- Phagocytic cell defects\n\n\nWhereas, Secondary Immune Deficiencies (SID) are acquired as consequence that is not genetically driven. Often by HIV infection, chemotherapy, immunosuppression after organ transplantation, or environmental factor (starvation or adverse drug reaction)",
+        "answer_image": null
+      },
+      {
+        "question": "What are the steps to immunodeficiency disease diagnosis",
+        "answer_text": "###### 1. Types and frequency of infections - \n###### 2. Family history\n- **X-linked, recessive, dominant**\n- **Incest or cousin babies?**\n-  **Denovo mutation?**\n###### 3. T cell, B cell, neutrophils, platelets, and macrophage counts compared to normal for that age range: \n- **Are they there? Are they functional? Counts and Ig types and levels in serum**\n###### 4. In vivo immune system function: \n- **Can patient amount an immune response to \u03d5X174 (novel ag that should have immune response against), antibodies specific to previous vaccinations, do skin test**\n###### 5. In vitro immune system test by drawing blood\n- **Induced antibody production into matrix in response to pokeweed mitogen (T cell dependent) or EBV (T cell independent)**\n- **T cell proliferation in response to phytohemagglutinin or tetanus toxoid | Anti-CD3 stimulation: incubate cells with CD3 antibody then look at tritium thymodate levels indicative of cell division**\n- **Do a stimulation index**\n###### 6. Test for the presence of specific immune system components (enzymes: ADA, CD40/CD40L, genes BTK, Complement)\n- **Last step after confirming above to get idea of where to specifically look**\n- **Flow cytometry, antibodies, PCR to isolate gene, IP, ELISA**",
+        "answer_image": null
+      }
     ]
   },
   "Micro II": {
