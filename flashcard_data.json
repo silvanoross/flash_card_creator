@@ -24,7 +24,7 @@
       {
         "question": "What is the rule about secretion or response to IL-2 by T Cells?",
         "answer_text": "T Cells can either secrete IL-2 or respond to IL-2\n\nT Cells that secrete IL-2 don't end up producing IL-2R\u03b1 and become T-fh with ICOS\n\nT Cells that don't secrete IL-2 can respond to IL-2 and make IL-2R\u03b1 on surface to do so",
-        "answer_image": null
+        "answer_image": "flashcard_images/Picture4.jpg"
       },
       {
         "question": "What are the common costimulatory receptors that get upregulated after T Cell activation?",
@@ -79,17 +79,17 @@
       {
         "question": "What are the key signals to develop Tregs?",
         "answer_text": "TGF-\u03b2, IL-2, and all trans retinoic acid, and NO IL-6\n\nIn presence of IL-6 they become Th17s",
-        "answer_image": "flashcard_images/paste_6e8952090d.png"
+        "answer_image": "flashcard_images/Picture5.jpg"
       },
       {
         "question": "What is an immunological synapse?",
         "answer_text": "When APCs engage naive T cell in the lymphnode for a long period of time and the T cell gets activated. \n1. TCR/MHC + CD3 + CD4/CD8 recognition forms a cluster for enhanced signaling forming the central supramolecular activation complex (cSMAC)\n2. LFA-1 binding to ICAM-1/2 form around the cSMAC to form the peripheral supramolecular activation complex (pSMAC)\n3. Filamentous actin bundles form on the very outer areas forming the distal SMAC or dSMAC.\nIf this complex does not form then T cell activation does not happen. The mTOR complex moves towards the cSMAC as well and polarizes the cell, carrying the cytotoxic granules with it. The clustering of TCR complexes brings together signaling machinery like ZAP-70, Lck, Fyn, Lat to enhance signaling.",
-        "answer_image": "flashcard_images/paste_39263a190f.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.32.37\u202fPM.png"
       },
       {
         "question": "What do CD8 T cells release?",
         "answer_text": "Cytotoxic granules that kick off intrinsic apoptosis:\n    - Perforin - pore forming unit to help delivery of cytotoxic granules\n    - Granzyme - serine proteases that activate apoptotic pathways\n    - Granulysin - antimicrobial properties\n    - Serglycin - scaffold\n\nCytokines that trigger extrinsic apoptosis:\n    - IFN-\u03b3 to block viral replication\n    - TNF-\u03b1 and Lymphotoxin (LT)-\u03b1 to induce Fas and TNFR for extrinsic apoptosis",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.44.26\u202fPM.png"
       },
       {
         "question": "Detail the process of extrinsic apoptosis",
@@ -99,7 +99,7 @@
       {
         "question": "Detail intrinsic apoptosis",
         "answer_text": "Cytotoxic granules released into target cell\nSerglycin scaffold carries perforin, granzyme, and granulysin\nGranzyme B hits Bid and caspase 3 (cas 3 effector caspase already)\n    - tBid helps formation of Bak, Bax, and Bok to release cytochrome C from mitochondrial membrane\nCytochrome C associates with Apaf-1 and procaspase 9 to make apoptosome\nProcaspase 9 cleaves procaspase 3 into effector cas 3\ncas 3 cleaves ICAD which kills cell",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.38.53\u202fPM.png"
       },
       {
         "question": "What are the subtypes of Effector CD8 T cells?",
@@ -120,6 +120,36 @@
         "question": "Which subset of T cells is higher after clonal contraction?",
         "answer_text": "CD8",
         "answer_image": "flashcard_images/paste_416531bd58.png"
+      },
+      {
+        "question": "What are some Treg specific markers",
+        "answer_text": "##### Cytokines:\n- IL-10, TGF-\u03b2\n\n##### Surface Markers:\n- CTLA-4, PD-L1, CD25 (IL-2\u03b1), CD62L\n\n##### Intracellular markers\n- **FoxP3**",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.19.55\u202fPM.png"
+      },
+      {
+        "question": "How do Tregs suppress T cell activation",
+        "answer_text": "- CTLA4 can outcompetes CD28 for B7 receptors\n- Constitutively expressing IL-2Ra sequester IL-2 \n\n- Multiple ways to suppress. One way is by injiitory cytokines, TGF beta, il-10 and il-35\n\nOther ways is using granzyme A or granzyme B \nCause metabolic disruption \nTarget DCs to inhibit DC maturation and function \n\nT regs also be come subset like\nTh1 like, th2 like treg, th17 like treg and tfh like treg\nGoes along with specific reponse for what theyre like",
+        "answer_image": "flashcard_images/paste_a9585a26e5.png"
+      },
+      {
+        "question": "What is so important about the T cell cytoskeleton",
+        "answer_text": "Really important \u2013 TCR signaling, cytoskeleton activation tightly coupled and connected. Deficits in cytoskeleton, you wont get proper activation of t cell\n\nInside out signaling \u2013 TCR being activated leads to different f-actin nucleators to cause actin to be built",
+        "answer_image": "flashcard_images/paste_bddac3b03e.png"
+      },
+      {
+        "question": "A brief overview of T cell subsets and their effector molecules",
+        "answer_text": "Upon stimulation, different output of cytokines that make it important",
+        "answer_image": "flashcard_images/paste_69597f3004.png"
+      },
+      {
+        "question": "Reminder of T cell cytokines and function",
+        "answer_text": "",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.37.17\u202fPM.png"
+      },
+      {
+        "question": "What happens during T cell polarization?",
+        "answer_text": "",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.42.12\u202fPM.png"
       }
     ],
     "Humoral Immunity": [
