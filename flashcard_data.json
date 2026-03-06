@@ -195,8 +195,8 @@
       },
       {
         "question": "If T cells can't recognize carbohydrates, then how do they stimulate B cells to create antibody against said carbohydrates if B cells need T cell help in order to become plasma cells?",
-        "answer_text": "The BCR recognizes the carbohydrate epitope that's part of the entire antigen with other protein parts. It macropinocytoses the antigen and present the peptide portion on MHC class II to TCRs that recognize the peptide/MHC complex. The CD40 receptor on the B cell also recognizes the CD40 Ligand (CD154) on the T cell which activates that B cell with the BCR that recognizes the carbohydrate and cytokine secretion from T cell (IL-4 or IL-21 for extracellular parasite or microbe or IFN-\u03b3/IL-12 if virus picked up by antibody). The B cell can then differentiate into a plasma cell and secrete antibody.\n\nWhen you design vaccines, adding the protein portion of an antigen along with its carbohydrate portion (often on a bacteria with peptidoglycan domains) then this is called a HAPTEN. This allows you amount an immune response a carbohydrate, that otherwise does not trigger an antibody response by itself. This was done in tetanus toxoid vaccine.",
-        "answer_image": "flashcard_images/paste_8392e1cee9.png"
+        "answer_text": "- The BCR recognizes the carbohydrate epitope that's part of the entire antigen with other protein parts. \n- It macropinocytoses the antigen and present the peptide portion on MHC class II to TCRs that recognize the peptide/MHC complex. \n- The CD40 receptor on the B cell also recognizes the CD40 Ligand (CD154) on the T cell which activates that B cell with the BCR that recognizes the carbohydrate and cytokine secretion from T cell (IL-4 or IL-21 for extracellular parasite or microbe or IFN-\u03b3/IL-12 if virus picked up by antibody).\n- The B cell can then differentiate into a plasma cell and secrete antibody.\n\nWhen you design vaccines, adding the protein portion of an antigen along with its carbohydrate portion (often on a bacteria with peptidoglycan domains) then this is called a HAPTEN. This allows you amount an immune response a carbohydrate, that otherwise does not trigger an antibody response by itself. This was done in tetanus toxoid vaccine.",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.53.29\u202fPM.png"
       },
       {
         "question": "What is ADCC and in what contexts is it best for?",
@@ -236,7 +236,7 @@
       {
         "question": "What are the main and two extra signals B cells need to trigger differentiation?",
         "answer_text": "1. Crosslinking of BCR to antigen\n2. B Cell -<CD40 - CD40L >-T cell is signal, costimulation through B cell-<B7 - CD28>-T cell",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 3.55.58\u202fPM.png"
       }
     ],
     "Mucosal Immunity": [
@@ -267,13 +267,13 @@
       },
       {
         "question": "What is the structure of the GI system?",
-        "answer_text": "Crypts\nIntraepithelium\nLamina propria\nPeyer\u2019s patches\nFollicle-associated epithelium (FAE)\nMesenteric Lymph node\nLumen Isolated lymphoid follicle",
+        "answer_text": "- Crypts\n\n- Intraepithelium\n\n- Lamina propria\n\n- Peyer\u2019s patches\n\n- Follicle-associated epithelium (FAE)\n\n- Mesenteric Lymph node\n\n- Lumen Isolated lymphoid follicle",
         "answer_image": "flashcard_images/Screenshot 2026-03-04 at 10.49.33\u202fAM.png"
       },
       {
         "question": "What happens in the crypts?",
-        "answer_text": "Stem cells that rapidly proliferate to replace epithelium\nPaneth cells make Antimicrobial Peptides (AMPs) like Beta defensins. This protects the crypts where there are precious stem cells. Keeps the crypts free from bacteria where higher up in the lumen theres more. Helps shape composition of commensal microorganisms as well.",
-        "answer_image": null
+        "answer_text": "- Stem cells that rapidly proliferate to replace epithelium\n- Paneth cells make Antimicrobial Peptides (AMPs) like Beta defensins: This protects the crypts where there are precious stem cells. Keeps the crypts free from bacteria where higher up in the lumen theres more. Helps shape composition of commensal microorganisms as well.",
+        "answer_image": "flashcard_images/Picture7.png"
       },
       {
         "question": "What about Peyer's Patches, what do they look like, where are they located, and what do they do?",
@@ -287,13 +287,13 @@
       },
       {
         "question": "What are the cells of the GI immune system?",
-        "answer_text": "Dendritic cells (DCs): tolerogenic or inflammatory  \nIntraepithelial T lymphocytes (IEL)\nLamina propria T lymphocytes (LPL)\nRegulatory T cells (Treg) \nT helper 17 cells (Th17) \nGroup 3 innate lymphocytes (ILC3s)  \nIgA-secreting B cells",
+        "answer_text": "- Dendritic cells (DCs): tolerogenic or inflammatory  \n- Intraepithelial T lymphocytes (IEL)\n- Lamina propria T lymphocytes (LPL)\n- Regulatory T cells (Treg) \n- T helper 17 cells (Th17) \n- Group 3 innate lymphocytes (ILC3s)  \n- IgA-secreting B cells",
         "answer_image": null
       },
       {
         "question": "Interactions of the T cells and DCs in gut",
         "answer_text": "We have Dendritic cells that can produce IL-6 for systemic inflammation and for Th17 differentiation . Retinoic acid RA to influence Treg differentiation. \n\nResident macrophages can release these cytokines as well. \n\nThen you have the intra-epithelial Lymphocytes (IELs) which are specific CD8 T cells with CD8\u03b1\u03b1 or CD8\u03b1\u03b2 more innate like not cytotoxic. \n\nYour thymic T regs or inducible CD4s",
-        "answer_image": "flashcard_images/paste_57941ba324.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 4.00.43\u202fPM.png"
       },
       {
         "question": "Th-17 cells are important in what contexts?",
@@ -303,7 +303,7 @@
       {
         "question": "What kinds of drugs are made to target Th17 cells?",
         "answer_text": "Since the Th17 cells are overactive in chronic gut diseases, the drug companies will make an antibody to the cytokines made by Th17 cells. All drugs end in \"mab\" - monoclonal antibody\n\nThey antibodies need to target the p40 and p35 subunits of the cytokine because just blocking one won't kill downstream effects the other subunit has.\n\nThe main targets are IL-17, IL-12, and IL-23 which are proinflammatory cytokines",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 4.07.59\u202fPM.png"
       },
       {
         "question": "Differentiate the different Innate-Lymphocyte (ILCs)",
@@ -337,18 +337,18 @@
       },
       {
         "question": "What happens if you have an IgA deficiency?",
-        "answer_text": "It is possible that other classes of Antibody will compensate for lack of IgA. Still don't have the greatest immune responses and still have frequent GI and pulmonary infections. Higher risk for celiac disease, most likely a class switching error. Problems with transfusions because you can make ab to IgA",
+        "answer_text": "- It is possible that other classes of Antibody will compensate for lack of IgA. \n- Still don't have the greatest immune responses and still have frequent GI and pulmonary infections. \n- Higher risk for celiac disease, most likely a class switching error. \n- Problems with transfusions because you can make ab to IgA",
         "answer_image": null
       },
       {
         "question": "How does GI Immune system uptake antigen?",
         "answer_text": "1. M Cells - microfold cells\n- Modified cell mainly on the Follicle Associated Endothelium for easy endocytosis of ag and delivery to lamina propria DCs\n\n2. Dendritic Cells\n- Sampling gets through tight junctions allegedly\n\n3. Transcytosis with IgG receptor\n- IgG binds ag in gut lumen\n- Fc receptor on epithelium endocytosis ab bound ag\n- transported to lamina propria and released",
-        "answer_image": "flashcard_images/paste_0153c50787.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 4.04.21\u202fPM.png"
       },
       {
         "question": "What happens once antigen gets recognized?",
         "answer_text": "Changes.\n1. Ag presentation by APC to T cells in peyers patch, CD40-CD40L, cytokine release and T cell activation and proliferation\n2. T cells leave the area draining through lymph via upregulation S1PR and downregulating CCR7\n3. After circulation through lymph (if CD4 its helping activate other cells) it homes back to tissue\n- Gut homing mediated by chemokine receptors on T cell (CCR9 & CCR10) and MAdCAM-1 sialyl-Lewis x factor binding \u03b14:\u03b27 integrin for diapedesis through blood vessel in gut to lamina propria\n- Once in lamina propria CCL25 and CCL28 attract T cell via CCR9 and CCR10 \n- \u03b1\u0395:\u03b27 integrin on T cell binds \u0395-cadherin on epithelium for firm adhesion",
-        "answer_image": "flashcard_images/paste_f333e7163e.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 4.05.23\u202fPM.png"
       },
       {
         "question": "What is the first line of defense in the gut?",
@@ -358,12 +358,12 @@
       {
         "question": "How come our innate immune system isn't just responding to everything all the time with all of the commensals and gut microbiota?",
         "answer_text": "TLR expression is spatially regulated so you have a lot where there shouldn't be any microbiota - ie the stomach or in crypts where stem cells are to protect them from microbes that get past paneth cell AMPs. Or you have a few where there is a lot of microbiota so you don't cause crazy activation like in distal ileum/colon",
-        "answer_image": null
+        "answer_image": "flashcard_images/Picture8.jpg"
       },
       {
         "question": "Which bug do most immunologists use to create bacterial infection that has led to most of what we know about mucosal immunity?",
         "answer_text": "Citrobacter redentium: like Enteropathogenic E. Coli. \n\nMouse specific, good at colonizing. Induces strong innate response \u2013 IL-1B, IL-22, AMPs, \nAlthough the innate can help protect, you get a strong adaptive response\n\nInduces strong Th17 and Ab response. It ultimately gets cleared, so it isn\u2019t chronic. Induces a good immune response. Model pathogen",
-        "answer_image": null
+        "answer_image": "flashcard_images/Picture9.jpg"
       },
       {
         "question": "What is the difference between protective immunity and mucosal tolerance, why is it important?",
@@ -372,8 +372,8 @@
       },
       {
         "question": "What is Oral Tolerance and what is its mechanism?",
-        "answer_text": "Oral Tolerance: Development of tolerance to fed antigen. The lack of responsiveness by peripheral immunity.\nMechanism: Anergy with no costimulation, or Treg induction with TGF\u03b2-1 and IL-10 to dampen immune response.",
-        "answer_image": null
+        "answer_text": "###### Oral tolerance is \n- the default response to a fed antigen and is the development of a state of specific peripheral unresponsiveness.   \n- Blunted T cell responses and IgE responses\n\n###### Mechanism?\n- Anergy or deletion of effector or helper T cells\n- Generation of Treg cells (IL-10, TGF-\u03b2)\n\n###### Therapeutic?\n- In mouse models, fed antigen can reduce incidence of experimental models of type I diabetes (T1D), rheumatoid arthritis and multiple sclerosis",
+        "answer_image": "flashcard_images/Picture10.jpg"
       },
       {
         "question": "How do we develop a full Gut Immunity?",
@@ -389,6 +389,21 @@
         "question": "Which genes are implicated in IBD (disease not syndrome)",
         "answer_text": "Crohn's - Th1\nUlcerative Colitis - Th2\n\nA multitude of mutations in everything related to mucosal immunity in gut, from epithelium, to cells, to cytokines, to cytokine receptors, to effector enzymes, to autophagy, T cell regulation, commensal tolerance, carbohydrate metabolism...",
         "answer_image": "flashcard_images/paste_1dcbeb20a1.png"
+      },
+      {
+        "question": "What kind of drugs target homing of T cells to GI tract?",
+        "answer_text": "",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 4.08.57\u202fPM.png"
+      },
+      {
+        "question": "What does an IBD gut look like?",
+        "answer_text": "",
+        "answer_image": "flashcard_images/Picture11.png"
+      },
+      {
+        "question": "What does the respiratory tract look like?",
+        "answer_text": "",
+        "answer_image": "flashcard_images/Picture12.jpg"
       }
     ],
     "Dynamics of Adaptive and Innate Immunity": [
