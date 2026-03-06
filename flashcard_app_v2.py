@@ -62,6 +62,11 @@ def img_to_b64(path):
             return f"data:image/{mime};base64,{base64.b64encode(f.read()).decode()}"
     return None
 
+def update_session_state():
+    # This function runs when the widget value changes
+    # st.session_state.new_q is already updated by Streamlit internally here
+    st.session_state.other_variable = st.session_state.new_q
+
 # ─── session state ────────────────────────────────────────────────────────────
 for k, v in [("data", load_data()), ("mode", "manage"), ("study_state", {})]:
     if k not in st.session_state:
@@ -315,7 +320,7 @@ if st.session_state.mode == "manage":
                 with st.expander("➕ Add New Flashcard", expanded=len(cards) == 0):
 
                     q = st.text_area("❓ Question (front)", key="new_q", height=100,
-                                     placeholder="Type your question here…")
+                                     placeholder="Type your question here…", on_change=update_session_state)
                     st.markdown("**✏️ Answer text**")
                     a_text = st.text_area("Answer text", key="new_a_text", height=100,
                                           placeholder="Type the answer here…")
@@ -387,6 +392,7 @@ if st.session_state.mode == "manage":
                             # Reset by incrementing counter → new widget key next render
                             st.session_state["pasted_image_data"] = ""
                             st.session_state["relay_counter"] += 1
+
                             st.success("Card saved!"); st.rerun()
                         else:
                             st.warning("Please enter a question.")
