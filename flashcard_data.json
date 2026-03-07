@@ -409,8 +409,8 @@
     "Dynamics of Adaptive and Innate Immunity": [
       {
         "question": "Identify the initial innate responses to different classes of pathogens",
-        "answer_text": "",
-        "answer_image": null
+        "answer_text": "---\n##### Viral/Intracellular Bacteria\n- Type 1 immunity\n- Most cells have RIG-I/MAVS to TBK-1 to IRF-3 results in ISGs (Interferon Stimulating Genes - Type I IFN)\n- TLR3 (dsRNA) - TRIF, TLR7 (ssRNA), TLR8 (ssRNA), TLR9 (no meth CpG) > MyD88 creates NFkB\n- Paracrine signaling to IFNRs and self - positive feedback loop for inflammation - recruitment of innate immune cells\n- Type I IFN activates IFNRs on monocytes to create IL-18 (IFN knockouts have decreased recruitment of monocytes)\n- IL-18 acts to upregulate IFN- \u03b3 on NK cells\n- Viruses can downregulate MHC on cells then NK cells with KIRs can kill after degranulation\n- Stressed cells upregulate NKG2 which is acted upon by NK cells\n- NK cells are activated by Type I IFN, IL-12, IL-18, and IL-15\n- **Phagocytosis by macrophages, cytotoxicity by NK cells, cytokine production for inflammation**\n- Neutrophils are not a big player in innate immunity wrt viral/intracellular pathogen infection\n\n---\n\n##### Extracellular Bacteria\n- Injury (even sterile) to site from toxins, PAMPs/DAMPs, TLR activation in DC/Langerhans Cells in skin drive **Neutrophil Recruitment)\n- After neutrophil recruitment and activation, cytokine secretion, degranulation, NETosis, ROS, H2O2, superoxide\n- Complement activation (classical, MBL, alternative), deposition of C3b, MAC formation\n- TLRs 1:2 (peptidoglycans), 2:6, 4 (LPS), 5 (flagella) - inflammatory cytokines for recruitment\n- NLRs recognize peptidoglycans and flagellin make the inflammosome important for IL-18 and IL-1 cleavage to pro form by caspases of inflammosome\n- IL-1 important for inflammation, fever, and chemokines for attracting lymphocytes\n- NOD like receptors, recognize peptidoglycan NFkB, MAPK, TRAF3 \n- Turns into Inflammation, Cell Death, Survival, recruitment of adaptive immunity\n- Damage to epithelium and epithelial cells can release AMPs\n\n---\n\n##### Large Extracellular Parasite/Helminth\n- IL-33 release from gut epithelium: Helps recruit eosinophils, basophils, and activate mast cells\n- IL-25 Goes to help differentiate ILC2s and promote type 2 cytokine production:  IL-4, IL-5, IL-13 to promote Th2 differentiation\n- ILC2s secrete IL-5 and IL-13 to cause mucus production from goblet cells and smooth muscle contraction - weep and sweep\n- IL-1\u03b2 stimulated by parasites can curb ILC2 response and be beneficial for parasite\n \n\n---",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 5.09.31\u202fPM.png"
       },
       {
         "question": "Identify the innate and adaptive immune cells associated with intracellular, extracellular, and large extracellular parasitic pathogens",
@@ -470,7 +470,7 @@
       {
         "question": "What happens after first innate activation?",
         "answer_text": "- Tissue resident DCs take up antigen and leave their residence to go to LN\n- Lose adhesion molecules, gain CCR7\n- Upregulate inflammatory cytokine production",
-        "answer_image": null
+        "answer_image": "flashcard_images/Picture14.png"
       },
       {
         "question": "How do T cells become activated upon first pathogen exposure?",
@@ -494,13 +494,33 @@
       },
       {
         "question": "What happens to CD8 immune response in absence of CD4 T helper cells? What is the signal that is vital for memory T cell formation?",
-        "answer_text": "A CD8 CTL may be able to bind and recognize a pathogen initially and kill it and proliferate to completely eradicate. However, without T cell help from CD4 t cells, it fails to form memory and after clonal contraction after response the necessary surface molecules needed to become a memory cell won't have been stimulated by CD4 T cells.\n\nIL-21 VITAL FOR MEMORY FORMATION from CD4 helper Ts.",
-        "answer_image": null
+        "answer_text": "###### In the absence of CD4+ T cells, CD8+ T cells are still activated, gain effector function, and control acute infection\n###### These CD8+ T cells do not, however, respond to a secondary infection\n- Multiple theories as to how, involving DC licensing and Treg mediated suppression of terminal differentiation\n###### During a sustained/chronic infection, CD4+ T cells are essential for maintaining the CD8+ T cell response\n- **This is due to IL-21 production by CD4+ T cells**",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 5.16.02\u202fPM.png"
       },
       {
         "question": "So now the DCs have taken Ag to LN and have primed T cells and B cells, what happens next?",
         "answer_text": "They need to leave the LN. This is caused by \n- Upregulation of S1PR to re-enter the lymphatics/blood stream. \n- Loss of CCR7 needed to attraction to LN\n- L-selectin/CD62L needed for slow rolling near HEVs\n- Expression of new adhesion molecules specific for site of infection (LFA-1, VLA-4 (VCAM-1 vascular inflammed epithelium), PSGL-1 (P-selectin of endothelium), \u03b14:\u03b2 (MAdCAM-1 gut epithelium)\n- Expression of new receptors to follow chemokines at site of infection",
         "answer_image": "flashcard_images/paste_66e0560bf2.png"
+      },
+      {
+        "question": "Why do your lymphnodes get swollen?",
+        "answer_text": "- CD8 t cells stay longer as they have to survey entire MHC I expressing population in lymph node. CD4 has fewer cells to interact with. Constant circulation. Swollen lymphnodes during infection\n- 4 days after administration of TLR ligands, lymph nodes are heavily swollen Dendritic cell arrival from the site of inflammation is responsible for the rearrangement of subcapsular sinus macrophages\n- Increased numbers of both T and B cells are found in the draining lymph nodes, indicating enhanced accumulation of these cells",
+        "answer_image": null
+      },
+      {
+        "question": "What are the adaptive immune cells and functions for intracellular pathogens?",
+        "answer_text": "#### Intracellular Adaptive Immunity\n##### Type 1 Immunity\n###### Th1 - \n###### CD8 - \n###### TNF-\u03b1 - \n###### Fas/FasL -",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 5.24.23\u202fPM.png"
+      },
+      {
+        "question": "What are the adaptive immune cells and functions for extracellular pathogens?",
+        "answer_text": "#### Extracellular Adaptive Immunity\n##### Type 3 Immunity\n###### Th17\n- IL-17 and IL-22 induce AMP production from by epithelial cells and increases their turnover (in gut)\n- IL-17 also stimulates neutrophil production in bone marrow via G-CSF\n- IL-17 induces chemokines from stromal/epithelial cells for neutrophil recruitment\n- IL-17 also helps produce CCL20 - another chemoattractant for Th17\n\n###### Neutrophils\n- IL-17 from Th17 or \u03b3\u03b4 T cells - calls neutrophils\n- Fc\u03b3R Ab recognition promotes ROS, H2O2, HOCl via NADPH Oxidase and/or degranulation\n- NETosis, to kill and trap preventing bacterial spread (DNA and granule particles)\n\n###### Complement stimulated by IgM\n- Classical\n###### Abs\n- Complement - lyse cells\n- Neutralization - ward off toxin or adherence factors\n- Opsonization - phagocytosis or degranulation",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 5.30.38\u202fPM.png"
+      },
+      {
+        "question": "What are the adaptive immune cells and functions for parasitic/helminth pathogens?",
+        "answer_text": "#### Large Parasite Adaptive Immunity\n##### Type 2 Immunity\n###### Th2\n- IL-13 production: increase repair, turnover, mucus production, smooth muscle contraction, M2 activation, recruit eosinophils, recruit mast cells\n- Type 2 cytokines - IL-4 (Mast cell and B cell IgE production), IL-5 (Eosinophils), IL-9 (Mast cell), IL-13 (M2 macrophage)\n- Th2 response inhibits Th1 response for appropriate immune activation\n###### Tregs\n- Promote wound healing after clearance of parasite\n- Lots of damage to surrounding tissue from parasite\n- Increases IL-10 and anti-inflammatory cytokines (IL-1ra, IL-4, IL-13, IL-11, IFN- \u03b1)\n###### Antibodies\n- Bound to surface of large pathogen, trigger ADCC degranulation by NK cells and MAC complement to hurt parasite\n######",
+        "answer_image": "flashcard_images/Screenshot 2026-03-06 at 5.46.03\u202fPM.png"
       }
     ],
     "Failures of the Immune System - PIDS": [
