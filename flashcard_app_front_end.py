@@ -255,7 +255,10 @@ with col_m2:
     # if st.button("🧠 Study Mode", use_container_width=True,
     #              type="primary" if st.session_state.mode == "study" else "secondary"):
         # st.session_state.mode = "study"; st.rerun()
-st.subheader("", divider="rainbow")
+st.markdown("""
+    <hr style="height:4px;border:none;
+    background:linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">
+    """, unsafe_allow_html=True)
 
 # ═════════════════════════════════════════════════════════════════════════════
 # MANAGE MODE
