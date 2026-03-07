@@ -519,22 +519,25 @@ else:
                 if st.button("👁️ Show Answer", type="primary", use_container_width=True):
                     ss["show_answer"] = True; st.rerun()
             else:
-                img_html = ""
-                if card.get("answer_image") and os.path.exists(card["answer_image"]):
-                    b64 = img_to_b64(card["answer_image"])
-                    if b64: img_html = f'<img src="{b64}" />'
+                
 
                 raw_answer = card.get("answer_text", "")
                 answer_html = md_lib.markdown(
                     raw_answer,
                     extensions=["fenced_code", "tables", "nl2br", "sane_lists"]
                 )
-
+                img_html = ""
                 st.markdown(f"""
                 <div class="card-back">
                     <div>{answer_html}</div>
                     {img_html}
                 </div>""", unsafe_allow_html=True)
+
+                
+                if card.get("answer_image") and os.path.exists(card["answer_image"]):
+                    b64 = img_to_b64(card["answer_image"])
+                    if card.get("answer_image"):
+                      st.image(card["answer_image"], use_container_width=True)
 
                 st.markdown("**How did you do?**")
                 cy, cn = st.columns(2)
