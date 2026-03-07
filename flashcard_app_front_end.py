@@ -537,7 +537,7 @@ else:
                 if card.get("answer_image") and os.path.exists(card["answer_image"]):
                     b64 = img_to_b64(card["answer_image"])
                     if card.get("answer_image"):
-                      st.image(card["answer_image"], width=700)
+                      st.image(card["answer_image"], width=600)
 
                 st.markdown("**How did you do?**")
                 cy, cn = st.columns(2)
