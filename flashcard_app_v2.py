@@ -18,6 +18,10 @@ import streamlit as st
 import streamlit.components.v1 as components
 import json, base64, os, random, uuid
 from pathlib import Path
+from PIL import Image
+import io
+
+
 
 st.set_page_config(page_title="FlashCard Studio", page_icon="🃏", layout="wide")
 
@@ -54,6 +58,16 @@ def save_b64(data_url: str) -> str:
         f.write(base64.b64decode(b64data))
     return path
 
+def save_uploaded(uf):
+    p = os.path.join(IMAGES_DIR, uf.name)
+    # Save at full original quality using Pillow
+    img = Image.open(uf)
+    if p.lower().endswith((".jpg", ".jpeg")):
+        img.save(p, quality=95, optimize=True)  # 95 = near-lossless
+    else:
+        img.save(p)  # PNG is lossless by default
+    return p
+
 def img_to_b64(path):
     if path and os.path.exists(path):
         with open(path, "rb") as f:
@@ -85,7 +99,7 @@ st.markdown("""
 # .card-back{background:linear-gradient(135deg,#f093fb,#f5576c);border-radius:16px;
 #   padding:2rem;color:#fff;font-size:1.1rem;text-align:left;min-height:180px;
 #   box-shadow:0 8px 32px rgba(245,87,108,.3);margin-bottom:1rem}
-.card-back img{max-width:100%;max-height:260px;border-radius:10px;margin-top:1rem}
+.card-back img{max-width:100%;max-height:700px;border-radius:10px;margin-top:1rem}
 .progress-bar{background:#E5E7EB;border-radius:8px;height:12px}
 .progress-fill{background:#4F46E5;border-radius:8px;height:12px}
 .badge{display:inline-block;background:#EEF2FF;color:#4F46E5;border-radius:20px;
@@ -511,7 +525,7 @@ else:
                         img_html = ""
                         if card.get("answer_image"):
                             b64 = img_to_b64(card["answer_image"])
-                            if b64: img_html = f'<img src="{b64}" />'
+                            if b64: img_html = f'<img src="{b64}" style="max-width:100%;max-height:600px;border-radius:10px;" />'
 
                         # st.markdown('<div class="card-back">', unsafe_allow_html=True)
                         with st.container(border=True):

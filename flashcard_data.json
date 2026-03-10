@@ -53,7 +53,7 @@
       },
       {
         "question": "How does cross presentation and DC licensing lead to increased activation of both CD4 and CD8 T cells",
-        "answer_text": "APCs can phagocytose and express antigens on both MHC class I and class II. \nWhen CD4+ T cells bind MHC class II on APCs they 'license' them by shooting them full of cytokines like CD80, CD86, and CD40. These activated APCs now upregulate expression of B7 and other TNF-TNFR family receptors like OX40 activating ligands for CD28 and amplify T cell response for CD8.",
+        "answer_text": "APCs can phagocytose and express antigens on both MHC class I and class II. \nWhen CD4+ T cells bind MHC class II on APCs they 'license' them by recognizing binding proteins CD80, CD86, and CD40. These activated APCs now upregulate expression of B7 and other TNF-TNFR family receptors like OX40 activating ligands for CD28 and amplify T cell response for CD8. They also secrete specific cytokines to drive appropriate response in CD8s that bind MHC class I like IL-12",
         "answer_image": "flashcard_images/paste_ef45704de8.png"
       },
       {
@@ -209,7 +209,7 @@
         "answer_image": "flashcard_images/paste_cf3efc0244.png"
       },
       {
-        "question": "What is the difference between TD, TD1, and TD2 antigen?",
+        "question": "What is the difference between TD, TI1, and TI2 antigen?",
         "answer_text": "TD is T cell dependent, meaning the antibody alone cannot trigger a B cell to differentiate and secrete antibody as a plasma cell.\n\nTI - T cell Independent and depending on the type of antigen, B cells can turn into plasma cells without CD4 t cell help.\nTI1s - LPS - Polyclonal B cell activation. Super immuno-active. Think TLR activation\nT2s - Pneumococcal polysaccharide, Salmonella polymerized flagellin, Dextran, Hapten-conjugated Ficoll (polysucrose) - Repeating epitopes that can cause antibody production, not as polyclonally activating, usually only one BCR recognizes the repeating epitopes, is crosslinked and triggers production of that one antibody.",
         "answer_image": "flashcard_images/paste_3a955b0f8c.png"
       },
@@ -409,7 +409,7 @@
     "Dynamics of Adaptive and Innate Immunity": [
       {
         "question": "Identify the initial innate responses to different classes of pathogens",
-        "answer_text": "---\n##### Viral/Intracellular Bacteria\n- Type 1 immunity\n- Most cells have RIG-I/MAVS to TBK-1 to IRF-3 results in ISGs (Interferon Stimulating Genes - Type I IFN)\n- TLR3 (dsRNA) - TRIF, TLR7 (ssRNA), TLR8 (ssRNA), TLR9 (no meth CpG) > MyD88 creates NFkB\n- Paracrine signaling to IFNRs and self - positive feedback loop for inflammation - recruitment of innate immune cells\n- Type I IFN activates IFNRs on monocytes to create IL-18 (IFN knockouts have decreased recruitment of monocytes)\n- IL-18 acts to upregulate IFN- \u03b3 on NK cells\n- Viruses can downregulate MHC on cells then NK cells with KIRs can kill after degranulation\n- Stressed cells upregulate NKG2 which is acted upon by NK cells\n- NK cells are activated by Type I IFN, IL-12, IL-18, and IL-15\n- **Phagocytosis by macrophages, cytotoxicity by NK cells, cytokine production for inflammation**\n- Neutrophils are not a big player in innate immunity wrt viral/intracellular pathogen infection\n\n---\n\n##### Extracellular Bacteria\n- Injury (even sterile) to site from toxins, PAMPs/DAMPs, TLR activation in DC/Langerhans Cells in skin drive **Neutrophil Recruitment)\n- After neutrophil recruitment and activation, cytokine secretion, degranulation, NETosis, ROS, H2O2, superoxide\n- Complement activation (classical, MBL, alternative), deposition of C3b, MAC formation\n- TLRs 1:2 (peptidoglycans), 2:6, 4 (LPS), 5 (flagella) - inflammatory cytokines for recruitment\n- NLRs recognize peptidoglycans and flagellin make the inflammosome important for IL-18 and IL-1 cleavage to pro form by caspases of inflammosome\n- IL-1 important for inflammation, fever, and chemokines for attracting lymphocytes\n- NOD like receptors, recognize peptidoglycan NFkB, MAPK, TRAF3 \n- Turns into Inflammation, Cell Death, Survival, recruitment of adaptive immunity\n- Damage to epithelium and epithelial cells can release AMPs\n\n---\n\n##### Large Extracellular Parasite/Helminth\n- IL-33 release from gut epithelium: Helps recruit eosinophils, basophils, and activate mast cells\n- IL-25 Goes to help differentiate ILC2s and promote type 2 cytokine production:  IL-4, IL-5, IL-13 to promote Th2 differentiation\n- ILC2s secrete IL-5 and IL-13 to cause mucus production from goblet cells and smooth muscle contraction - weep and sweep\n- IL-1\u03b2 stimulated by parasites can curb ILC2 response and be beneficial for parasite\n \n\n---",
+        "answer_text": "---\n##### Viral/Intracellular Bacteria\n- Type 1 immunity\n- Most cells have RIG-I/MAVS to TBK-1 to IRF-3 results in ISGs (Interferon Stimulating Genes - Type I IFN)\n- TLR3 (dsRNA) - TRIF, TLR7 (ssRNA), TLR8 (ssRNA), TLR9 (no meth CpG) > MyD88 creates NFkB\n- Paracrine signaling to IFNRs and self - positive feedback loop for inflammation - recruitment of innate immune cells\n- Type I IFN activates IFNRs on monocytes to create IL-18 (IFN knockouts have decreased recruitment of monocytes)\n- IL-18 acts to upregulate IFN- \u03b3 on NK cells\n- Viruses can downregulate MHC on cells then NK cells with KIRs can kill after degranulation\n- Stressed cells upregulate NKG2 which is acted upon by NK cells\n- NK cells are activated by Type I IFN, IL-12, IL-18, and IL-15\n- **Phagocytosis by macrophages, cytotoxicity by NK cells, cytokine production for inflammation**\n- Neutrophils are not a big player in innate immunity wrt viral/intracellular pathogen infection\n\n---\n\n##### Extracellular Bacteria\n- Injury (even sterile) to site from toxins, PAMPs/DAMPs, TLR activation in DC/Langerhans Cells in skin drive **Neutrophil Recruitment**\n- After neutrophil recruitment and activation, cytokine secretion, degranulation, NETosis, ROS, H2O2, superoxide\n- Complement activation (classical, MBL, alternative), deposition of C3b, MAC formation\n- TLRs 1:2 (peptidoglycans), 2:6, 4 (LPS), 5 (flagella) - inflammatory cytokines for recruitment\n- NLRs recognize peptidoglycans and flagellin make the inflammosome important for IL-18 and IL-1 cleavage from pro form by caspases of inflammosome\n- IL-1 important for inflammation, fever, and chemokines for attracting lymphocytes\n- NOD like receptors, recognize peptidoglycan NFkB, MAPK, TRAF3 \n- Turns into Inflammation, Cell Death, Survival, recruitment of adaptive immunity\n- Damage to epithelium and epithelial cells can release AMPs\n\n---\n\n##### Large Extracellular Parasite/Helminth\n- IL-33 release from gut epithelium: Helps recruit eosinophils, basophils, and activate mast cells\n- IL-25 Goes to help differentiate ILC2s and promote type 2 cytokine production:  IL-4, IL-5, IL-13 to promote Th2 differentiation\n- ILC2s secrete IL-5 and IL-13 to cause mucus production from goblet cells and smooth muscle contraction - weep and sweep\n- IL-1\u03b2 stimulated by parasites can curb ILC2 response and be beneficial for parasite\n \n\n---",
         "answer_image": "flashcard_images/Screenshot 2026-03-06 at 5.09.31\u202fPM.png"
       },
       {
@@ -666,6 +666,115 @@
       {
         "question": "What does the term Clinical Breakpoint mean?",
         "answer_text": "CLINICAL BREAK POINT \u2013 concentration for drug will actually effect organism \u2013 meaning 4mg/ml will kill in human \u2013 derived from clinical labs and patient clinical trials. Cannot be determined in lab or in mice. Means theres a record for a human trial that if you treat with this concentration it will clear the infection.",
+        "answer_image": null
+      }
+    ],
+    "Cryptococcus": [
+      {
+        "question": "#### Lecture Objectives: \n1. Describe the species of Cryptococcus\n2. Describe the differences in susceptible individuals for each cryptococcal species\n3. Describe the different infection outcomes due to each species",
+        "answer_text": "###### 1. Species\nA) C. neoformans (VN) serotype A, D: \n- Found in everywhere in environment, soil, air, easily breathed in - pigeon poop\n\nB) C. gattii (VG) serotype B, C\n- Found primarily in tropics/subtropics - eucalyptus, coniferous, and deciduous trees\n- \n\nC) Common Amongst Both:\n- Huge cell wall\n- Grow as yeast\n- Haploid organism\n- Sexual reproduction (in vitro)\n- asexual reproduction (budding yeast)\n- Two mating (Mat) types (a and a)\n  - Mat a types\n    - Majority of environmental isolates\n    - Predominant number of clinical isolates\n    - Associated with increased virulence (murine models)\n\n###### 2. Susceptibility\nA) C. neoformans\n- Opportunistic, only infects immunocompromised folks (AIDS, txp patients, immunosuppressive drugs)\n\nB) C. gattii\n- Primary pathogen, can infect immunocompetent individuals",
+        "answer_image": null
+      },
+      {
+        "question": "#### Lecture Objectives: \nDescribe the major virulence factors of Cryptococcus \u2013 *different from aspergillus and candida*",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "#### Lecture Objectives: \nUnderstand the immune responses associated with protective immunity and clearance of Cryptococcus",
+        "answer_text": "- Protection against cryptococcal infection is dependent on CD4+ T cells \u2013 in human infection and animal models\n  - DEPENDENT ON TH1 type cytokine response \u2013 and TNF alpha, INF-gamma, IL-12\n    - cytokines such as IL-12 and IFN-g and pro-inflammatory cytokine TNF-alpha are associated with clearance of C. neoformans, *Th2 responses lead to exacerbation of disease*\n- Drugs that lock TNF alpha in autoimmune disease make you more susceptible\n- Innate cells such as **macrophages** and **dendritic cells (DCs)** are involved in initial stages of controlling this infection and play a role in directing the protective response\n  - Classically activated (M1) macrophages are necessary for protection, while alternatively activated (M2) macrophages can allow intracellular replication\nDCs can kill the pathogen in vitro and are recruited to the lungs during infection",
+        "answer_image": null
+      },
+      {
+        "question": "What are the two species of crypto?",
+        "answer_text": "###### C. neoformans\n- Opportunistic pathogen\n- Primarily affects immunocompromised patients\n- AIDS, transplant patients, immune suppressive drugs\n\n###### C. gattii\n- Primary pathogen because it can infect immune competent people. \n- Maybe these individuals have an unknown immune deficiency?\n- Maybe the pathogen is better at dampening immune responses, downregulating MHC?",
+        "answer_image": null
+      },
+      {
+        "question": "What is a major virulence factor for both species of crypto?",
+        "answer_text": "The cell wall, GXM composition, super thick, hard to phagocytose because large and slippery",
+        "answer_image": "flashcard_images/paste_65a2bd746d.png"
+      },
+      {
+        "question": "What is the route of pathogenesis for crypto?",
+        "answer_text": "1. Inhalation of desiccated spores from environment (deciduous trees, pigeon poop)\n2. Germination in lungs\n3. Dissemination to other parts of the body\n4. Cryptococcal meningitis\n\n**No human to human transmission**",
+        "answer_image": "flashcard_images/paste_81b7dbd9df.png"
+      },
+      {
+        "question": "What are the different types of pulmonary cryptococcosis",
+        "answer_text": "**Asymptomatic carriage**\n- healthy people after exposure\n- later infection perhaps due to reactivation of latent disease compared to a new infection\n\n**Subclinical cryptococcosis**\n- environmental exposure, self limiting pneumonia (fever, cough, pain)\n- Invasive pulmonary cryptococcosis\n\n**chronic pneumonia**\n- slow progressing over years\n- increased risk of dissemination to CNS",
+        "answer_image": "flashcard_images/paste_e4fb11c64f.png"
+      },
+      {
+        "question": "How does crypto cause meningitis?",
+        "answer_text": "1. Have phagocytic cell. Probably not alveolar macrophages since they don\u2019t leave the lung. Interstitial m-phage takes up crypto coccus and it goes into phagolysosome. In phagolysosome it causes actin flashes, releasing electrons back into cell making it less acidic. Replicate in phagolysosome. Then it can expunge cryptococcus \u2013 called vomicytosis \u2013 or non lytic expulsion, where crypto comes out of phagocyte and the phagocyte is file.\n2. Crypto can then cross BBB by itself. Or the mphage crosses into vessel, then you have traffic from the lung up to the brain\n3. Exclusive size exclusion. Perhaps in inflammation conditions the BBB is more easily penetrated. Macrophage can get through via diapedesis and vomicytosis, or it can bind epithelium or certain molecules that can get through.\n\n###### more...\n- Dissemination to brain\n  - most common manifestation\n\n- Acute onset\n   - deteriorate rapidly and die in a matter of weeks\n\n- Meningitis\n  - inflammation of membrane,\n  - most common form\n  - 70 - 90% of cases\n  - symptoms develop slowly including headache, drowsiness, dizziness, irritability, confusion, nausea, vomiting, neck stiffness, focal neurological defects\n  - later stages loss of visual acuity, coma.",
+        "answer_image": "flashcard_images/paste_75b1199ed9.png"
+      },
+      {
+        "question": "How do you diagnose Cryptococcus infections?",
+        "answer_text": "Microscopy\n- wet mount with India ink\n\nCulture (from CSF or blood)\n- definitive\n\nSerology\n- antibodies to capsule\n\nLateral flow\n- Antibodies to capsule GXM, using blood or CSF samples",
+        "answer_image": "flashcard_images/Screenshot 2026-03-10 at 1.58.09\u202fPM.png"
+      },
+      {
+        "question": "What are the treatments for Crypto?",
+        "answer_text": "Mild Pulmonary Disease\n- Antifungal drugs - Fluconazole, itraconazole, low dose amphotericin B\n\nSevere Pulmonary Disease\n- Treat like CNS\n  - CNS\n    - Higher dose Amphotericin B (perhaps lipid formulations) + 5 flucytocine and/or fluconazole\n    - May require long-term fluconazole therapy\n\n*Caveat \u2013 More severe pulmonary disease and may require more aggressive anti-fungal therapy compared with C. neoformans \u2013 same in general fluconazole for life, but more aggressive and slightly more resistant*",
+        "answer_image": null
+      },
+      {
+        "question": "How do Dendritic Cells respond to Crypto?",
+        "answer_text": "- DCs are immune cells that act as sentinels of the immune system, sampling antigens in their environment\n- The respiratory tract contains a dense network of DCs specialized for antigen uptake\n- DCs can phagocytose and kill C. neoformans \n- Lysosomal contents from DCs also kill C. neoformans - take out lysosomes and the contents can kill crytpo well in vitro\n- **Lysosomal Extracts**\n  - Cathepsin B",
+        "answer_image": null
+      },
+      {
+        "question": "How do Macrophages respond to Crypto?",
+        "answer_text": "- Tissue-specific macrophages are present in almost all organs, including the lung (alveolar macrophages)\n- Macrophages can have different responses to Cryptococcus\n  - Can allow Cryptococcus to grow intracellularly\n  - Non-lytic expulsion (Ma et al 2006, Alvarez et al 2006)\n \n- Can be antifungal\n  - M1 or \u201cclassically activated\u201d macrophages kill C. neoformans by signaling through STAT-1 and producing iNOS (Hardison 2012, Leopold Wager 2014, 2015)\n  - &uarr; MHC-I\n  - &uarr; CAL-R\n  - &uarr; MHC-II\n  - &uarr; FABP4\n  - &uarr; MARCO\n  - &uarr; Glycolytic capacity",
+        "answer_image": null
+      }
+    ],
+    "Helminths - Parasitic Worms": [
+      {
+        "question": "###### Lecture Objective: The big picture - Types of worms",
+        "answer_text": "1. Nematodes - Roundworms\n2. Trematodes - Flukes or flat worms\n3. Cestodes - Tape worms, segmented\n4. Acanthocephala - Thorny-headed worms\n---\n\n*Generally speaking...*\n- Eukaryotic, multi-cellular - Relatively large (adults: >1mm,\u00a0some >1m)\n-  Classified\u00a0by shape/ structure (round, flat etc)\n- Nematodes can have separate sexes\n- Type 2 immune responses (Th2,\u00a0eosinophil, and antibody responses)",
+        "answer_image": "flashcard_images/Picture23.png"
+      },
+      {
+        "question": "###### Lecture Objective: Helminth disease (Ascariasis)\n1. Life cycle\n2. Disease\n3. **Diagnostics** - easy exam points\n4. **Treatments** - easy exam points",
+        "answer_text": "General: Most common worm, hundreds of million cases, 95% disease prevalence in endemic areas (mostly southern hemisphere)\n\n###### Life Cycle\n  1. **Fertilized eggs** ingested from contaminated soil (pooped out) - embryonated\n  2. Hatched larvae immediately migrate to the lung to \"find themselves\" and mature\n  3. Matured larvae are coughed up from the lungs and swallowed into the gut\n  4. Adult males and females mate in the gut and make eggs\n  5. Eggs shed in feces\n  6. If fertilized they will then be able to become larvae if ingested by another host2. Disease\n\n---\n###### Disease\n*Real damage from migration and destruction of tissue*\n- High worm burden can stunt growth in children from malnutrition (rare).\n- High worm burden causes abdominal pain, intestinal obstruction and perforations.\n- Migrating larva can block biliary or nasopharyngeal tracts and anywhere else they get to\n---\n##### Diagnostics\n*They make ~200,000 eggs a day*\n- Fecal sample and blood samples - take poop and look for eggs\n- Fecal floatation to concentrate (only needed for \u201clow\u201d burden, if say, only tummy hurts, eggs will float)\n- Wet mount and identification of eggs - put poop on a cover slip\n- High Eosinophilia (though non-specific) in blood\n\n---\n##### Treatments\nDeworming protocols - 50 cents a day\n- **Albendazole (Albenza)**:\u00a0A single dose of 400 mg\u00a0\n- **Ivermectin (Stromectol)**:\u00a0A single dose of 150-200 mcg/kg",
+        "answer_image": null
+      },
+      {
+        "question": "###### Lecture Objective: Basic science research (Schistosoma paper)\n1. Lifecycle\n2. Pathology\n3. **Sexual Development** - main point",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "Common worms we know of",
+        "answer_text": "1. Pinworm- butthole \u2013 at night time they crawl out and make butt itchy, then they scratch and touch each others mouths \u2013 nurseries, not associated with poverty\n2. Hookworm \u2013 get at the bitch \u2013 walk in the sand and you get weird veiny thing, high inflammation and itchy \u2013 easy to cure. \n3. Guinea worm \u2013 when it releases eggs it makes blister and gets hot, you stick food in water and it releases eggs in water. Cant rip it, so you have to twist and gently pull the worm out, otherwise it goes crazy inflammation and infection. \n4. Heart worm \u2013 common in pets, makes hearts look like that. \n5. Loa loa \u2013 in the eye \u2013 into eye and \u2013 antiworming drugs and it gets cleared by immune system, might have to go in and snipsnippullpull\n6. Tapeworm \u2013 hunting wild boar and eating meat rare \u2013 pork tapeworms, don\u2019t go to brain \u2013 \n7. Garden worm \u2013 earthworm",
+        "answer_image": null
+      },
+      {
+        "question": "###### Lecture Objective: The big picture - Overview of how our immune system tries to clear worms\n1. Eosinophils:\n- Eosinphil Extracellular Traps (EETs), lipid mediators, cytokines, ROS, histamine, cytokines, and chemokines\n2. Complement:\n- C3b opsonization and formation of MAC to punch holes in worms - osmotic lysis\n3. Macrophage antigen presentation\n- recruits other immune cells for killing\n4. Neutrophils:\n- NETs for trapping and sometimes is sufficient (can also produce ROS, etc)\n\n*Caveat*\n- Worms are much bigger than macrophages and cannot be phagocytosed\n- Macrophages can engulf what worms secrete and present that\n- \"Complement is what properly puts holes in worms\" but you need 100-1000 immune cells to actually have an impact - they are hard to kill",
+        "answer_text": "",
+        "answer_image": "flashcard_images/Picture1343.jpg"
+      },
+      {
+        "question": "Detail the lifecycle of Ascarias.",
+        "answer_text": "1. **Fertilized eggs** ingested from contaminated soil (pooped out) - embryonated\n2. Hatched larvae immediately migrate to the lung to \"find themselves\" and mature\n3. Matured larvae are coughed up from the lungs and swallowed into the gut\n4. Adult males and females mate in the gut and make eggs\n5. Eggs shed in feces\n6. If fertilized they will then be able to become larvae if ingested by another host",
+        "answer_image": "flashcard_images/paste_6bc8f0f21d.png"
+      },
+      {
+        "question": "How does Ascarias cause pathology?",
+        "answer_text": "- Real damage comes from larvae finding their way to the lung\n- Don't go directly to lung and take lots of detours destroying tissue and causing inflammation along the way\n- High worm burden can stunt growth in children from malnutrition (rare).\n- High worm burden causes abdominal pain, intestinal obstruction and perforations.\n- Migrating larva can block biliary or nasopharyngeal tracts.",
+        "answer_image": "flashcard_images/paste_241ba76094.png"
+      },
+      {
+        "question": "How do you diagnose Ascarisis",
+        "answer_text": "*They make ~200,000 eggs a day*\n- Fecal sample and blood samples - take poop and look for eggs\n- Fecal floatation to concentrate (only needed for \u201clow\u201d burden, if say, only tummy hurts, eggs will float)\n- Wet mount and identification of eggs - put poop on a cover slip\n- High Eosinophilia (though non-specific) in blood",
+        "answer_image": "flashcard_images/paste_b2792de878.png"
+      },
+      {
+        "question": "What kinds of treatments are there for Ascarisis",
+        "answer_text": "Deworming protocols - 50 cents a day\n- **Albendazole (Albenza)**:\u00a0A single dose of 400 mg\u00a0\n- **Ivermectin (Stromectol)**:\u00a0A single dose of 150-200 mcg/kg\u00a0\n  - Mebendazole (Vermox):\u00a0100 mg twice daily for 3 days\u00a0\n  - Pyrantel pamoate (Pin-X):\u00a0A single dose of 11 mg/kg (up to 1 g)",
         "answer_image": null
       }
     ]
