@@ -564,24 +564,91 @@
         "answer_text": "###### 1. Types and frequency of infections - \n###### 2. Family history\n- **X-linked, recessive, dominant**\n- **Incest or cousin babies?**\n-  **Denovo mutation?**\n###### 3. T cell, B cell, neutrophils, platelets, and macrophage counts compared to normal for that age range: \n- **Are they there? Are they functional? Counts and Ig types and levels in serum**\n###### 4. In vivo immune system function: \n- **Can patient amount an immune response to \u03d5X174 (novel ag that should have immune response against), antibodies specific to previous vaccinations, do skin test**\n###### 5. In vitro immune system test by drawing blood\n- **Induced antibody production into matrix in response to pokeweed mitogen (T cell dependent) or EBV (T cell independent)**\n- **T cell proliferation in response to phytohemagglutinin or tetanus toxoid | Anti-CD3 stimulation: incubate cells with CD3 antibody then look at tritium thymodate levels indicative of cell division**\n- **Do a stimulation index**\n###### 6. Test for the presence of specific immune system components (enzymes: ADA, CD40/CD40L, genes BTK, Complement)\n- **Last step after confirming above to get idea of where to specifically look**\n- **Flow cytometry, antibodies, PCR to isolate gene, IP, ELISA**",
         "answer_image": null
       }
+    ],
+    "Allergies and Allergic Diseases": [
+      {
+        "question": "What are the different types of hypersensitivity?",
+        "answer_text": "###### Type I - classic allergy response\n- **IgE-mediated**\n- Dysregulated or uncontrolled response to foreign antigen resulting in tissue injury\n- Predominately mast cell sensitization degranulation and **IgE response**\n- Immediate onset and chronic inflammation\n- Predominant cause of anaphylaxis -systemic IgE response\n- Hay fever and asthma\n\n###### Type II\n- **IgG-mediated**\n- A failure of self-tolerance leading to responses against self antigens (includes autoimmune diseases)\n- Ab-mediated RBC or platelet destruction - drug induced hemolytic anemia\n\n###### Type III\n- **Immune complex regulated**\n- small aggregates deposit on blood vessel walls, \n- ligation of FcR on leukocytes leading to activation and injury\n- Arthus rxn: IgG antibodies diffuse and aggregate in skin, FcRIIIg activated on mast cells\n- Serum sickness - Horse anti-serum or anti-venin\n\n###### Type IV\n- **Th1 and CTL mediated**\n- delayed type hypersensitivity (24-72hr): T cell mediated release of cytokines IFN-g, TNF-a - inflammation, vascular permeabilization\n- Contact hypersensitivity: haptens like poison ivy or small metal ions like nickel chromate cause dermatitis and cellular infiltration of skin\n- Celiac disease:  \u03b1-gliadin presented on HLA-DQB1*02 - inflammation of the epithelial cells on villi, malabsoprtion.",
+        "answer_image": null
+      },
+      {
+        "question": "How do you develop sensitization?",
+        "answer_text": "##### Sensitization\n###### 4 routes of antigen exposure - Ingestion, Injection (sub-epithelial or directly into bloodstream), and Inhalation\n- A 19 yr old man is rushed to the emergency room from a restaurant where he became acutely \u2018ill\u2019 while eating.\n- On arrival he is pale, cool with low blood pressure. He wheezes and has very poor air intake.\n- To his knowledge this has never happened before and no one in his family has ever had these symptoms.\n\nImagine you grow up in a land locked state and never had shell fish. You then eat crab for the first time. Nothing really happens. However, your immune system begins to start to form IgE to the shellfish. Then you go back to your favorite restaurant years later and have the crab again. This time you get a little bit of an upset stomach and diarrhea, but eventually it resolves. Finally, a couple years down the line you go back and get the crab again because you forgot that it made you feel sick. You start to feel terrible, become light headed, and your throat starts to close up. \n\nAfter the first exposure your B cells began to class switch and preform IgE antibodies to the crab. On the subsequent recall responses IgE ended up binding mast cells systemically and there was a systemic release of histamine and intense allergic response - anaphylaxis.",
+        "answer_image": null
+      },
+      {
+        "question": "##### Lecture Objective:\n###### What are the different types of hypersensitivity reactions and what are their mechanisms?",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "##### Lecture Objective \n###### What are the environmental and genetic factors that contribute to hypersensitivity?",
+        "answer_text": "##### Genetic\n- Susceptible loci all over genome and different chromosomes\n- Polymorphisms Th2 cytokines (chr. 5 - GM-CSF, IL-3, IL-4, IL-5, IL-9, IL-13)\n- Chemokines (CCLs)\n- CD4 and ILC2 differentiation mediators - STAT3, TLRs, NODs\n- MHC (short arm chr. 6) \n- FC\u03b5RI (chr. 11)\n- ADAM33 - matrix metallo-protease (chr. 20)\n- Proteinase or proteinase inhibitors - ADAM33, SPINK5\n\n#####",
+        "answer_image": null
+      },
+      {
+        "question": "##### Lecture Objective \n###### What are the clinical manifestations of hypersensitivity and possible treatments?",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "##### Lecture Objective \n###### What kinds of experimental allergic disease therapy is there?",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "##### Possible Test Question:\n###### How do you differentiate the sensitization process and the actual allergic reaction that happens later?",
+        "answer_text": "**No one develops an allergic reaction without already having been pre-sensitized/pre-exposed to specific allergen\"\n\n##### Sensitization Process\n1) First exposure to allergen\n2) Antigen activation of Th2 (IL-4, IL-5, IL-13, IL-33) and IgE class switching in B cells \n3) New plasma cells secrete soluble IgE\n4) IgE binds Fc\u03b5RI on mast cells, which is the highest affinity Fc receptor for IgE, eventually you get critical mass of IgE bound\n\n##### Allergic Reaction\n1) Repeat exposure to sensitized antigen\n2) Crosslinking of IgE on resident mast cells\n3) Activation of mast cells leads to degranulation \n4) Contents of granules and effects:\n    \n    **Immediate phase hypersensitivity:**\n    - Vasoactive amines\n    - Histamine (vascular permeability, smooth muscle contraction)\n    - Heparin (anti-coagulation)\n    - TNF-\u03b1 inflammation\n    - cytokine production, IL-3, IL-5, and GM-CSF eosinophil activation and productionCCL3 (chemokine for monocytes, macrophages, and neutrophils)\n    - Lipid mediators: prostaglandins and leukotrienes cause smooth muscle contraction, chemotaxis for eosinphils, basophils and Th2 response. Mucus secretion and bronchoconstriction\n    \n    **Late phase hypersensitivity:**\n    - Cytokines, edemas, immune cell recruitment",
+        "answer_image": "flashcard_images/asdf.jpg"
+      },
+      {
+        "question": "What are the biochemical events in mast cell degranulation?",
+        "answer_text": "- Crosslinking from IgE bound to Ag brings ITAM signaling chains of Fc\u03b5RI together, Fc\u03b5RI doesn't have signaling capability\n- Signaling pathways activated\n  - Granules released - vasoactive amines, smooth muscle contraction. Proteases cause tissue damage\n  - Arachidonic acids turn into lipid mediators and are secreted - prostoglandins and leukotrienes (LTB4) also lead to vascular dilation and smooth muscle contraction\n  - Transcriptional activation of cytokines: TNF-\u03b1 inflammation and leukocyte recruitment - late phase reaction",
+        "answer_image": "flashcard_images/paste_f712986076.png"
+      },
+      {
+        "question": "Give examples of the different routes of allergen entry and the associated responses",
+        "answer_text": "###### Intravenous (directly or absorption into blood stream after ingestion)\nReaction\n| Route of Entry   | Common stimuli    | Reaction/Disease  | Response    |\n|--------------|--------------|--------------|--------------|\n| Intravenous (Directly or after absorption post oral entry )| Drugs, venoms, foods, serum | Systemic anaphylaxis | Edema, increased vascular permeability, Circulatory collapse, Death |\n| Through Skin | animal hair, bee stings, allergy testing| acute hives - wheel flare reaction | edema, local vascular permeability and increased blood flow |\n| Contact with conjuctiva of eye or nasal mucosa | Pollens, ragweed, dust mite feces | hay fever (rhinoconjunctivitis) | sneezing, edema of conjunctiva and nasal mucosa |\n| Inhalation and contact with airway mucosa | Dander, pollens, dust mite feces | Asthma | bronchial constriction, mucus production, airway inflammation, bronchial hyperactivity |\n| Oral | Nuts, shellfish, millk, eggs, soy, wheat | Food allergy | vomiting, diarrhea, itching, hives, anaphylaxis |",
+        "answer_image": "flashcard_images/paste_312bc443fd.png"
+      },
+      {
+        "question": "What are the properties of inhaled allergens?",
+        "answer_text": "1) Dust mite Der p 1 cleaves occludin and tight junctions - protease\n2) Lack of protease inhibitor, SPINK5, and protease exposure\n- Airborne pathogens that promote priming the Th2 (IL-4, CD4 T cells) cells to drive the IgE response\n- Pollen super stable, diffuse into the mucosa, can survive in desiccation",
+        "answer_image": "flashcard_images/paste_5642d0147d.png"
+      },
+      {
+        "question": "How do inhaled allergens trigger sensitization?",
+        "answer_text": "1) The Der p 1 protease from dust mite feces cleaves occludin and gets under epithelium (inhaled or physical contact)\n2) Resident DCs uptake antigen and present to Th2 cells and B cells in lymph node\n3) Class switching occurs and plasma cells release IgE\n4) IgE binds to Fc\u03b5RI on mast cells\n5) Mast cell granule contents create allergic symptoms",
+        "answer_image": "flashcard_images/paste_5a9b10a30b.png"
+      },
+      {
+        "question": "How do plasma cells trigger IgE amplification?",
+        "answer_text": "- IgE also binds to Fc\u03b5RI on basophils\n- Activated basophils have CD40L and trigger B cells to amp up IgE production",
+        "answer_image": "flashcard_images/paste_f233e2b9ef.png"
+      },
+      {
+        "question": "What is Netherton's Syndrome? What is the allergic mechanism?",
+        "answer_text": "- SPINK5 deficiency\n- Epidermal hyperplasia, dermal perivascular infiltrates\n- Breakdown of epidermis integrity\n- Allows more bacteria to be introduced \n- Respond to skin commensals",
+        "answer_image": "flashcard_images/paste_d13ad64851.png"
+      }
     ]
   },
   "Micro II": {
     "Intro Fungi & Fungal Physiology": [
       {
-        "question": "Yeast vs. Mold:\n    \u2022 Describe and distinguish their morphology.\n    \u2022 Characterize their modes of reproduction.",
+        "question": "#### Lecture Objective: \nYeast vs. Mold:\n    \u2022 Describe and distinguish their morphology.\n    \u2022 Characterize their modes of reproduction.",
         "answer_text": "Yeast:\n    \u2022 Single celled: Round, ovoid, or rod like\n    \u2022 Can perform asymmetric (budding) division or symmetric (fission)\n    \u2022 Cell wall can be thick or thin.\n    \u2022 Different plate colony appearance, color and morphology\n\nFilamentous Mold:\n    \u2022 Elongated cells called hyphae (network called mycelium)\n    \u2022 Cells can be septate (segregated transport between cells) or aseptate (continuous/connected cells)\n    \u2022 Hyphae don't divide but extend (invade) into the environment until they run out of nutrients\n    \u2022 Different appearances on plate - some are fluffy/velvety, others have different characteristics\n    \u2022 Reproduce through production and spread of spores (Sporangiospores or Arthrospores)\n\nDimorphic and Pleiomorphic Molds:\n    \u2022 Grow as yeast or hyphae depending on environment\n    \u2022 Pleiomorphic example: Candida albicans - grow as yeast on mucosa or at 30\u00baC in culture. Then when they get to 37\u00baC it can trigger shift to hyphae or pseudohyphae (chains of unseparated yeast)\n    \u2022  Dimorphic example: Blastomyces dermatitidis - grows as hyphae at 30C then as single celled yeast at 37C\nBoth:\n    \u2022 Membrane bound organelles\n    \u2022 Have thick cell walls",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 4.59.10\u202fPM.png"
       },
       {
-        "question": "Immune defense against fungal infections:\n    \u2022 Understand which immune systems (innate vs. adaptive) are important for fungal infections.\n    \u2022 Describe the defense mechanisms of major immune cells against fungi.",
+        "question": "#### Lecture Objective: \nImmune defense against fungal infections:\n    \u2022 Understand which immune systems (innate vs. adaptive) are important for fungal infections.\n    \u2022 Describe the defense mechanisms of major immune cells against fungi.",
         "answer_text": "Main protection from fungi is the innate immune system. Since fungi and mold always in the air we've been conditioned to them and our adaptive immunity does not respond. If it did we would be constantly reacting and creating inflammation.\n\n    \u2022 Mechanical barriers and clearance mechanisms: Upper airway cilia (lung actually direct line to inner bodily compartments), blinking, tears, epithelial junctions, sebaceous secretions, altered pH of digestive and vaginal tracts\n\n    \u2022 Antimicrobial enzymes: from innate immune system, defensins to break cell wall, metal chelating compounds to limit fungal nutrients, complement and TLR responses\n\n    \u2022 Normal flora (commensals): Space and nutrient competition, secretion of antifungal metabolites\n\n    \u2022 Innate immune cells and complement: Macrophages and DCs phagocytose, oxidative burst, MHC presentation, recruit other immune cells. Neutrophils first line of defense to get called in - ROS, H2O2, bleach, NETosis",
-        "answer_image": null
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.31.19\u202fPM.png"
       },
       {
-        "question": "Major classes of antifungal drugs:\n    \u2022  List out major classes and giving examples of drug name(s) within each class.\n    \u2022 Describe detailed mechanisms of each major antifungal drug class.",
+        "question": "#### Lecture Objective: \nMajor classes of antifungal drugs:\n    \u2022  List out major classes and giving examples of drug name(s) within each class.\n    \u2022 Describe detailed mechanisms of each major antifungal drug class.",
         "answer_text": "Main idea is to target the part of the fungi that are most unlike humans to minimize side-effects\n\n1) Cell wall targeting: Echinocandins - noncompetitively inhibit 1,3 \u03b2-glucan synthase (encoded by FKS1 gene)\n    - Can be fungicidal or fungistatic depending on organism\n    - caspofungin or micafungin\n\n2) Fungal membrane targeting: Polyenes - Bind ergosterol (like fungal cholesterol) on fungal membrane (small drug that can get past cell wall. \n    - amphotericin B (injection) or nystatin (cream/ointment)\n    - Very high kidney toxicity, ergosterol very similar to human cholesterol so high amount of side effects. Usually last line of defense\n\n3) Targeting ergosterol synthesis (enzymes): \n    i. Azoles - competitively inhibit 14\u03b1 - lanosterol demethylase enzyme (encoded by ERG11). Binds to active sites to inhibit sythesis.\n        - Imidazoles (topical) - miconazole\n        - Triazoles: systemic treatments - fluconazole\n        - First line treatment worldwide\n    ii. Allylamines - inhibit the squalene epoxidase enzyme (encoded by ERG1)\n        - Highly lipophilic and can accumulate in skin, mostly used as topical\n        - Lamisil\n\n5) Flucytosine: Nucelotide analog that inhibits RNA and DNA synthesis - converted to fungicidal uracil, not stand alone treatment\n\n6) Griseofulvin: Binds microtubules and inhibits mitosis and cell wall deposition\n    - High affinity for keratin. Perfect to fight ringworm fungus since they originate in hair follicles.",
-        "answer_image": "flashcard_images/Screenshot 2026-02-24 at 5.53.47\u202fPM.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.32.37\u202fPM.png"
       },
       {
         "question": "What does a mold use to produce?",
@@ -596,60 +663,54 @@
     ],
     "Candida albicans infections": [
       {
-        "question": "Describe the detailed mechanism of hyphae formation",
-        "answer_text": "",
+        "question": "#### Lecture Objectives: \n###### (probably exam question)\nDescribe the detailed mechanism of hyphae formation",
+        "answer_text": "1. Hyphae building blocks, **EXOCYSTS** transcribed in nucleus\n2. exocysts translated in ER and packaged in Golgi\n3. **Sec4/Sec2** GTPases provide energy for vesicle of exocysts to be deposited onto **actin filaments**\n4. Parcels transported unidirectionally via myosin-motor on actin/tubulin filaments, away from nucleus\n5. Parcels and polarisomes (vesicles with cell wall, energy components, enzymes that use ATP and GTP at tip of hyphae) deposited in the Sptizenkorper (warehouse, can send forward or backward) near tip of hyphae\n\n**ACTIN PATCHES** very important for directionality, otherwise vesicle trafficking would be random, have exocysts and polarisomes\n\n**Hyphae extension** is what causes a lot of tissue damage",
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 4.59.10\u202fPM.png"
+      },
+      {
+        "question": "#### Lecture Objectives: \nDescribe candidalysin synthesis process, and its function",
+        "answer_text": "**Synthesis**\n- Produced by **hyphae cells only**\n- Encoded in **ECE1 gene**\n- Specific aa sequence is the peptide between lysine (K) and arginine (R) 61st and 93rd aa position (only active part of toxin)\n- **Kex2p** and **Kex1p** two main cleavage proteases \n- First made a **pro-toxin** then cleavage into active form\n\n**Function**\n- Induces necrosis\n- **Forms pore** - latches to cell membrane and forms pore that allows Ca2+ influx\n- Activates MPP that cuts EGFR ligands to trigger signaling through EGFR\n- Activates c-Fos and MapK pathway \n- Proinflammatory mediators, Th-17 production/IL-17 for neutrophil recruitment\n- Toxin critical for systemic infection and immune activation *in vivo*",
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.31.19\u202fPM.png"
+      },
+      {
+        "question": "#### Lecture Objectives: \nDescribe major steps in fungal biofilm formation, and list out major components of fungal biofilm matrix",
+        "answer_text": "1) Adherence by yeast cells\n2) Initiation of hyphael/pseudohyphael growth\n3) Mautration: Secretion of biofilm matrix made of glycoproteins (55%), carbohydrates (25%), lipids (15%), and nucleic acids (5%)\n4. Dispersion: at the biofilm surface when yeast cells slough off\n\n**Using DNAse is bad because it will allow for easier dispersion and systemic infection**\n\nBiofilms can cause clogging and systemic infection in indwelling devices like catheters.",
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.32.37\u202fPM.png"
+      },
+      {
+        "question": "#### Lecture Objectives: \nMechanisms of antifungal drug resistance in C. albicans: \n    - Understand and describe the mechanism(s) of resistance against each antifungal class",
+        "answer_text": "###### Polyenes (Amphotericin B): \n- Normally sequesters ergosterol and disrupts membrane function - cidal\n- Resistance mechanism: decrease overall amount of ergosterol in membrane so drug doesn't have as strong of an effect. This is a rare form of resistance carrying a huge fitness cost.\n\n###### Echinocandins (Caspofungin, micafungin): \n- Normally non-competitively inhibits 1,3 \u03b2-glucan synthase\n- Resistance mechanism: Gain mutations in FKS1 gene which prevents binding of echinocandins  to target\n\n###### 5-FC (Flucytosine):\n- Normally is a pyramidine analog of uracil leading to RNA/DNA synthesis inhibition (static) \n- Resistance mechanism:\n    - Mutations in 5-FC transporter (cytosine permease) causing reduction in drug import\n    - Mutations in cytosine deaminase which converts 5-FC into uracil analog causing inhibition of the drug function\n\n###### Azoles:\n- Normally competitively inhibit 14\u03b1 - lanosterol demethylase (encoded by ERG11) for ergosterol synthesis\n- Resistance mechanisms:\n    - Easiest is to upregulate efflux pump Cdr1p and Mdr1p to remove intracellular drug\n    - Gain mutations in ERG11 gene leading to reduction in azole binding\n    - Gain hyper-active mutations in master regulator of the entire ergosterol synthesis pathway - Upc2p - inducing ERG11 and ergosterol synthesis *This entire pathway has to be upregulated for stoichiometry, unlike Aspergillus, which can selectively upregulate ERG11*\n\n###### Allylamines:\n- Normally competitively inhibits squalene epoxidase encoded by ERG1 for ergosterol synthesis\n- Resistance mechanisms are the same as azole",
         "answer_image": null
       },
       {
-        "question": "Describe candidalysin synthesis process, and its function",
-        "answer_text": "",
-        "answer_image": null
+        "question": "How do hyphae divide and extend?",
+        "answer_text": "- Nuclear division in C. albicans with septum ring formation(not in Apergillus, or normal hyphae extension, that just extend from one cell)\n-  Tissue Invasion\n   - Epithelial cells endocytose hyphae\n   - Hyphae actively penetrate the epithelia or through tight junctions between cells\n- Tissue Damage\n  - Hydrolase secretion: proteases, lipases, phosphlipases\n  - Candidalysin toxin (only known fungal exotoxin) released",
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.23.13\u202fPM.png"
       },
       {
-        "question": "Describe major steps in fungal biofilm formation, and list out major components of fungal biofilm matrix",
-        "answer_text": "",
-        "answer_image": null
-      },
-      {
-        "question": "Mechanisms of antifungal drug resistance in C. albicans: \n    - Understand and describe the mechanism(s) of resistance against each antifungal class",
-        "answer_text": "asd",
-        "answer_image": null
-      },
-      {
-        "question": "Outline C. albicans pathogenesis",
-        "answer_text": "",
-        "answer_image": null
-      },
-      {
-        "question": "Outline C. albicans pathogenesis",
-        "answer_text": "",
-        "answer_image": null
-      },
-      {
-        "question": "What are the different hyphae functions?",
-        "answer_text": "",
+        "question": "How do *C. Albicans* evade the immune system?",
+        "answer_text": "- As soon as PMNs uptake yeast cells, they can start growing hyphae and kill the neutrophils from inside out\n- Counteracts ROS by releasing **superoxide dismuatse** which detoxifies ROS from Macrophages and neutrophils\n- Releases flavohemoglobin - counteracts reactive nitrogen species (RNS)\n- Scavenges with versatile nutrient metabolism and starves commensals, as well as uses PMN vacuole contents\n- Biofilms protect against PMN effects and antifungals, make phagocytosis difficult",
         "answer_image": null
       }
     ],
-    "Candida albicans": [],
     "Aspergillus fumigatus - Tolerance/Resistance": [
       {
-        "question": "Describe 4 major types of A. fumigatus lung infections",
+        "question": "#### Lecture Objective: \nDescribe 4 major types of A. fumigatus lung infections",
         "answer_text": "1) IPA - Invasive Pulmonary Aspergillosis: Most prominent case. High mortality rate. Fungal hyphae spread in lung tissue. Occurs primarily in immunodeficient patients (neutropenic), those with COPD, Pulmonary viral infections (COVID), ICU long stays. For diagnosis: Need to know current history if neutropenic, need chest CT that has white mass and extended hyphae visible.\n\n2) CPA - Chronic Pulmonary Aspergillosis: Less common than IPA, slow, cavitating process. Occurs in immunocompetent patients with COPD, TB, Sarcoidosis - Damage done during prolonged injury to lung tissue create pockets/scar tissue, spores can be inhaled and germinate in pockets which there is no immune presence, growth with distinct vacuole in lung. Diagnosis: Needs chest ct showing clear cavity, prior history of chronic lung disease\n\n3) ABPA - Allergic Bronchopulmonary Aspergillosis: Allergic response to the hyphae of the mold. Elevated levels of IgE in serum. Treatment with steroid inhaler, need to manage immune suppression/fungal growth. Mild or Severe where just walking outside triggers strong immune response. Needs to be taken care of, allergist, or chronic can be bad - fibrotic lung disease. Found in patients with asthma or cystic fibrosis chronic diseases. \n\n4) AB - Aspergillosis Bronchitis: Rule out the other 3. Mainly diagnosed in patients with COPD or CF",
-        "answer_image": "flashcard_images/Screenshot 2026-02-27 at 11.38.05\u202fAM.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 4.59.10\u202fPM.png"
       },
       {
-        "question": "Understand azole resistance mechanisms in A. fumigatus",
+        "question": "#### Lecture Objective: \nUnderstand azole resistance mechanisms in A. fumigatus",
         "answer_text": "14\u03b1 - lanosterol demethylase - inhibits synthesis of 4,4-dimethylcholesta-8,14,24-trienol from lanosterol\nNo ointments because in the lungs - \n\nUpregulate the efflux pump system (CDR1/ABCG1), leading to a reduction in the intracellular azole level.\n\nGained mutations in ERG11/CYP51 gene in azole binding pocket, leading to a reduction of azole binding to the enzyme. \n\nIncrease ERG11/CYP51 expression specifically. Of note, this is different from C. albicans in which the entire ERG pathway is upregulated by increase Upc2 function.\n\nDerived from European use of antifungals for their tulips, same strain and has had a lot of time to acquire resistant mutations",
-        "answer_image": "flashcard_images/Screenshot 2026-02-27 at 11.49.32\u202fAM.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.31.19\u202fPM.png"
       },
       {
-        "question": "Understand the definition of drug resistance vs. drug tolerance",
+        "question": "#### Lecture Objective: \nUnderstand the definition of drug resistance vs. drug tolerance",
         "answer_text": "Resistance:\nA strain that is resistant to an antibiotic typically will have a mutation allowing it to grow while in the presence of that drug. If you treat a strain with a drug, select surviving colonies (normally very few), then retreat with same drug, the colonies that have developed resistance will always proliferate quite well in presence of the drug. Then if you do whole genome sequencing on that strain you will find differences/mutations compared to WT/parent strain.\n\nTolerance: \nThere are no mutations present in the genome, making tolerant strains hard to identify. After treatment with drug there is stunted proliferation, smaller cells, more colonies than what resistant strains initially form. Then if you isolate these colonies and retreat with the drug you will get the exact same effect, the same number of surviving colonies will persist - and it doesn't matter the concentration of the drug being used.\n\nDrug susceptible strains \u2013 somehow it can grow just a little bit slower. 4 distinct characteristics \u2013 \nREPRODUCIBLE. Same number of colonies after repetition of the same process (without permanent mutation). Subopulation \u2013 slow growth vs no growth\nSubpopulation\nTolerance is independent of drug concentration \u2013 (more specific to fungi)\nAn isolate can have a higher tolerance and can grow faster phenotypically relative to lower tolerance strain",
-        "answer_image": "flashcard_images/Screenshot 2026-02-27 at 12.11.51\u202fPM.png"
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.32.37\u202fPM.png"
       },
       {
-        "question": "Describe 4 unique characteristics of fluconazole-tolerant cells",
+        "question": "#### Lecture Objective: \nDescribe 4 unique characteristics of fluconazole-tolerant cells",
         "answer_text": "Fluconazole - Azole drug that inhibits ERG11\n1. Environment plays a role - level of tolerance exhibited differently depending on location and fitness of strain in that location\n\n2. Epigenetic - there aren't any point mutations so DNA accessibility, mRNA stability, or PTMs can change expression levels of certain proteins, ie up-regulate expression of efflux pumps by having them always on or being able to switch them on and off advantageously. Affects tolerance without permanent mutations.\n\n3. (& 4) Transient Gene Modifications:\n\n- Aneuploidy - gaining an extra copy or multiple extra copies of chromosome. Ex: additional copy of chromosome 3 which is where the CDR1 and MDR1 efflux pumps are so increasing relative abundance in cell when turned on. \n\n- Loss of Heterozygosity - Only possible with diploid organisms (not bacterial resistance mechanism). Normally have two copies and they work together. They have point mutations in one copy, then it silences the other, now the cell lives by the mutated version of the gene, then when drug disappears the WT copy becomes functional again and through replication it fixes mutation to become WT again.",
         "answer_image": null
       },
