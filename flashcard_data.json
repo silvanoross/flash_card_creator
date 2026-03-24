@@ -838,6 +838,65 @@
         "answer_text": "Deworming protocols - 50 cents a day\n- **Albendazole (Albenza)**:\u00a0A single dose of 400 mg\u00a0\n- **Ivermectin (Stromectol)**:\u00a0A single dose of 150-200 mcg/kg\u00a0\n  - Mebendazole (Vermox):\u00a0100 mg twice daily for 3 days\u00a0\n  - Pyrantel pamoate (Pin-X):\u00a0A single dose of 11 mg/kg (up to 1 g)",
         "answer_image": null
       }
+    ],
+    "Amoebas": [
+      {
+        "question": "##### Lecture Objectives:\nBroad Strokes on Amoebas",
+        "answer_text": "Classes of Amoebas:\n1) Obligate Parasites - need host to live and thus doesn't kill host - *Entamoeba histolytica* \n2) Free Living Amoebas - don't need nobody, will most likely kill host trying to get out - *Naglaeria fowleri*\n\n- Amoebas are everywhere\n- E. histolytica cysts very stable\n- Often leads to coinfections with other worms\n- Can be as simple as fly landing on poop then your food\n- They can travel throughout your body (but mostly localized to stomach in LMICs",
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 7.01.30\u202fPM.png"
+      },
+      {
+        "question": "##### Lecture Objectives:\nLifecycle:  *N. fowleri*",
+        "answer_text": "1. Amoebic cyst transforms into trophozoite, the infectious version, as well as flagellated form, in the environment\n2. Some dumb as kid plays in the water and gets a boat load of water in their sinus\n3. Infectious trophozoite penetrates nasal mucosa\n4. They migrate to the brain via the olfactory nerve - where they start trogocytose and kill brain - cause PAM - Primary Amoeba Meningoencephalitis\n5. Trophozoite also found in CSF\n6. Hangs out in brain eating, creating lesions, replicating, causing inflammation, NK cells come, lots of dead/necrotic tissue from trogocytosis.\n7. They outreplicate the immune response",
+        "answer_image": "flashcard_images/paste_0b90eafb33.png"
+      },
+      {
+        "question": "##### Lecture Objectives:\nDisease: *N. fowleri*",
+        "answer_text": "**Initial Exposure**: (Days 1-9) Amoeba enter nasal cavity, attaches to olfactory nerve, travels to brain, usually no symptoms at this point\n\n**Stage 1**: (Sudden onset of symptoms) Frontal headache, fever, nausea, vomiting, much like bacterial meningitis\n\n**Stage 2**: (Rapid Deterioration) Advances quickly, stiff neck, contusions, lack of attention, hallucinations, seizures, coma\n\n**Final Stage**: (Death) Massive brain and meningeal tissue destruction, cerebral edema, herniation, death within 3-7 days from initial symptoms\n\n**95-97% fatality ~5 days usually**",
+        "answer_image": "flashcard_images/paste_028aab8080.png"
+      },
+      {
+        "question": "##### Lecture Objectives:\nDiagnosis: *N. fowleri*",
+        "answer_text": "*Pretty limited*\n1) PCR of cerebral spinal fluid for Naegleria - need to have high enough load\n2) CSF staining or cultures\n    - Giemsa\n    - Hematoxylin + Eosin (H&E)\n    - Periodic Acid-Schiff (PAS)\n    - Trichrome\n\nHard to diagnose",
+        "answer_image": "flashcard_images/paste_15f7a79ff4.png"
+      },
+      {
+        "question": "##### Lecture Objectives:\nTreatment: *N. fowleri*",
+        "answer_text": "**Boil your water, don't drink from streams, JUST DONT GET IT** *or else you dead \ud83d\udc80*\n\nDrugs:\n- Miltefosine\n- Posacanazole\n- Amphotericin B\n\n*you probably still dead \ud83d\udc80*",
+        "answer_image": null
+      },
+      {
+        "question": "##### Lecture Objectives:\nDisease: Amebiases - *Entamoeba histolytica*",
+        "answer_text": "- Less deadly, only 20% require treatment for milder symptoms - gut inflammation and diarrhea - maybe just need hydration and dried toast\n- <1% severe cases - *E. histolytica* end up extraintestinal and migrate to other organs. Migrate through bloodstream, end up in organs where there is no release so they wreak havoc\n    - Pulmonary\n    - Liver\n    - Brain (rare)",
+        "answer_image": "flashcard_images/paste_0b93d07fc1.png"
+      },
+      {
+        "question": "##### Lecture Objectives:\nVirulence: Amebiases - *Entamoeba histolytica*",
+        "answer_text": "*Random as to who gets the intestinal infections*\n1. **Microbiome** - commensals secrete food that help amoeba live, causes increase in thin mucus production so easier for amoeba to get through\n2. **Mucus degradation** - secrete glycosidases that break down thick mucus and expose enterocytes - leads to dysbiosis of gut\n3. **Gal/GalNAC** Lectin on surface of amoeba, once it engages intestinal epithelium, **signaling cascades** tells amoeba to start invading and killing\n4. Release of **amoebapores**, pore forming toxins\n5. **Cystein proteases** which can chew up cells\n6. **Trogocytosis** induced cell death - nibbles on cells, causes leaky gaps, allows amoeba to slip through tight junctions, just stops eating once it receives signal that cell is dead, leaving dead material in boat loads behind (truly evil)\n7. **Hyper inflammation + Immune Response** - Makes gut even leakier with excess TNF-\u03b1, allows for amoeba and other pathogens to gain access through holes in epithelium - COINFECTIONS \n8. **Extraintestinal Absessses** If makes it to liver - makes huge hole \"central zone of liquifactive, necrotic tissue containing thick-reddish brown anchovy paste paste-like material enclosed in a capsule of immune cells. \n    - Eats and spits shit out, leaves behind dead shit, trogocytosis",
+        "answer_image": "flashcard_images/paste_cdc9b1a4c6.png"
+      },
+      {
+        "question": "##### Lecture Objectives:\nTrogocytosis (paper) - *Entamoeba histolytica*",
+        "answer_text": "- Stops nibbling after Ca2+ release upon cell death (murders cell and moves on)\n- Leaves dead cell and tissue behind which is why so much necrosis\n- See amoeba invading epithelia through hole\n- If it gets into the blood stream once out of nutrition in the gut then it attacks RBCs, making things very inflammatory systemically\n- Creates irreversible fibrotic and necrotic tissue damage in organs",
+        "answer_image": "flashcard_images/paste_ed3fb40a92.png"
+      }
+    ],
+    "Trypanosomes": [
+      {
+        "question": "##### Lecture Objective:\nDescribe the phylogeny and distinctive features of kinetoplastids",
+        "answer_text": "Eukaryotes - Protists (not animalia, plantae, or fungi) - **Protozoan (animal like)**, **motile**, sexual/asexual, parasitic - trypanosomes, eat food\n\nPhylogeny: Protista - Excavates - Kinetoplastids\n\n**5 Defining Features**\n1) Anterior Flagellum - motility, not pushing from behind\n2) Vector borne (flies and bugs)\n3) Glycosomes - compartmentalized glycolysis organelles\n4) Kinetoplasts - Mitochondrial genome of concatenated mini and maxi circles & extensive RNA editing of transcripts\n5) Ubiquitous multigene RNA Pol II transcription coupled by *trans*-splicing and capping/poly-A additions",
+        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 7.33.43\u202fPM.png"
+      },
+      {
+        "question": "##### Lecture Objective:\n**Understand basic concepts from Exploitation of the Leishmania exosomal pathway\nby Leishmania RNA virus 1**",
+        "answer_text": "",
+        "answer_image": null
+      },
+      {
+        "question": "##### Lecture Objective:\n**Describe three major human diseases caused by kinetoplastid parasites**\n- Disease name\n- Etiological agent (genus species)\n- Routes of infection\n- Symptoms\n- Critical immunity factors\n- Treatment and prevention",
+        "answer_text": "| Type | *Trypanosoma brucei*| *Trypanosoma cruzi* | *Leishmania* |\n|----------|----------|----------|----------|\n| **Disease**  | [African] Sleeping Sickness   | Chaga's Disease (kissing)  | cutaneous, mucocutaneous, visceral Leishmaniasis |\n| **Vector**  | Tsetse Fly blood meal  | triatomine bug feces in blood meal   | phlebotomine sand fly blood meal  |\n| **Chemotherapy**  | Pentamidine (DNA/RNASynth) suramine (glycolysis)   | nifurtimox (ROS)  | Amph B, miltesofine   |",
+        "answer_image": null
+      }
     ]
   }
 }
