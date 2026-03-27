@@ -294,7 +294,7 @@ else:
                 st.markdown(f"""
                 <div class="progress-bar">
                   <div class="progress-fill" style="width:{idx/total*100:.1f}%"></div>
-                </div>""", unsafe_allow_html=True, width='content')
+                </div>""", unsafe_allow_html=True, width='stretch')
 
                 rc1, rc2, _ = st.columns([1, 1, 4])
                 with rc1: st.markdown(f'✅ **{ss.get("correct",0)}** correct')
