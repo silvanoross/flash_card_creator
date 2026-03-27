@@ -302,8 +302,9 @@ else:
                 st.markdown("<br>", unsafe_allow_html=True)
 
                 question_html = md_lib.markdown(card["question"])
-                st.markdown(f'<div class="card-front">{question_html}</div>',
-                            unsafe_allow_html=True)
+                st.markdown(f'<div class="card-front">{question_html}</div>'
+                            # unsafe_allow_html=True
+                            )
 
                 if not ss.get("show_answer"):
                     if st.button("👁️ Show Answer", type="primary", use_container_width=True):
