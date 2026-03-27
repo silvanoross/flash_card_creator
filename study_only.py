@@ -88,71 +88,121 @@ else:
     st.markdown('<div class="section-header">Study Session Setup</div>',
                 unsafe_allow_html=True)
 
-    study_class = st.selectbox("Class", list(data.keys()), key="study_class")
+    # ── Pre-initialise all checkbox state before any widgets render ──────────
+    all_classes = list(data.keys())
 
-    available_topics = list(data.get(study_class, {}).keys())
+    if "select_all_classes" not in st.session_state:
+        st.session_state["select_all_classes"] = True
+    for cls in all_classes:
+        if f"class_cb_{cls}" not in st.session_state:
+            st.session_state[f"class_cb_{cls}"] = True
+        if f"select_all_topics_{cls}" not in st.session_state:
+            st.session_state[f"select_all_topics_{cls}"] = True
+        for t in data[cls]:
+            if f"topic_cb_{cls}_{t}" not in st.session_state:
+                st.session_state[f"topic_cb_{cls}_{t}"] = True
 
-    # Pre-initialise individual topic keys so they exist before widgets render
-    for t in available_topics:
-        key = f"study_topic_cb_{study_class}_{t}"
-        if key not in st.session_state:
-            st.session_state[key] = True
+    # ── Callbacks ─────────────────────────────────────────────────────────────
+    def on_select_all_classes():
+        val = st.session_state["select_all_classes"]
+        for cls in all_classes:
+            st.session_state[f"class_cb_{cls}"] = val
+            st.session_state[f"select_all_topics_{cls}"] = val
+            for t in data[cls]:
+                st.session_state[f"topic_cb_{cls}_{t}"] = val
 
-    # "Select All" callback: push its value into every topic key
-    def select_all_changed():
-        val = st.session_state[f"select_all_{study_class}"]
-        for t in available_topics:
-            st.session_state[f"study_topic_cb_{study_class}_{t}"] = val
+    def make_class_cb(cls):
+        def on_class_cb():
+            val = st.session_state[f"class_cb_{cls}"]
+            st.session_state[f"select_all_topics_{cls}"] = val
+            for t in data[cls]:
+                st.session_state[f"topic_cb_{cls}_{t}"] = val
+            # Sync global select-all
+            st.session_state["select_all_classes"] = all(
+                st.session_state.get(f"class_cb_{c}", True) for c in all_classes
+            )
+        return on_class_cb
 
-    # Individual topic callback: keep Select All ticked only when all topics are on
-    def topic_changed():
-        all_on = all(
-            st.session_state.get(f"study_topic_cb_{study_class}_{t}", True)
-            for t in available_topics
-        )
-        if f"select_all_{study_class}" in st.session_state:
-            st.session_state[f"select_all_{study_class}"] = all_on
+    def make_select_all_topics_cb(cls):
+        def on_select_all_topics():
+            val = st.session_state[f"select_all_topics_{cls}"]
+            for t in data[cls]:
+                st.session_state[f"topic_cb_{cls}_{t}"] = val
+            st.session_state[f"class_cb_{cls}"] = val
+            st.session_state["select_all_classes"] = all(
+                st.session_state.get(f"class_cb_{c}", True) for c in all_classes
+            )
+        return on_select_all_topics
 
-    # Initialise Select All key from current topic states (only on first load)
-    sa_key = f"select_all_{study_class}"
-    if sa_key not in st.session_state:
-        st.session_state[sa_key] = all(
-            st.session_state.get(f"study_topic_cb_{study_class}_{t}", True)
-            for t in available_topics
-        )
+    def make_topic_cb(cls):
+        def on_topic_cb():
+            topics = list(data[cls].keys())
+            all_on = all(st.session_state.get(f"topic_cb_{cls}_{t}", True) for t in topics)
+            st.session_state[f"select_all_topics_{cls}"] = all_on
+            st.session_state[f"class_cb_{cls}"] = all_on
+            st.session_state["select_all_classes"] = all(
+                st.session_state.get(f"class_cb_{c}", True) for c in all_classes
+            )
+        return on_topic_cb
 
-    st.markdown("**Topics**")
-    tc1, tc2 = st.columns([2, 1])
-    with tc1:
-        st.checkbox("Select All", key=sa_key, on_change=select_all_changed)
-    with tc2:
+    # ── Top controls ──────────────────────────────────────────────────────────
+    top1, top2 = st.columns([3, 1])
+    with top1:
+        st.checkbox("✅ Select All Classes", key="select_all_classes",
+                    on_change=on_select_all_classes)
+    with top2:
         shuffle = st.checkbox("Shuffle cards", value=True)
 
-    # Render one checkbox per topic in a grid of up to 4 columns
-    topic_cols = st.columns(min(4, len(available_topics)) if available_topics else 1)
-    topic_checks = {}
-    for i, topic in enumerate(available_topics):
-        with topic_cols[i % len(topic_cols)]:
-            n = len(data[study_class].get(topic, []))
-            topic_checks[topic] = st.checkbox(
-                f"{topic} ({n})",
-                key=f"study_topic_cb_{study_class}_{topic}",
-                on_change=topic_changed,
+    st.divider()
+
+    # ── Per-class sections ────────────────────────────────────────────────────
+    for cls in all_classes:
+        topics = list(data[cls].keys())
+        total_cls_cards = sum(len(data[cls][t]) for t in topics)
+
+        st.checkbox(
+            f"**{cls}** — {len(topics)} topic(s), {total_cls_cards} card(s)",
+            key=f"class_cb_{cls}",
+            on_change=make_class_cb(cls),
+        )
+
+        if st.session_state.get(f"class_cb_{cls}", True) and topics:
+            st.checkbox(
+                "Select all topics",
+                key=f"select_all_topics_{cls}",
+                on_change=make_select_all_topics_cb(cls),
             )
 
-    selected_topics = [t for t, checked in topic_checks.items() if checked]
+            topic_cols = st.columns(min(4, len(topics)))
+            for i, topic in enumerate(topics):
+                with topic_cols[i % len(topic_cols)]:
+                    n = len(data[cls][topic])
+                    st.checkbox(
+                        f"{topic} ({n})",
+                        key=f"topic_cb_{cls}_{topic}",
+                        on_change=make_topic_cb(cls),
+                    )
 
-    # Fall back to all topics if none selected
-    topics_to_study = selected_topics if selected_topics else available_topics
+        st.divider()
 
-    if selected_topics:
-        st.caption(f"📌 {len(selected_topics)} of {len(available_topics)} topic(s) selected")
-    else:
-        st.caption(f"📌 No topics selected — studying all {len(available_topics)}")
+    # ── Build card deck from current checkbox state ───────────────────────────
+    all_cards = [
+        {**card, "_class": cls, "_topic": topic}
+        for cls in all_classes
+        if st.session_state.get(f"class_cb_{cls}", True)
+        for topic in data[cls]
+        if st.session_state.get(f"topic_cb_{cls}_{topic}", True)
+        for card in data[cls][topic]
+    ]
 
-    all_cards = [{**c, "_topic": t}
-                 for t in topics_to_study
-                 for c in data[study_class].get(t, [])]
+    total_selected_topics = sum(
+        1 for cls in all_classes
+        if st.session_state.get(f"class_cb_{cls}", True)
+        for t in data[cls]
+        if st.session_state.get(f"topic_cb_{cls}_{t}", True)
+    )
+    selected_classes = [c for c in all_classes if st.session_state.get(f"class_cb_{c}", True)]
+    st.caption(f"📌 {len(selected_classes)} class(es) · {total_selected_topics} topic(s) · {len(all_cards)} card(s) selected")
 
     if not all_cards:
         st.warning("No cards found for this selection.")
@@ -183,7 +233,7 @@ else:
                     ss.clear(); st.rerun()
             else:
                 card = deck[idx]
-                st.markdown(f"**Card {idx+1} of {total}** — Topic: *{card.get('_topic','')}*")
+                st.markdown(f"**Card {idx+1} of {total}** — {card.get('_class','')} › *{card.get('_topic','')}*")
                 st.markdown(f"""
                 <div class="progress-bar">
                   <div class="progress-fill" style="width:{idx/total*100:.1f}%"></div>
