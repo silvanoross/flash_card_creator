@@ -51,7 +51,7 @@ def img_to_b64(path):
 
 
 # ─── session state ───────────────────────────────────────────────────────────
-for k, v in [("data", load_data()), ("study_state", {})]:
+for k, v in [("data", load_data()), ("study_state", {}), ("show_setup", True)]:
     if k not in st.session_state:
         st.session_state[k] = v
 
@@ -111,8 +111,6 @@ if not data:
     st.info("No flashcard data found. Make sure flashcard_data.json is in the same folder as this app.")
 else:
     ss = st.session_state.study_state
-    st.markdown('<div class="section-header">Study Session Setup</div>',
-                unsafe_allow_html=True)
 
     # ── Pre-initialise all checkbox state before any widgets render ──────────
     all_classes = list(data.keys())
@@ -177,53 +175,69 @@ else:
             )
         return on_topic_cb
 
-    # ── Top controls ──────────────────────────────────────────────────────────
-    top1, top2 = st.columns([0.325, 1], gap='small')
-    with top1:
-        st.checkbox("📚Select All Classes", key="select_all_classes",
-                    on_change=on_select_all_classes)
-    with top2:
-        shuffle = st.checkbox("🔀Shuffle cards", value=True)
+    # ── Setup toggle (shown only when a session is active) ───────────────────
+    if ss.get("deck"):
+        toggle_label = "🔼 Hide Setup" if st.session_state.show_setup else "🔽 Change Setup"
+        if st.button(toggle_label):
+            st.session_state.show_setup = not st.session_state.show_setup
+            st.rerun()
+        st.divider()
 
-    st.divider()
+    if st.session_state.show_setup:
+        st.markdown('<div class="section-header">Study Session Setup</div>',
+                    unsafe_allow_html=True)
+
+        # ── Top controls ──────────────────────────────────────────────────────
+        top1, top2 = st.columns([0.325, 1], gap='small')
+        with top1:
+            st.checkbox("📚Select All Classes", key="select_all_classes",
+                        on_change=on_select_all_classes)
+        with top2:
+            shuffle = st.checkbox("🔀Shuffle cards", value=True)
+    else:
+        shuffle = st.session_state.get("_last_shuffle", True)
+
+    if st.session_state.show_setup:
+        st.divider()
 
     # ── Per-class sections ─────────────────────────────────────────────────────
     # FIX: Topics are ALWAYS rendered regardless of class checkbox state.
     # Previously they were hidden when the class was unchecked, which caused
     # Streamlit to destroy and recreate those widgets on every toggle,
     # resetting all their state values and producing the "deselects everything" bug.
-    for cls in all_classes:
-        topics = list(data[cls].keys())
-        total_cls_cards = sum(len(data[cls][t]) for t in topics)
+    if st.session_state.show_setup:
+        for cls in all_classes:
+            topics = list(data[cls].keys())
+            total_cls_cards = sum(len(data[cls][t]) for t in topics)
 
-        # Class-level checkbox
-        st.checkbox(
-            f"**{cls}** — {len(topics)} topic(s), {total_cls_cards} card(s)",
-            key=f"class_cb_{cls}",
-            on_change=make_class_cb(cls),
-        )
-
-        # "Select all topics" toggle — always visible
-        if topics:
+            # Class-level checkbox
             st.checkbox(
-                "Select all topics",
-                key=f"select_all_topics_{cls}",
-                on_change=make_select_all_topics_cb(cls),
+                f"**{cls}** — {len(topics)} topic(s), {total_cls_cards} card(s)",
+                key=f"class_cb_{cls}",
+                on_change=make_class_cb(cls),
             )
 
-            # Individual topic checkboxes — always visible
-            topic_cols = st.columns(min(4, len(topics)))
-            for i, topic in enumerate(topics):
-                with topic_cols[i % len(topic_cols)]:
-                    n = len(data[cls][topic])
-                    label = topic if len(topic) <= 40 else topic[:38] + "…"
-                    st.checkbox(
-                        f"{label} ({n})",
-                        key=f"topic_cb_{cls}_{topic}",
-                        on_change=make_topic_cb(cls),
-                    )
+            # "Select all topics" toggle — always visible
+            if topics:
+                st.checkbox(
+                    "Select all topics",
+                    key=f"select_all_topics_{cls}",
+                    on_change=make_select_all_topics_cb(cls),
+                )
 
-        st.divider()
+                # Individual topic checkboxes — always visible
+                topic_cols = st.columns(min(4, len(topics)))
+                for i, topic in enumerate(topics):
+                    with topic_cols[i % len(topic_cols)]:
+                        n = len(data[cls][topic])
+                        label = topic if len(topic) <= 40 else topic[:38] + "…"
+                        st.checkbox(
+                            f"{label} ({n})",
+                            key=f"topic_cb_{cls}_{topic}",
+                            on_change=make_topic_cb(cls),
+                        )
+
+            st.divider()
 
     # ── Build card deck from current checkbox state ───────────────────────────
     all_cards = [
@@ -235,26 +249,29 @@ else:
         for card in data[cls][topic]
     ]
 
-    total_selected_topics = sum(
-        1 for cls in all_classes
-        if st.session_state.get(f"class_cb_{cls}", True)
-        for t in data[cls]
-        if st.session_state.get(f"topic_cb_{cls}_{t}", True)
-    )
-    selected_classes = [c for c in all_classes if st.session_state.get(f"class_cb_{c}", True)]
-    st.caption(f"📌 {len(selected_classes)} class(es) · {total_selected_topics} topic(s) · {len(all_cards)} card(s) selected")
+    if st.session_state.show_setup:
+        total_selected_topics = sum(
+            1 for cls in all_classes
+            if st.session_state.get(f"class_cb_{cls}", True)
+            for t in data[cls]
+            if st.session_state.get(f"topic_cb_{cls}_{t}", True)
+        )
+        selected_classes = [c for c in all_classes if st.session_state.get(f"class_cb_{c}", True)]
+        st.caption(f"📌 {len(selected_classes)} class(es) · {total_selected_topics} topic(s) · {len(all_cards)} card(s) selected")
 
-    if not all_cards:
-        st.warning("No cards found for this selection.")
-    else:
-        if st.button("▶️ Start / Restart Session", type="primary"):
-            deck = all_cards.copy()
-            if shuffle: random.shuffle(deck)
-            ss.update({"deck": deck, "index": 0, "show_answer": False,
-                        "correct": 0, "incorrect": 0})
-            st.rerun()
+        if not all_cards:
+            st.warning("No cards found for this selection.")
+        else:
+            if st.button("▶️ Start / Restart Session", type="primary"):
+                st.session_state["_last_shuffle"] = shuffle
+                deck = all_cards.copy()
+                if shuffle: random.shuffle(deck)
+                ss.update({"deck": deck, "index": 0, "show_answer": False,
+                            "correct": 0, "incorrect": 0})
+                st.session_state.show_setup = False
+                st.rerun()
 
-        if ss.get("deck"):
+    if ss.get("deck"):
             deck  = ss["deck"]
             idx   = ss["index"]
             total = len(deck)
@@ -270,7 +287,9 @@ else:
                 elif pct >= 60: st.info("Good effort! Keep practicing the ones you missed.")
                 else:           st.warning("Keep going! Repetition is key to learning.")
                 if st.button("🔄 Study Again"):
-                    ss.clear(); st.rerun()
+                    ss.clear()
+                    st.session_state.show_setup = True
+                    st.rerun()
             else:
                 card = deck[idx]
                 st.markdown(f"**Card {idx+1} of {total}** — {card.get('_class','')} › *{card.get('_topic','')}*")
