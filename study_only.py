@@ -17,7 +17,6 @@ The paste/drop bridge:
 import streamlit as st
 import streamlit.components.v1 as components
 import json, base64, os, random, uuid
-import markdown as md_lib
 from pathlib import Path
 from PIL import Image
 import io
@@ -63,10 +62,7 @@ st.markdown("""
 .card-front{background:linear-gradient(135deg,#667eea,#764ba2);border-radius:16px;
   padding:2rem;color:#fff;font-size:1.3rem;font-weight:600;text-align:center;
   min-height:180px;display:flex;align-items:center;justify-content:center;
-  flex-direction:column;
   box-shadow:0 8px 32px rgba(79,70,229,.3);margin-bottom:1rem}
-.card-front p,.card-front li{margin:0;padding:0}
-.card-front ul,.card-front ol{text-align:left;margin:.4rem 0 0 1.2rem;padding:0}
 # .card-back{background:linear-gradient(135deg,#f093fb,#f5576c);border-radius:16px;
 #   padding:2rem;color:#fff;font-size:1.1rem;text-align:left;min-height:180px;
 #   box-shadow:0 8px 32px rgba(245,87,108,.3);margin-bottom:1rem}
@@ -86,76 +82,69 @@ st.markdown("Select your classes and topics, then start studying.")
 st.divider()
 
 if not data:
-    st.info("No classes yet. Switch to Manage Cards to create some!")
+    st.info("No flashcard data found. Make sure flashcard_data.json is in the same folder as this app.")
 else:
     ss = st.session_state.study_state
     st.markdown('<div class="section-header">Study Session Setup</div>',
                 unsafe_allow_html=True)
 
-    # ── Top controls row ─────────────────────────────────────────────
-    ctrl1, ctrl2 = st.columns([3, 1])
-    with ctrl1:
-        select_all_classes = st.checkbox("✅ Select All Classes", value=True, key="study_all_classes")
-    with ctrl2:
+    study_class = st.selectbox("Class", list(data.keys()), key="study_class")
+
+    available_topics = list(data.get(study_class, {}).keys())
+
+    # Initialise per-topic checkbox state (only on first encounter)
+    for t in available_topics:
+        if f"study_topic_cb_{t}" not in st.session_state:
+            st.session_state[f"study_topic_cb_{t}"] = True
+
+    def select_all_changed():
+        val = st.session_state["study_all_topics"]
+        for t in available_topics:
+            st.session_state[f"study_topic_cb_{t}"] = val
+
+    def topic_changed():
+        # Keep "Select All" in sync: check it only when every topic is checked
+        all_on = all(st.session_state.get(f"study_topic_cb_{t}", True) for t in available_topics)
+        st.session_state["study_all_topics"] = all_on
+
+    st.markdown("**Topics**")
+    tc1, tc2 = st.columns([2, 1])
+    with tc1:
+        # Derive the Select All state from individual topic states
+        all_currently_checked = all(
+            st.session_state.get(f"study_topic_cb_{t}", True) for t in available_topics
+        )
+        if "study_all_topics" not in st.session_state:
+            st.session_state["study_all_topics"] = all_currently_checked
+        st.checkbox("Select All", key="study_all_topics", on_change=select_all_changed)
+    with tc2:
         shuffle = st.checkbox("Shuffle cards", value=True)
 
-    st.divider()
-
-    # ── Per-class section with nested topic checkboxes ────────────────
-    # collection: { class_name: [topic, ...] }
-    selection = {}
-
-    for cls_name, topics_dict in data.items():
-        available_topics = list(topics_dict.keys())
-        total_cls_cards  = sum(len(v) for v in topics_dict.values())
-
-        cls_col, _ = st.columns([4, 1])
-        with cls_col:
-            cls_checked = st.checkbox(
-                f"**{cls_name}** — {len(available_topics)} topic(s), {total_cls_cards} card(s)",
-                value=select_all_classes,
-                key=f"study_class_cb_{cls_name}"
+    # Render one checkbox per topic in a grid of up to 4 columns
+    topic_cols = st.columns(min(4, len(available_topics)) if available_topics else 1)
+    topic_checks = {}
+    for i, topic in enumerate(available_topics):
+        with topic_cols[i % len(topic_cols)]:
+            n = len(data[study_class].get(topic, []))
+            topic_checks[topic] = st.checkbox(
+                f"{topic} ({n})",
+                key=f"study_topic_cb_{topic}",
+                on_change=topic_changed,
             )
 
-        if cls_checked and available_topics:
-            # "Select All Topics" toggle for this class
-            all_t_col, _ = st.columns([4, 1])
-            with all_t_col:
-                all_topics_checked = st.checkbox(
-                    "Select all topics",
-                    value=True,
-                    key=f"study_all_topics_{cls_name}"
-                )
+    selected_topics = [t for t, checked in topic_checks.items() if checked]
 
-            # Topic checkboxes in up to 4 columns
-            topic_cols = st.columns(min(4, len(available_topics)))
-            chosen_topics = []
-            for i, topic in enumerate(available_topics):
-                with topic_cols[i % len(topic_cols)]:
-                    n = len(topics_dict.get(topic, []))
-                    checked = st.checkbox(
-                        f"{topic} ({n})",
-                        value=all_topics_checked,
-                        key=f"study_topic_cb_{cls_name}_{topic}"
-                    )
-                    if checked:
-                        chosen_topics.append(topic)
+    # Fall back to all topics if none selected
+    topics_to_study = selected_topics if selected_topics else available_topics
 
-            if chosen_topics:
-                selection[cls_name] = chosen_topics
+    if selected_topics:
+        st.caption(f"📌 {len(selected_topics)} of {len(available_topics)} topic(s) selected")
+    else:
+        st.caption(f"📌 No topics selected — studying all {len(available_topics)}")
 
-        st.divider()
-
-    # ── Build the card deck from selection ────────────────────────────
-    all_cards = [
-        {**card, "_class": cls_name, "_topic": topic}
-        for cls_name, topics in selection.items()
-        for topic in topics
-        for card in data[cls_name].get(topic, [])
-    ]
-
-    total_selected = sum(len(t) for t in selection.values())
-    st.caption(f"📌 {len(selection)} class(es) · {total_selected} topic(s) · {len(all_cards)} card(s) selected")
+    all_cards = [{**c, "_topic": t}
+                 for t in topics_to_study
+                 for c in data[study_class].get(t, [])]
 
     if not all_cards:
         st.warning("No cards found for this selection.")
@@ -186,10 +175,10 @@ else:
                     ss.clear(); st.rerun()
             else:
                 card = deck[idx]
-                st.markdown(f"**Card {idx+1} of {total}** — {card.get('_class','')} › *{card.get('_topic','')}*")
+                st.markdown(f"**Card {idx+1} of {total}** — Topic: *{card.get('_topic','')}*")
                 st.markdown(f"""
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width:{idx/total*100:.1f}%"></div>
+                  <div class="progress-fill" style="width:{idx/total*100:.1f}%"></div>
                 </div>""", unsafe_allow_html=True)
 
                 rc1, rc2, _ = st.columns([1, 1, 4])
@@ -197,8 +186,7 @@ else:
                 with rc2: st.markdown(f'❌ **{ss.get("incorrect",0)}** incorrect')
                 st.markdown("<br>", unsafe_allow_html=True)
 
-                question_html = md_lib.markdown(card["question"])
-                st.markdown(f'<div class="card-front">{question_html}</div>',
+                st.markdown(f'<div class="card-front">{card["question"]}</div>',
                             unsafe_allow_html=True)
 
                 if not ss.get("show_answer"):
