@@ -182,8 +182,8 @@ else:
             st.rerun()
 
     if st.session_state.show_setup:
-        st.markdown('<div class="section-header">Study Session Setup</div>',
-                    unsafe_allow_html=True)
+        # st.markdown('<div class="section-header">Study Session Setup</div>',
+        #             unsafe_allow_html=True)
 
         # ── Top controls ──────────────────────────────────────────────────────
         top1, top2 = st.columns([0.325, 1], gap='small')
