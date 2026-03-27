@@ -24,7 +24,7 @@ import markdown as md_lib
 
 
 
-st.set_page_config(page_title="FlashCard Studio", page_icon="🃏", layout="wide")
+st.set_page_config(page_title="FlashCard Studio", page_icon="🧠", layout="wide")
 
 DATA_FILE  = "flashcard_data.json"
 IMAGES_DIR = "flashcard_images"
@@ -190,10 +190,10 @@ else:
         # ── Top controls ──────────────────────────────────────────────────────
         top1, top2 = st.columns([0.325, 1], gap='small')
         with top1:
-            st.checkbox("📚Select All Classes", key="select_all_classes",
+            st.checkbox("📚 Select All Classes", key="select_all_classes",
                         on_change=on_select_all_classes)
         with top2:
-            shuffle = st.checkbox("🔀Shuffle cards", value=True)
+            shuffle = st.checkbox("🔀 Shuffle cards", value=True)
     else:
         shuffle = st.session_state.get("_last_shuffle", True)
 
