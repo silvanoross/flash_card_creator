@@ -67,7 +67,7 @@ st.markdown("""
   color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
-  text-align: left;           /* was: center */
+  text-align: center;           /* was: center */
   min-height: 180px;
   display: flex;
   flex-direction: column;     /* ADD: stacks children vertically */
