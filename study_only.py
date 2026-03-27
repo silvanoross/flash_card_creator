@@ -104,7 +104,6 @@ div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]
 
 # ─── header ──────────────────────────────────────────────────────────────────
 st.markdown('<div class="main-title">🦠 Micro and 🧬 Immuno Flashcard Study</div>', unsafe_allow_html=True)
-st.markdown("Select your classes and topics, then start studying.")
 st.divider()
 
 if not data:
@@ -181,7 +180,6 @@ else:
         if st.button(toggle_label):
             st.session_state.show_setup = not st.session_state.show_setup
             st.rerun()
-        st.divider()
 
     if st.session_state.show_setup:
         st.markdown('<div class="section-header">Study Session Setup</div>',
