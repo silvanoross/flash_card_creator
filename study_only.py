@@ -179,10 +179,10 @@ else:
     # ── Top controls ──────────────────────────────────────────────────────────
     top1, top2 = st.columns([0.2, 1], gap='small')
     with top1:
-        st.checkbox("✅ Select All Classes", key="select_all_classes",
+        st.checkbox("📚Select All Classes", key="select_all_classes",
                     on_change=on_select_all_classes)
     with top2:
-        shuffle = st.checkbox("Shuffle cards", value=True)
+        shuffle = st.checkbox("🔀Shuffle cards", value=True)
 
     st.divider()
 
