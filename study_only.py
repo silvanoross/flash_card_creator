@@ -177,7 +177,7 @@ else:
         return on_topic_cb
 
     # ── Top controls ──────────────────────────────────────────────────────────
-    top1, top2 = st.columns([0.33, 1], gap='small')
+    top1, top2 = st.columns([0.325, 1], gap='small')
     with top1:
         st.checkbox("📚Select All Classes", key="select_all_classes",
                     on_change=on_select_all_classes)
