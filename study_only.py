@@ -92,31 +92,39 @@ else:
 
     available_topics = list(data.get(study_class, {}).keys())
 
-    # Initialise per-topic checkbox state (only on first encounter)
+    # Pre-initialise individual topic keys so they exist before widgets render
     for t in available_topics:
-        if f"study_topic_cb_{t}" not in st.session_state:
-            st.session_state[f"study_topic_cb_{t}"] = True
+        key = f"study_topic_cb_{study_class}_{t}"
+        if key not in st.session_state:
+            st.session_state[key] = True
 
+    # "Select All" callback: push its value into every topic key
     def select_all_changed():
-        val = st.session_state["study_all_topics"]
+        val = st.session_state[f"select_all_{study_class}"]
         for t in available_topics:
-            st.session_state[f"study_topic_cb_{t}"] = val
+            st.session_state[f"study_topic_cb_{study_class}_{t}"] = val
 
+    # Individual topic callback: keep Select All ticked only when all topics are on
     def topic_changed():
-        # Keep "Select All" in sync: check it only when every topic is checked
-        all_on = all(st.session_state.get(f"study_topic_cb_{t}", True) for t in available_topics)
-        st.session_state["study_all_topics"] = all_on
+        all_on = all(
+            st.session_state.get(f"study_topic_cb_{study_class}_{t}", True)
+            for t in available_topics
+        )
+        if f"select_all_{study_class}" in st.session_state:
+            st.session_state[f"select_all_{study_class}"] = all_on
+
+    # Initialise Select All key from current topic states (only on first load)
+    sa_key = f"select_all_{study_class}"
+    if sa_key not in st.session_state:
+        st.session_state[sa_key] = all(
+            st.session_state.get(f"study_topic_cb_{study_class}_{t}", True)
+            for t in available_topics
+        )
 
     st.markdown("**Topics**")
     tc1, tc2 = st.columns([2, 1])
     with tc1:
-        # Derive the Select All state from individual topic states
-        all_currently_checked = all(
-            st.session_state.get(f"study_topic_cb_{t}", True) for t in available_topics
-        )
-        if "study_all_topics" not in st.session_state:
-            st.session_state["study_all_topics"] = all_currently_checked
-        st.checkbox("Select All", key="study_all_topics", on_change=select_all_changed)
+        st.checkbox("Select All", key=sa_key, on_change=select_all_changed)
     with tc2:
         shuffle = st.checkbox("Shuffle cards", value=True)
 
@@ -128,7 +136,7 @@ else:
             n = len(data[study_class].get(topic, []))
             topic_checks[topic] = st.checkbox(
                 f"{topic} ({n})",
-                key=f"study_topic_cb_{topic}",
+                key=f"study_topic_cb_{study_class}_{topic}",
                 on_change=topic_changed,
             )
 
