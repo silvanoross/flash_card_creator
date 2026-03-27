@@ -71,7 +71,7 @@ st.markdown("""
   min-height: 180px;
   display: flex;
   flex-direction: column;     /* ADD: stacks children vertically */
-  align-items: flex-start;    /* was: center — lets content left-align */
+  align-items: center;    /* was: center — lets content left-align */
   justify-content: center;
   box-shadow: 0 8px 32px rgba(79, 70, 229, .3);
   margin-bottom: 1rem;
