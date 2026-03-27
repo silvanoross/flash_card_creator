@@ -195,8 +195,8 @@ else:
     else:
         shuffle = st.session_state.get("_last_shuffle", True)
 
-    if st.session_state.show_setup:
-       
+    # if st.session_state.show_setup:
+    #     st.divider()
 
     # ── Per-class sections ─────────────────────────────────────────────────────
     # FIX: Topics are ALWAYS rendered regardless of class checkbox state.
