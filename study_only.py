@@ -294,7 +294,7 @@ else:
                 st.markdown(f"""
                 <div class="progress-bar">
                   <div class="progress-fill" style="width:{idx/total*100:.1f}%"></div>
-                </div>""", unsafe_allow_html=True, width='stretch')
+                </div>""", unsafe_allow_html=True)
 
                 rc1, rc2, _ = st.columns([1, 1, 4])
                 with rc1: st.markdown(f'✅ **{ss.get("correct",0)}** correct')
@@ -303,7 +303,7 @@ else:
 
                 question_html = md_lib.markdown(card["question"])
                 st.markdown(f'<div class="card-front">{question_html}</div>',
-                            unsafe_allow_html=True)
+                            unsafe_allow_html=True, width='content')
 
                 if not ss.get("show_answer"):
                     if st.button("Show Answer", type="primary", use_container_width=True):
