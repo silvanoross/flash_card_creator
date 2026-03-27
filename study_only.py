@@ -70,6 +70,35 @@ st.markdown("""
   padding:2px 12px;font-size:.8rem;font-weight:600;margin:2px}
 .section-header{font-size:1.1rem;font-weight:700;color:#374151;
   border-left:4px solid #4F46E5;padding-left:10px;margin:1.2rem 0 .6rem 0}
+
+/* ── Topic grid: force every column cell to the same fixed height so rows
+      stay perfectly aligned no matter how long the label text is.        ── */
+div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"] {
+    /* each cell is exactly 56px tall — fits two-line labels comfortably */
+    height: 56px !important;
+    overflow: visible !important;
+    /* pin all content to the top of the cell */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+/* Keep the actual checkbox widget from inheriting the flex stretch */
+div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]
+  > div[data-testid="stCheckbox"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Prevent the checkbox label from pushing the row taller */
+div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]
+  > div[data-testid="stCheckbox"] label {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    line-height: 1.3 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
