@@ -79,6 +79,7 @@ div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"] {
     display: flex !important;
     flex-direction: column !important;   /* ← keep only this one */
     justify-content: flex-start !important;
+    white-space: nowrap !important;
 }
             
             
