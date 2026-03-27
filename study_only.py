@@ -102,7 +102,7 @@ div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]
 """, unsafe_allow_html=True)
 
 # ─── header ──────────────────────────────────────────────────────────────────
-st.markdown('<div class="main-title">🃏 FlashCard Studio — Study Mode</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">🦠Micro and 🧬Immuno Flashcard Study</div>', unsafe_allow_html=True)
 st.markdown("Select your classes and topics, then start studying.")
 st.divider()
 
