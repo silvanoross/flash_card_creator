@@ -60,10 +60,22 @@ data = st.session_state.data
 st.markdown("""
 <style>
 .main-title{font-size:2.4rem;font-weight:800;color:#4F46E5;margin-bottom:.2rem}
-.card-front{background:linear-gradient(135deg,#667eea,#764ba2);border-radius:16px;
-  padding:2rem;color:#fff;font-size:1.3rem;font-weight:600;text-align:center;
-  min-height:180px;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 8px 32px rgba(79,70,229,.3);margin-bottom:1rem}
+.card-front {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 16px;
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: left;           /* was: center */
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;     /* ADD: stacks children vertically */
+  align-items: flex-start;    /* was: center — lets content left-align */
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(79, 70, 229, .3);
+  margin-bottom: 1rem;
+}
 .card-back img{max-width:100%;max-height:700px;border-radius:10px;margin-top:1rem}
 .progress-bar{background:#E5E7EB;border-radius:8px;height:12px}
 .progress-fill{background:#4F46E5;border-radius:8px;height:12px}
