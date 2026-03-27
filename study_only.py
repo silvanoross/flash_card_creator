@@ -301,7 +301,7 @@ else:
                 with rc2: st.markdown(f'❌ **{ss.get("incorrect",0)}** incorrect')
                 st.markdown("<br>", unsafe_allow_html=True)
 
-                question_html = md_lib.markdown(card["question"])
+                question_html = card["question"]
                 st.markdown(f'<div class="card-front">{question_html}</div>',
                             unsafe_allow_html=True)
 
