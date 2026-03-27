@@ -215,9 +215,9 @@ else:
             for i, topic in enumerate(topics):
                 with topic_cols[i % len(topic_cols)]:
                     n = len(data[cls][topic])
-                    label = topic if len(topic) <= 15 else topic[:10] + "…"
+                    label = topic if len(topic) <= 30 else topic[:28] + "…"
                     st.checkbox(
-                        f"{topic} ({n})",
+                        f"{label} ({n})",
                         key=f"topic_cb_{cls}_{topic}",
                         on_change=make_topic_cb(cls),
                     )
