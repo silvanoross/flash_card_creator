@@ -73,15 +73,14 @@ st.markdown("""
 
 /* ── Topic grid: force every column cell to the same fixed height so rows
       stay perfectly aligned no matter how long the label text is.        ── */
-div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"] {
-    /* each cell is exactly 56px tall — fits two-line labels comfortably */
-    height: 56px !important;
-    overflow: visible !important;
-    /* pin all content to the top of the cell */
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
+div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]
+  > div[data-testid="stCheckbox"] label {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: block !important;
 }
+            
 
 /* Keep the actual checkbox widget from inheriting the flex stretch */
 div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"]
