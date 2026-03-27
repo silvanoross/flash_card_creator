@@ -63,9 +63,6 @@ st.markdown("""
   padding:2rem;color:#fff;font-size:1.3rem;font-weight:600;text-align:center;
   min-height:180px;display:flex;align-items:center;justify-content:center;
   box-shadow:0 8px 32px rgba(79,70,229,.3);margin-bottom:1rem}
-# .card-back{background:linear-gradient(135deg,#f093fb,#f5576c);border-radius:16px;
-#   padding:2rem;color:#fff;font-size:1.1rem;text-align:left;min-height:180px;
-#   box-shadow:0 8px 32px rgba(245,87,108,.3);margin-bottom:1rem}
 .card-back img{max-width:100%;max-height:700px;border-radius:10px;margin-top:1rem}
 .progress-bar{background:#E5E7EB;border-radius:8px;height:12px}
 .progress-fill{background:#4F46E5;border-radius:8px;height:12px}
@@ -114,10 +111,11 @@ else:
     def make_class_cb(cls):
         def on_class_cb():
             val = st.session_state[f"class_cb_{cls}"]
+            # Cascade down to this class's topics only
             st.session_state[f"select_all_topics_{cls}"] = val
             for t in data[cls]:
                 st.session_state[f"topic_cb_{cls}_{t}"] = val
-            # Sync global select-all
+            # Sync global select-all (True only if ALL classes are checked)
             st.session_state["select_all_classes"] = all(
                 st.session_state.get(f"class_cb_{c}", True) for c in all_classes
             )
@@ -126,9 +124,12 @@ else:
     def make_select_all_topics_cb(cls):
         def on_select_all_topics():
             val = st.session_state[f"select_all_topics_{cls}"]
+            # Cascade down to this class's topics only
             for t in data[cls]:
                 st.session_state[f"topic_cb_{cls}_{t}"] = val
+            # Sync class checkbox to match
             st.session_state[f"class_cb_{cls}"] = val
+            # Sync global select-all
             st.session_state["select_all_classes"] = all(
                 st.session_state.get(f"class_cb_{c}", True) for c in all_classes
             )
@@ -138,8 +139,10 @@ else:
         def on_topic_cb():
             topics = list(data[cls].keys())
             all_on = all(st.session_state.get(f"topic_cb_{cls}_{t}", True) for t in topics)
+            # Sync this class's "select all topics" and class checkbox
             st.session_state[f"select_all_topics_{cls}"] = all_on
             st.session_state[f"class_cb_{cls}"] = all_on
+            # Sync global select-all
             st.session_state["select_all_classes"] = all(
                 st.session_state.get(f"class_cb_{c}", True) for c in all_classes
             )
@@ -155,24 +158,31 @@ else:
 
     st.divider()
 
-    # ── Per-class sections ────────────────────────────────────────────────────
+    # ── Per-class sections ─────────────────────────────────────────────────────
+    # FIX: Topics are ALWAYS rendered regardless of class checkbox state.
+    # Previously they were hidden when the class was unchecked, which caused
+    # Streamlit to destroy and recreate those widgets on every toggle,
+    # resetting all their state values and producing the "deselects everything" bug.
     for cls in all_classes:
         topics = list(data[cls].keys())
         total_cls_cards = sum(len(data[cls][t]) for t in topics)
 
+        # Class-level checkbox
         st.checkbox(
             f"**{cls}** — {len(topics)} topic(s), {total_cls_cards} card(s)",
             key=f"class_cb_{cls}",
             on_change=make_class_cb(cls),
         )
 
-        if st.session_state.get(f"class_cb_{cls}", True) and topics:
+        # "Select all topics" toggle — always visible
+        if topics:
             st.checkbox(
                 "Select all topics",
                 key=f"select_all_topics_{cls}",
                 on_change=make_select_all_topics_cb(cls),
             )
 
+            # Individual topic checkboxes — always visible
             topic_cols = st.columns(min(4, len(topics)))
             for i, topic in enumerate(topics):
                 with topic_cols[i % len(topic_cols)]:
@@ -256,7 +266,6 @@ else:
                         b64 = img_to_b64(card["answer_image"])
                         if b64: img_html = f'<img src="{b64}" style="max-width:100%;max-height:600px;border-radius:10px;" />'
 
-                    # st.markdown('<div class="card-back">', unsafe_allow_html=True)
                     with st.container(border=True):
                         st.markdown(
                             '<div style="background:linear-gradient(135deg,#f093fb,#f5576c);'
