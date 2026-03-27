@@ -683,6 +683,38 @@
         "answer_text": "1. Blockade of cytokines - IL-17 antibodies, JAK/STAT inhibitors. \n- You can block signaling at different levels, block the cytokine, block the Fc Receptor, small molecule inhibitors that get into cell and block second messengers/effector proteins\n2. Steroids - reduce inflammation, causes rapidly cycling cells to die\n3. Potentially increase Tregs - can take blood out and differentiate Tregs then reintroduce\n4. Depleting B cells - rituximab, Deplete hematopoietic stem cells - alumtuzimab\n5. Blocking immune cell entry to target tissues to help reduce inflammation - S1PR/SIP blockers, block adhesion molecules (VLA-4/VCAM-1, PSGL-1, chemokine gradient targets\n6. Vacation therapy - which can lead to relapse\n7. CAR-T therapy - Tailor them to recognize APC that is presenting self-antigen. Tregs can be engineered to go back and repair tissue.",
         "answer_image": null
       }
+    ],
+    "Tumor Immunology": [
+      {
+        "question": "##### Lecture Objective:\n###### Monoclonal antibodies (mAb)\n- Mechanistically, **how do mAb kill cancer cells**, what is their requirement? - **Exam Question**\n- How do tumors evade mAbs - **Exam Question**\n- What are challenges with mAbs",
+        "answer_text": "**Tumor specific Ag (TSA)  must be expressed on cell surface**\n\nTypes: \n\n###### Killing:\n1. Block natural ligand needed for growth ie if tumor is using tons of a certain growth factor and other cells are not, then you can target the the mAb to the growth factor to sequester\n2. Monoclonals can induce apoptosis if targeted to CD20 (rituximab) if B cell lymphoma or blastoma\n3. Induction complement cascade to cause lysis of tumor cells with mAb against TSA\n4.  ADCC via NK cells via Fc binding FcR or CD8 cytotoxicity, or antibody dependent cellular phagocytosis (ADCP)\n5. Hyper specific (non-systemic) targeting of toxin, radionuclide, or chemotherapy (toxic high levels systemic) with conjugated mAb to TSA\n\n\n---\n###### Challenges:\n- TSA needs to be surface accessible so if intracellular or in fibrotic/collagen-rich areas mAbs will have hard time penetrating. For the CNS they need to be directly injected into CSF\n     - Use Fabs or single chain Fragment Variable regions to target, but do not have Fc portion for recruiting complement, ADCC, or ADCP systems, also much shorter half life\n- Tregs can develop tolerance and anergize effector cells \u2193ADCC/ADCP\n- Immune response against mAb can destroy mAb upon next infusion\n    - \"chimeric\" or \"humanized\" mAbs might help this, but very expensive and time consuming, not for gen pop\n- [POTENTIAL EXAM QUESTION] Tumors dodge mAbs by down-regulating, secreting, mutating, or eliminating TSA",
+        "answer_image": "flashcard_images/Screenshot 2026-03-27 at 2.12.05\u202fPM.png"
+      },
+      {
+        "question": "##### Lecture Objective:\nChimeric Ag Receptor T cells (CAR-T)",
+        "answer_text": "###### Concept:\n- Building *new immune cells* to kill cancer\n- Use different immune molecules/parts/receptors to build a TSA Receptor\n- Make **chimeric** by adding stimulatory/co-stimulatory signals\n- Remove patient's T cell and genetically engineer CAR into them (retrovirus etc)\n- Expand CAR-T ex vivo\n- Reintroduce CAR-T to patient via infusion\n\n###### Two Key Parts:\n**Extracellular**\n- Part that binds the TSA - anything that can bind it, can be single chain, Fab, humanized, etc\n\n**Intracellular**\n- Transmits the growth, response, and/or survival signals - can specifically control for memory vs effector function\n    - CD3 and CD28 signaling ITAMs, helps prevent exhaustion",
+        "answer_image": "flashcard_images/cart.png"
+      },
+      {
+        "question": "##### Lecture Objective:\nCheckpoint inhibitors (CKi)",
+        "answer_text": "###### Concept:\n- Changing *pre-existing immune cell behavior* to kill cancer\n- Typically small-molecules, but can also be mAbs to specific non-tumor targets\n- Go for either side of the T cell response - on the T cell itself (CTLA-4, PD-1) or on the APC (B7.1/B7.2, PDL1/2)\n\n###### Immune Checkpoints [EXAM QUESTION]\n1. Release of ag from dying cancer cell\n2. APC pick up and present cancer specific antigen and go to LN\n3. **PRIMING: T CELL AND APC ACTIVATION** Not in the cancer cell but in the LN where immune cells would normally go to sleep, you can target anergy here and they would wake up and go back through system to cancer\n4. Trafficking of T cells to tumors (CTLs)\n5. Infiltration of T cells into tumors (extravasation CTLs through endothelial cells)\n6. **RECOGNITION:** CTLs recognize cancer cells - block immune checkpoint here PD-1/PDL-1\n7. **EFFECTOR T CELL KILLING:** Killing of cancer cells (perforin, granzyme, granulysin)",
+        "answer_image": "flashcard_images/Screenshot 2026-03-27 at 2.26.05\u202fPM.png"
+      },
+      {
+        "question": "##### Lecture Objective:\nTumor-specific antigens",
+        "answer_text": "###### Background:\n- *Proved they exist in mice* - vaccine can elicit anti-tumor response - not feasible form of treatment when it's usually too late when someone shows up to hospital with metastatic cancer\n- Huge challenges to vaccine - tumor heterogeneity, tumor burden/timing, immunosuppressive Tregs, immunosuppression from other therapies\n- Specific antigen issues:\n    - Unknown for many cancers\n    - Vary between different cancer types\n    - Vary between patients\n        - Different tumor Ags in same cancer type in different peopls\n        - Different Ag processing machinery (TAP1/2, proteases)\n        - Different MHC haplotypes causes different peptide presentation\n\n###### Characteristics:\n- Ags not expressed by normal mature tissues (maybe expressed at a certain time during development, but now their presence is an indication something is wrong)\n- **TSAs: acquired point mutations** - not ones you are born with that will allow new MHC-I or CTL targeting \n    - Higher mutagenic burden better, more TSAs to go after\n    - BCR/ABL translocation event for CML - now universal target for this type of cancer\n- Tumor specific Ig or TCR idiotype Ags - only for B anc T cell cancers\n- Ag expressed by normal tissue but at lower levels or only temporarily\n- Ag with unique PTM, glycosylation\n- Ags derived from viral oncoproteins - E6/E7 peptides HPV",
+        "answer_image": null
+      },
+      {
+        "question": "What is the idea of immunosurveillance?",
+        "answer_text": "Our immune system is keeping tumor growth in check all the time\n\nEvidence:\n- People with HIV tend to develop tumors that normal healthy people don't (Kaposi sarcoma, CNS lymphoma)\n- People undergoing immunosuppression post organ txp encounter reactivation of EBV (most of us have it but our immune system can suppress it)",
+        "answer_image": null
+      },
+      {
+        "question": "How can tumors escape immunosurveillance?",
+        "answer_text": "Treg contribution and Tumor Micro Environment:\n- Tumors can recruit Tregs and help induce peripheral tolerance\n- Solid tumors can have Tregs reside inside them\n- TME can be a physical barrier to immune cells and be immunosuppressive (fibrotic/collagen, hard to access, BBB) \n\nTumor Macro Environment:\nImmune-privileged areas like the eye, brain (BBB), testicles\n\nDown-regulation of MHC so no CD8 recognition of TSAs",
+        "answer_image": null
+      }
     ]
   },
   "Micro II": {
