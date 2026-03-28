@@ -722,7 +722,7 @@
       {
         "question": "#### Lecture Objective: \nYeast vs. Mold:\n    \u2022 Describe and distinguish their morphology.\n    \u2022 Characterize their modes of reproduction.",
         "answer_text": "Yeast:\n    \u2022 Single celled: Round, ovoid, or rod like\n    \u2022 Can perform asymmetric (budding) division or symmetric (fission)\n    \u2022 Cell wall can be thick or thin.\n    \u2022 Different plate colony appearance, color and morphology\n\nFilamentous Mold:\n    \u2022 Elongated cells called hyphae (network called mycelium)\n    \u2022 Cells can be septate (segregated transport between cells) or aseptate (continuous/connected cells)\n    \u2022 Hyphae don't divide but extend (invade) into the environment until they run out of nutrients\n    \u2022 Different appearances on plate - some are fluffy/velvety, others have different characteristics\n    \u2022 Reproduce through production and spread of spores (Sporangiospores or Arthrospores)\n\nDimorphic and Pleiomorphic Molds:\n    \u2022 Grow as yeast or hyphae depending on environment\n    \u2022 Pleiomorphic example: Candida albicans - grow as yeast on mucosa or at 30\u00baC in culture. Then when they get to 37\u00baC it can trigger shift to hyphae or pseudohyphae (chains of unseparated yeast)\n    \u2022  Dimorphic example: Blastomyces dermatitidis - grows as hyphae at 30C then as single celled yeast at 37C\nBoth:\n    \u2022 Membrane bound organelles\n    \u2022 Have thick cell walls",
-        "answer_image": "flashcard_images/Screenshot 2026-03-23 at 4.59.10\u202fPM.png"
+        "answer_image": null
       },
       {
         "question": "#### Lecture Objective: \nImmune defense against fungal infections:\n    \u2022 Understand which immune systems (innate vs. adaptive) are important for fungal infections.\n    \u2022 Describe the defense mechanisms of major immune cells against fungi.",
@@ -767,7 +767,7 @@
         "answer_image": null
       },
       {
-        "question": "How do hyphae divide and extend?",
+        "question": "How does hyphael extension and division cause virulence?",
         "answer_text": "- Nuclear division in C. albicans with septum ring formation (not in Apergillus, or normal hyphae extension, that just extend from one cell)\n-  Tissue Invasion\n   - Epithelial cells endocytose hyphae\n   - Hyphae actively penetrate the epithelia or through tight junctions between cells\n- Tissue Damage\n  - Hydrolase secretion: proteases, lipases, phosphlipases\n  - Candidalysin toxin (only known fungal exotoxin) released",
         "answer_image": "flashcard_images/Screenshot 2026-03-23 at 5.23.13\u202fPM.png"
       },
