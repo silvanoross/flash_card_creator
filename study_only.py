@@ -302,8 +302,25 @@ else:
                     ss.clear()
                     st.session_state.show_setup = True
                     st.rerun()
+
+                missed_cards = ss.get("missed", [])
+                if missed_cards:
+                    st.markdown("---")
+                    st.markdown(f"### 🔁 You missed **{len(missed_cards)}** card(s)")
+                    st.caption("Want to drill just those cards before moving on?")
+                    if st.button(f"🔁 Retry {len(missed_cards)} Missed Card(s)", type="primary"):
+                        retry_deck = missed_cards.copy()
+                        if st.session_state.get("_last_shuffle", True):
+                            random.shuffle(retry_deck)
+                        ss.clear()
+                        ss.update({"deck": retry_deck, "index": 0, "show_answer": False,
+                                   "correct": 0, "incorrect": 0, "is_retry": True})
+                        st.session_state.show_setup = False
+                        st.rerun()
             else:
                 card = deck[idx]
+                if ss.get("is_retry"):
+                    st.info("🔁 **Retry Mode** — drilling your missed cards only")
                 st.markdown(f"**Card {idx+1} of {total}** — {card.get('_class','')} › *{card.get('_topic','')}*")
                 st.markdown(f"""
                 <div class="progress-bar">
@@ -349,6 +366,7 @@ else:
                     with cn:
                         if st.button("❌ Missed it", use_container_width=True):
                             ss["incorrect"] = ss.get("incorrect", 0) + 1
+                            ss.setdefault("missed", []).append(card)
                             ss["index"] = idx + 1; ss["show_answer"] = False; st.rerun()
 
                     st.markdown("---")
