@@ -177,9 +177,11 @@ else:
         def on_topic_cb():
             topics = list(data[cls].keys())
             all_on = all(st.session_state.get(f"topic_cb_{cls}_{t}", True) for t in topics)
-            # Sync this class's "select all topics" and class checkbox
+            any_on = any(st.session_state.get(f"topic_cb_{cls}_{t}", False) for t in topics)
+            # "Select all topics" is only checked when every topic is on
             st.session_state[f"select_all_topics_{cls}"] = all_on
-            st.session_state[f"class_cb_{cls}"] = all_on
+            # Class checkbox stays True as long as at least one topic is checked
+            st.session_state[f"class_cb_{cls}"] = any_on
             # Sync global select-all
             st.session_state["select_all_classes"] = all(
                 st.session_state.get(f"class_cb_{c}", True) for c in all_classes
