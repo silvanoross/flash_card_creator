@@ -246,7 +246,7 @@ st.markdown('<div class="main-title">🗂️ FlashCard Studio</div>', unsafe_all
 st.markdown("Create classes, topics, and flashcards — then study them with ease.")
 st.divider()
 
-col_m1, col_m2, _ = st.columns([1, 1, 4])
+col_m1, col_m2, _ = st.columns([1, 1, 5])
 with col_m1:
     if st.button("📚 Manage Cards", use_container_width=True,
                  type="primary" if st.session_state.mode == "manage" else "secondary"):
@@ -263,7 +263,7 @@ st.divider()
 # ═════════════════════════════════════════════════════════════════════════════
 if st.session_state.mode == "manage":
 
-    left, right = st.columns([1, 2], gap="large")
+    left, right = st.columns([0.5, 2], gap="large")
 
     # ── LEFT ──────────────────────────────────────────────────────────────────
     with left:
