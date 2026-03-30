@@ -352,7 +352,7 @@ else:
                             unsafe_allow_html=True
                         )
                         if card.get("answer_text"):
-                            st.markdown(card["answer_text"])
+                            st.markdown(card["answer_text"], unsafe_allow_html=True)
                         if img_html:
                             st.markdown(img_html, unsafe_allow_html=True)
                         st.markdown('</div>', unsafe_allow_html=True)
