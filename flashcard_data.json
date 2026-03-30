@@ -918,11 +918,6 @@
         "answer_image": "flashcard_images/CPA-IPA.png"
       },
       {
-        "question": "#### Lecture Objectives: \nDescribe the major virulence factors of Cryptococcus \u2013 *different from aspergillus and candida*",
-        "answer_text": "",
-        "answer_image": null
-      },
-      {
         "question": "#### Lecture Objectives: \nUnderstand the immune responses associated with protective immunity and clearance of Cryptococcus",
         "answer_text": "- Protection against cryptococcal infection is dependent on CD4+ T cells \u2013 in human infection and animal models\n  - DEPENDENT ON TH1 type cytokine response \u2013 and TNF-\u237a, INF-\u03b3, IL-12\n    - cytokines such as IL-12 and IFN-\u03b3 and pro-inflammatory cytokine TNF-\u237a are associated with clearance of C. neoformans, *Th2 responses lead to exacerbation of disease*\n- Antibodies can coat GXM cell wall and opsonize for phagocytosis\n- Complement can opsonize for phagocytosis\n- Drugs that lock TNF alpha in autoimmune disease make you more susceptible\n- Innate cells such as **macrophages** and **dendritic cells (DCs)** are involved in initial stages of controlling this infection and play a role in directing the protective response\n    - Classically activated (M1) macrophages are necessary for protection, while alternatively activated (M2) macrophages can allow intracellular replication\n    - Different responses: allow growth intracellular and non-lytic expulsion | Antifungal M1 kill through STAT-1 and iNOS\n    - Lung APC isolates from mice show different levels of killing *C. neoformans*\n- DCs can kill the pathogen in vitro and are recruited to the lungs during infection - lysosomal contents can directly kill administered *in vitro*\n- Recognition of C-type lectin receptor",
         "answer_image": null
@@ -933,7 +928,7 @@
         "answer_image": null
       },
       {
-        "question": "What is a major virulence factor for both species of crypto? Which are specific to C. neoformans?",
+        "question": "###### Lecture Objective\nWhat is a major virulence factor for both species of crypto? Which are specific to C. neoformans?",
         "answer_text": "**Both**\n- The cell wall, GXM or glucuronoxylomannan composition, super thick, hard to phagocytose because large and slippery\n\n**C. Neoformans**\n- Grow inside macrophages and get trafficked to brain - trojan horse\n- Become TITAN cell, 8ploidy and cannot be phagocytosed",
         "answer_image": "flashcard_images/paste_65a2bd746d.png"
       },
