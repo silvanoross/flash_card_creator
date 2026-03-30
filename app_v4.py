@@ -436,7 +436,7 @@ if st.session_state.mode == "manage":
                     for i, card in enumerate(cards):
                         label = card["question"][:60] + ("…" if len(card["question"]) > 60 else "")
                         with st.expander(f"Card {i+1}: {label}"):
-                            c1, c2 = st.columns(2)
+                            c1, c2 = st.columns([0.6, 2])
                             with c1:
                                 st.markdown("**Front**"); st.info(card["question"])
                             with c2:
