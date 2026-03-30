@@ -452,7 +452,7 @@ if st.session_state.mode == "manage":
                                 if card.get("answer_text"):
                                     st.markdown(card["answer_text"], unsafe_allow_html=True)
                                 if card.get("answer_image") and os.path.exists(card["answer_image"]):
-                                    st.image(card["answer_image"], width=200)
+                                    st.image(card["answer_image"], width=500)
 
                             with st.form(key=f"edit_{i}"):
                                 st.markdown("**Edit card:**")
