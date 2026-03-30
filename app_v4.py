@@ -20,6 +20,7 @@ import json, base64, os, random, uuid
 from pathlib import Path
 from PIL import Image
 import io
+import re
 
 
 
@@ -432,17 +433,24 @@ if st.session_state.mode == "manage":
 
                 # ── Existing cards ────────────────────────────────────────────
                 if cards:
-                    st.markdown(f"**{len(cards)} card(s) in this topic:**")
+                    st.markdown(f"**{len(cards)} card(s) in this topic:**", unsafe_allow_html=True)
                     for i, card in enumerate(cards):
-                        label = card["question"][:60] + ("…" if len(card["question"]) > 60 else "")
+                        if not card.get("question"): 
+                            continue
+                        
+                        label = card["question"][:120] + ("…" if len(card["question"]) > 120 else "")
+                        clean_label = re.sub(r'\*\*|__|`|#{1,6}\s*|<[^>]+>', '', card["question"])
+                        label = clean_label[:120] + ("…" if len(clean_label) > 120 else "")
+
                         with st.expander(f"Card {i+1}: {label}"):
                             c1, c2 = st.columns([0.6, 2])
                             with c1:
-                                st.markdown("**Front**"); st.info(card["question"])
+                                st.markdown("**Front**", unsafe_allow_html=True)#; st.markdown(st.info(card["question"]), unsafe_allow_html=True)
+                                st.markdown(card["question"], unsafe_allow_html=True)
                             with c2:
-                                st.markdown("**Back**")
+                                st.markdown("**Back**", unsafe_allow_html=True)
                                 if card.get("answer_text"):
-                                    st.success(card["answer_text"])
+                                    st.markdown(card["answer_text"], unsafe_allow_html=True)
                                 if card.get("answer_image") and os.path.exists(card["answer_image"]):
                                     st.image(card["answer_image"], width=200)
 
