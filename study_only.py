@@ -210,7 +210,7 @@ else:
         shuffle = st.session_state.get("_last_shuffle", True)
 
     # if st.session_state.show_setup:
-    #     st.divider()
+        st.divider()
 
     # ── Per-class sections ─────────────────────────────────────────────────────
     # FIX: Topics are ALWAYS rendered regardless of class checkbox state.
@@ -249,7 +249,7 @@ else:
                             on_change=make_topic_cb(cls),
                         )
 
-            # st.divider()
+            st.divider()
 
     # ── Build card deck from current checkbox state ───────────────────────────
     all_cards = [
