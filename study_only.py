@@ -249,7 +249,7 @@ else:
                             on_change=make_topic_cb(cls),
                         )
 
-            st.divider()
+            # st.divider()
 
     # ── Build card deck from current checkbox state ───────────────────────────
     all_cards = [
